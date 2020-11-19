@@ -1,0 +1,27 @@
+The intention of the project is to create predictions bsaed off of the enemy
+team's history. First, try to do this for one person. Let's say we collect the 
+following data:
+- 10 highest mastery champs
+- ranked solo queue history
+    - what roles are they playing
+    - how well are they performing on certain champs, especially mastery ones
+    - how long has it been since they played their highest mastery champ
+
+- Rank best champs in the role
+    - given tier
+        - collect winrate data
+        - collect pick rate
+        - collect ban rate (maybe)
+        - rank champs using some kind of algorithm
+            - how to we incorporate these 3 factors? weighting? some complex math
+            thing?
+
+        - try to get maybe wins/pick?
+            - winrate = wins/times champ picked
+            - pickrate = times champs picked/total games
+            - normalize bsaed on mastery points, average mastery points
+                - logarithmic scale
+
+- If you were banning against them, what are your top 3 bans?
+    - What would restrict them the most/
+    - 
