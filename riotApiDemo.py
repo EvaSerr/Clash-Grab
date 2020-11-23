@@ -70,7 +70,9 @@ def riotApiDemo(lol_watcher):
     summonerData = lol_watcher.summoner.by_name(summonerRegion, summonerName)
     # print(summonerData)
     summonerId = summonerData['id']
+    print(f'summonerId: {summonerId}')
     accountId = summonerData['accountId']
+    print(f'accountId: {accountId}')
     myQueueType = 'RANKED_SOLO_5x5'
     myQueueTypeSet = {'RANKED_SOLO_5x5'}
     # print(type(myQueueTypeSet))
@@ -78,6 +80,7 @@ def riotApiDemo(lol_watcher):
     rankedData = lol_watcher.league.by_summoner(summonerRegion, summonerId)
     # print(rankedData)
     sumTier, sumRank = rankedData[1]['tier'], rankedData[1]['rank']
+    print(sumTier, sumRank)
     leagueUUID = lol_watcher.league.entries(summonerRegion, myQueueType, sumTier, sumRank)
     # print(f'leagueUUID: {leagueUUID}')
     leagueSummoners = set()
@@ -94,9 +97,21 @@ def riotApiDemo(lol_watcher):
     champKeys = dict()
     for champ in champData:
         champKeys[champ] = champData[champ]['key']
-    print(champKeys)
+    # print(champKeys)
     
-    matchHist = lol_watcher.match.matchlist_by_account(summonerRegion, accountId, queue={420}, season={13, 14}, champion={champKeys['Ashe']})
-    print(matchHist)
+    matchHist = lol_watcher.match.matchlist_by_account(summonerRegion, accountId, queue={420}, season={13}, champion={champKeys['Ashe']})
+    # print(matchHist)
 
-riotApiDemo(lol_watcher)
+def findSummonerList(lol_watcher):
+    # queues Gold IV - I, Platinum IV - I, Diamond IV - I
+    summonerRegion = 'na1'
+    rankList = ['GOLD', 'PLATINUM', 'DIAMOND']
+    divisionList = ['IV', 'III', 'II', 'I']
+    queueType = 'RANKED_SOLO_5x5'
+
+    summonerNames = []
+    for rank in rankList:
+        for division in divisionList:
+            leagueUUID = lol_watcher.league.entries(summonerRegion, queueType, division, rank)
+            for summonerData in leagueUUID:
+                summonerNames.append(leagueUUID['summonerName'])
