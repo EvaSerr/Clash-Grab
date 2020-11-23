@@ -25,3 +25,25 @@ following data:
 - If you were banning against them, what are your top 3 bans?
     - What would restrict them the most/
     - 
+
+TP0 Checkin Todo:
+    -Determine Basic Process:
+        -first find a the players in a given rank in ranked solo with:
+         entries(region: str, queue: str, tier: str, division: str, page: int = 1)
+        -loop through each player, getting summoner ID
+            -for each summoner id, loope through champion specific match history
+                -calculate WR for summoner on champ
+        -average WR
+        -multipy by (champ dificulty)/(max champ difficulty) for simple 'prio'
+
+        -do as above but for only one player
+        -give both number, give also one over the other, shows relative scale
+        -order by 0.75*league 'prio' + 0.25*personal 'prio'
+        -note if games < 5 on given champ
+
+    -UI
+        -basic entry box, enter summoner name
+        -first case only has the prio rankings
+        -return champ icons with the  weighted order, largest on left
+        -return gathered metrics, winrate, games played for each champ
+        -return league wide power rankings
