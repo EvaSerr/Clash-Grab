@@ -21,7 +21,7 @@ def findSummonerList(lol_watcher):
                     summonerNames[name] = summonerId
                 except:
                     pass
-
+    print(len(summonerNames))
     return summonerNames
 
 def findChampMasteries(lol_watcher, summonerDict):
@@ -48,7 +48,6 @@ def findChampMasteries(lol_watcher, summonerDict):
                 champName = champKeys[tempKey]
                 championMasteries[summonerName][champName] = championMastery['championPoints']
             depth += 1
-            print(championMasteries)
         except ApiError as err:
             if err.response.status_code == 429:
                 print('We should retry in {} seconds.'.format(err.headers['Retry-After']))
