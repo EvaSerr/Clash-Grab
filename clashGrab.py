@@ -13,15 +13,17 @@ def findSummonerList(lol_watcher):
     summonerNames = dict()
     for tier in tierList:
         for division in divisionList:
+            summonerCount = 0
             leagueUUID = lol_watcher.league.entries(summonerRegion, queueType, tier, division)
             for summonerData in leagueUUID:
                 # print(summonerData)
-                try:
-                    name = summonerData['summonerName']
+                name = summonerData['summonerName']
+                if name.isalnum():
                     summonerId = summonerData['summonerId']
                     summonerNames[name] = summonerId
-                except:
-                    pass
+                    summonerCount += 1
+                    if summonerCount >= 50:
+                        break
     print(len(summonerNames))
     return summonerNames
 
@@ -49,7 +51,7 @@ def findChampMasteries(lol_watcher, summonerDict):
                 champName = champKeys[tempKey]
                 championMasteries[summonerName][champName] = championMastery['championPoints']
             depth += 1
-        except ApiError as err:
+        except ApiError as err: # error code copied from: https://riot-watcher.readthedocs.io/en/latest/
             if err.response.status_code == 429:
                 print('We should retry in {} seconds.'.format(err.headers['Retry-After']))
                 print('this retry-after is handled by default by the RiotWatcher library')
@@ -65,5 +67,9 @@ def findChampMasteries(lol_watcher, summonerDict):
 
 names = findSummonerList(lol_watcher)
 champMasteriesDict = findChampMasteries(lol_watcher, names)
-with open('champMasteries.json', 'w') as masteryData:
+
+with open('rawSummonerData/allSummoners.json', 'w') as allSummonerNames:
+    json.dump(names, allSummonerNames, indent=2)
+
+with open('parsedSummonerData/champMasteries.json', 'w') as masteryData:
     json.dump(champMasteriesDict, masteryData, indent=2)
