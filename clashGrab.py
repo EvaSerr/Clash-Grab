@@ -1,4 +1,5 @@
 from riotwatcher import LolWatcher, ApiError
+import json
 
 lol_watcher = LolWatcher('RGAPI-d4e17890-be4b-4fdf-921d-328090cc960b')
 
@@ -60,7 +61,9 @@ def findChampMasteries(lol_watcher, summonerDict):
 
     return championMasteries
 
+# code copied from: https://www.geeksforgeeks.org/working-with-json-data-in-python/
+
 names = findSummonerList(lol_watcher)
-# print(names)
-champMasteries = findChampMasteries(lol_watcher, names)
-print(champMasteries)
+champMasteriesDict = findChampMasteries(lol_watcher, names)
+with open('champMasteries.json', 'w') as masteryData:
+    json.dump(champMasteriesDict, masteryData, indent=2)
