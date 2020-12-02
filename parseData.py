@@ -80,7 +80,6 @@ def findChamps(lol_watcher):
     return champNameSet
 
 def parseRankedData(path):
-    path = path
     summonerList = os.listdir(path)
     s10ChampDataParsed = dict()
     for summonerTxt in summonerList:
@@ -92,7 +91,7 @@ def parseRankedData(path):
 
             # set result dict, remove all lines that do not contain relevantClasses
             s10ChampDataParsedBySummoner = dict()
-            relevantClasses = ['<td class="ChampionName Cell', '<td class="RatioGraph Cell', '<td class="KDA Cell']
+            relevantClasses = ['<td class="ChampionName Cell', '<td class="RatioGraph Cell', '<div class="Text Left">', '<div class="Text Right">', '<td class="KDA Cell', '<span class="Kill">', '<span class="Assist">']
             for champCellRaw in s10ChampDataRawList:
                 tempParse = []
                 champCellRaw = champCellRaw.splitlines()
@@ -102,19 +101,84 @@ def parseRankedData(path):
                             tempParse.append(jsLine)
                             break
 
+                # print(f'tempParse: {tempParse}')
+                tempParsedGeneral = tempParse[:2] + [tempParse[len(tempParse) - 3]]
+                # print(f'tempParsedGeneral: {tempParsedGeneral}')
+                tempParsedGames = []
+                if len(tempParse) == 7:
+                    tempParsedGames = tempParse[2:4]
+                else:
+                    tempParsedGames = [tempParse[2]]
+                # print(f'tempParsedGames: {tempParsedGames}')
+                
+                tempParsedKA = tempParse[5:]
+                kPlusA = 0
+                for tempKADataRaw in tempParsedKA:
+                    classSplit = tempKADataRaw.split('>')
+                    classSplit = classSplit[1].split('<')
+
+                    kPlusA += float(classSplit[0])
+
                 # split by quotes to find data-value, return only the data-value
                 s10ChampDataParsedList = []
-                for tempChampDataRaw in tempParse:
+                for tempChampDataRaw in tempParsedGeneral:
                     classSplit = tempChampDataRaw.split('"')
                     dataValue = classSplit[len(classSplit) - 2]
                     # I hate Nunu in HTML
                     if dataValue == 'Nunu &amp; Willump':
                         dataValue = 'Nunu & Willump'
+                    # account for perfect KDA
+                    if dataValue == 'Perfect':
+                        dataValue = f'{kPlusA}'
                     s10ChampDataParsedList.append(dataValue)
+
+                totalGames = 0
+                for tempGameDataRaw in tempParsedGames:
+                    # parse format for win/losses
+                    # print(f'classSplit1: {classSplit}')
+                    classSplit = tempGameDataRaw.split('>')
+                    # print(f'classSplit2: {classSplit}')
+                    classSplit = classSplit[1].split('<')
+                    # print(f'classSplit3: {classSplit}')
+                    classSplit = classSplit[0]
+
+                    totalGames += int(classSplit[:-1])
+
+                    s10ChampDataParsedList.append(classSplit)
                 
-                s10ChampDataParsedBySummoner[s10ChampDataParsedList[0]] = {'winRate':s10ChampDataParsedList[1], 'KDA':s10ChampDataParsedList[2]}
+                s10ChampDataParsedList.append(totalGames)
+
+                if len(s10ChampDataParsedList) == 6:
+                    s10ChampDataParsedBySummoner[s10ChampDataParsedList[0]] = {'winRate':float(s10ChampDataParsedList[1]) / 100, 'KDA':float(s10ChampDataParsedList[2]), 'wins':int(s10ChampDataParsedList[3][:-1]), 
+                    'losses':int(s10ChampDataParsedList[4][:-1]), 'totalGames':s10ChampDataParsedList[5]}
+                elif s10ChampDataParsedList[len(s10ChampDataParsedList) - 2][-1] == 'W':
+                    s10ChampDataParsedBySummoner[s10ChampDataParsedList[0]] = {'winRate':float(s10ChampDataParsedList[1]) / 100, 'KDA':float(s10ChampDataParsedList[2]), 'wins':int(s10ChampDataParsedList[3][:-1]), 
+                    'losses':0, 'totalGames':s10ChampDataParsedList[4]}
+                else:
+                    s10ChampDataParsedBySummoner[s10ChampDataParsedList[0]] = {'winRate':float(s10ChampDataParsedList[1]) / 100, 'KDA':float(s10ChampDataParsedList[2]), 'wins':0,
+                    'losses':int(s10ChampDataParsedList[3][:-1]), 'totalGames':s10ChampDataParsedList[4]}
+                
         s10ChampDataParsed[summonerTxt[:len(summonerTxt) - 4]] = s10ChampDataParsedBySummoner
     return s10ChampDataParsed
+
+def addPickrateEntry(path):
+    pickrateData = dict()
+    with open(path, 'r') as winsLossesData:
+        prevData = json.load(winsLossesData)
+        pickrateData = prevData.copy()
+
+        for summonerName in prevData:
+            totalGamesAllChamps = 0
+            for championName in prevData[summonerName]:
+                totalGamesAllChamps += prevData[summonerName][championName]['totalGames']
+
+            for championName in prevData[summonerName]:
+                pickrateData[summonerName][championName]['pickrate'] = prevData[summonerName][championName]['totalGames'] / totalGamesAllChamps
+            
+    with open(path, 'w') as opggWithPickrate:
+        json.dump(pickrateData, opggWithPickrate, indent=2)
+        
+    return path
 
 def combineOpggDataAndMastery(pathOpggData, pathMastery, pathTarget):
     with open(pathOpggData, 'r') as parsedOPGG:
@@ -148,7 +212,15 @@ def percentizeMastery(path):
         json.dump(resultData, summonerDataWrite, indent=2)
     
     return path
-            
+
+def convertToChampionKeys(path):
+    with open(path, 'r') as summonerData:
+        tempData = json.load(summonerDataRead)
+        resultData = dict()
+        for summonerName in tempData:
+            for championName in tempData[summonerName]:
+                if championName in resultData:
+                    resultData(championName)[summonerName] = tempData[summonerName][championName]
 
 
 # code copied from: https://www.geeksforgeeks.org/working-with-json-data-in-python/
@@ -178,7 +250,12 @@ with open('parsedSummonerData/champMasteries.json', 'w') as masteryData:
     json.dump(champMasteriesDict, masteryData, indent=2)
 
 combineOpggDataAndMastery('parsedSummonerData/opggDataBySummoner.json', 'parsedSummonerData/champMasteries.json', 'parsedSummonerData/summonerDataByChamp.json')
+
 '''
+with open('parsedSummonerData/opggDataBySummoner.json', 'w') as parsedOPGG:
+    json.dump(parseRankedData('rawSummonerData'), parsedOPGG, indent=2)
+
+addPickrateEntry('parsedSummonerData/opggDataBySummoner.json')
 
 combineOpggDataAndMastery('parsedSummonerData/opggDataBySummoner.json', 'parsedSummonerData/champMasteries.json', 'parsedSummonerData/summonerDataByChamp.json')
 
