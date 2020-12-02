@@ -149,13 +149,13 @@ def parseRankedData(path):
                 s10ChampDataParsedList.append(totalGames)
 
                 if len(s10ChampDataParsedList) == 6:
-                    s10ChampDataParsedBySummoner[s10ChampDataParsedList[0]] = {'winRate':float(s10ChampDataParsedList[1]) / 100, 'KDA':float(s10ChampDataParsedList[2]), 'wins':int(s10ChampDataParsedList[3][:-1]), 
+                    s10ChampDataParsedBySummoner[s10ChampDataParsedList[0]] = {'winrate':float(s10ChampDataParsedList[1]) / 100, 'KDA':float(s10ChampDataParsedList[2]), 'wins':int(s10ChampDataParsedList[3][:-1]), 
                     'losses':int(s10ChampDataParsedList[4][:-1]), 'totalGames':s10ChampDataParsedList[5]}
                 elif s10ChampDataParsedList[len(s10ChampDataParsedList) - 2][-1] == 'W':
-                    s10ChampDataParsedBySummoner[s10ChampDataParsedList[0]] = {'winRate':float(s10ChampDataParsedList[1]) / 100, 'KDA':float(s10ChampDataParsedList[2]), 'wins':int(s10ChampDataParsedList[3][:-1]), 
+                    s10ChampDataParsedBySummoner[s10ChampDataParsedList[0]] = {'winrate':float(s10ChampDataParsedList[1]) / 100, 'KDA':float(s10ChampDataParsedList[2]), 'wins':int(s10ChampDataParsedList[3][:-1]), 
                     'losses':0, 'totalGames':s10ChampDataParsedList[4]}
                 else:
-                    s10ChampDataParsedBySummoner[s10ChampDataParsedList[0]] = {'winRate':float(s10ChampDataParsedList[1]) / 100, 'KDA':float(s10ChampDataParsedList[2]), 'wins':0,
+                    s10ChampDataParsedBySummoner[s10ChampDataParsedList[0]] = {'winrate':float(s10ChampDataParsedList[1]) / 100, 'KDA':float(s10ChampDataParsedList[2]), 'wins':0,
                     'losses':int(s10ChampDataParsedList[3][:-1]), 'totalGames':s10ChampDataParsedList[4]}
                 
         s10ChampDataParsed[summonerTxt[:len(summonerTxt) - 4]] = s10ChampDataParsedBySummoner
@@ -203,7 +203,7 @@ def percentizeMastery(path):
         for summonerName in tempData:
             totalMastery = 0
             for champName in tempData[summonerName]:
-                print(tempData[summonerName][champName]['mastery'])
+                # print(tempData[summonerName][champName]['mastery'])
                 totalMastery += tempData[summonerName][champName]['mastery']
             for champName in resultData[summonerName]:
                 resultData[summonerName][champName]['masteryPercentage'] = tempData[summonerName][champName]['mastery'] / totalMastery
@@ -213,52 +213,29 @@ def percentizeMastery(path):
     
     return path
 
-def convertToChampionKeys(path):
+def convertToByChamp(path):
     with open(path, 'r') as summonerData:
-        tempData = json.load(summonerDataRead)
+        tempData = json.load(summonerData)
         resultData = dict()
         for summonerName in tempData:
             for championName in tempData[summonerName]:
                 if championName in resultData:
-                    resultData(championName)[summonerName] = tempData[summonerName][championName]
+                    resultData[championName][summonerName] = tempData[summonerName][championName]
+                else:
+                    resultData[championName] = {summonerName:tempData[summonerName][championName]}
 
+    return resultData
 
 # code copied from: https://www.geeksforgeeks.org/working-with-json-data-in-python/
 
-'''
-with open('rawSummonerData/allSummoners.json', 'r') as allSummonerNamesAndKeys:
-    summonerNames = json.load(allSummonerNamesAndKeys)
+with open('parsedSummonerData/opggDataBySummoner.json', 'w') as opggData:
+    json.dump(parseRankedData('rawSummonerData'), opggData, indent=2)
 
-champMasteriesDict = findChampMasteries(lol_watcher, names)
+combineOpggDataAndMastery('parsedSummonerData/opggDataBySummoner.json', 'parsedSummonerData/champMasteries.json', 'parsedSummonerData/champDataBySummoner')
 
-with open('rawSummonerData/allSummoners.json', 'w') as allSummonerNames:
-    json.dump(names, allSummonerNames, indent=2)
+percentizeMastery('parsedSummonerData/champDataBySummoner')
 
+with open('parsedSummonerData/summonerDataByChamp.json', 'w') as parsedData:
+    json.dump(convertToByChamp('parsedSummonerData/champDataBySummoner'), parsedData, indent=2)
 
-with open('parsedSummonerData/opggDataBySummoner.json', 'w') as parsedOPGG:
-    json.dump(parseRankedData('rawSummonerData'), parsedOPGG, indent=2)
-
-combineOpggDataAndMastery('parsedSummonerData/opggDataBySummoner.json', 'parsedSummonerData/champMasteries.json', 'parsedSummonerData/summonerDataByChamp.json')
-
-
-with open('rawSummonerData/allSummoners.json', 'r') as allSummonerNamesAndKeys:
-    summonerNames = json.load(allSummonerNamesAndKeys)
-
-champMasteriesDict = findChampMasteries(lol_watcher, summonerNames)
-
-with open('parsedSummonerData/champMasteries.json', 'w') as masteryData:
-    json.dump(champMasteriesDict, masteryData, indent=2)
-
-combineOpggDataAndMastery('parsedSummonerData/opggDataBySummoner.json', 'parsedSummonerData/champMasteries.json', 'parsedSummonerData/summonerDataByChamp.json')
-
-'''
-with open('parsedSummonerData/opggDataBySummoner.json', 'w') as parsedOPGG:
-    json.dump(parseRankedData('rawSummonerData'), parsedOPGG, indent=2)
-
-addPickrateEntry('parsedSummonerData/opggDataBySummoner.json')
-
-combineOpggDataAndMastery('parsedSummonerData/opggDataBySummoner.json', 'parsedSummonerData/champMasteries.json', 'parsedSummonerData/summonerDataByChamp.json')
-
-percentizeMastery('parsedSummonerData/summonerDataByChamp.json')
-
-# print(findChamps(lol_watcher))
+addPickrateEntry('parsedSummonerData/summonerDataByChamp.json')
