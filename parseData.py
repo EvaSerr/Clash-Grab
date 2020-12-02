@@ -142,7 +142,7 @@ def percentizeMastery(path):
                 print(tempData[summonerName][champName]['mastery'])
                 totalMastery += tempData[summonerName][champName]['mastery']
             for champName in resultData[summonerName]:
-                resultData[summonerName][champName]['mastery'] = tempData[summonerName][champName]['mastery'] / totalMastery
+                resultData[summonerName][champName]['masteryPercentage'] = tempData[summonerName][champName]['mastery'] / totalMastery
 
     with open(path, 'w') as summonerDataWrite:
         json.dump(resultData, summonerDataWrite, indent=2)
@@ -179,6 +179,8 @@ with open('parsedSummonerData/champMasteries.json', 'w') as masteryData:
 
 combineOpggDataAndMastery('parsedSummonerData/opggDataBySummoner.json', 'parsedSummonerData/champMasteries.json', 'parsedSummonerData/summonerDataByChamp.json')
 '''
+
+combineOpggDataAndMastery('parsedSummonerData/opggDataBySummoner.json', 'parsedSummonerData/champMasteries.json', 'parsedSummonerData/summonerDataByChamp.json')
 
 percentizeMastery('parsedSummonerData/summonerDataByChamp.json')
 
