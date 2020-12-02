@@ -47,3 +47,14 @@ TP0 Checkin Todo:
         -return champ icons with the  weighted order, largest on left
         -return gathered metrics, winrate, games played for each champ
         -return league wide power rankings
+
+TP0:
+    - MVP requires the linear regression model at the bas
+        - independent variables: champion masteries, champion winrate,
+          KDA, Tier in Role(?)
+        - dependent variable: personal pickrate for champion
+    - just find pickrate
+    - then build the UI
+    - then do the API stuff
+
+    email shivank stuff after submitting
