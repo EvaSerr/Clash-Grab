@@ -231,11 +231,11 @@ def convertToByChamp(path):
 with open('parsedSummonerData/opggDataBySummoner.json', 'w') as opggData:
     json.dump(parseRankedData('rawSummonerData'), opggData, indent=2)
 
-combineOpggDataAndMastery('parsedSummonerData/opggDataBySummoner.json', 'parsedSummonerData/champMasteries.json', 'parsedSummonerData/champDataBySummoner')
+combineOpggDataAndMastery('parsedSummonerData/opggDataBySummoner.json', 'parsedSummonerData/champMasteries.json', 'parsedSummonerData/champDataBySummoner.json')
 
-percentizeMastery('parsedSummonerData/champDataBySummoner')
+percentizeMastery('parsedSummonerData/champDataBySummoner.json')
+
+addPickrateEntry('parsedSummonerData/champDataBySummoner.json')
 
 with open('parsedSummonerData/summonerDataByChamp.json', 'w') as parsedData:
-    json.dump(convertToByChamp('parsedSummonerData/champDataBySummoner'), parsedData, indent=2)
-
-addPickrateEntry('parsedSummonerData/summonerDataByChamp.json')
+    json.dump(convertToByChamp('parsedSummonerData/champDataBySummoner.json'), parsedData, indent=2)
