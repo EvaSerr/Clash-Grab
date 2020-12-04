@@ -16,9 +16,9 @@ class clashGrabUI(App):
         self.currentTab = 0
         self.inputHTML = ''
         self.summonerQueryName = ''
+        self.regressionData = [ ]
 
         self.backgroundColor = 'orchid2'
-        self.mainTextColor = 'thistle2'
 
         self.cx = self.width // 2
         self.cy = self.height // 2
@@ -26,9 +26,14 @@ class clashGrabUI(App):
         self.buttonHeight = self.height // 4
         self.buttonText = 'Click to enter data'
         self.buttonFont = f'Helvetica {self.buttonHeight // 6} bold'
-        self.buttonTextColor = 'thistle1'
+        self.buttonTextColor = 'thistle2'
         self.buttonColor = 'orchid4'
         self.buttonOutline = min(self.width, self.height) // 100
+
+        self.dataRowHeight = (self.height-self.tabMargin-self.tabHeight) // 10
+        self.regressionFont = f'Helvetica {self.dataRowHeight // 4} bold'
+        self.regressionTextColor = 'thistle1'
+        self.regressionTextMargin = self.dataRowHeight // 2
 
         self.readyToProceed = False
 
@@ -46,49 +51,121 @@ class clashGrabUI(App):
         self.buttonFont = f'Helvetica {self.buttonHeight // 6} bold'
         self.buttonOutline = min(self.width, self.height) // 100
 
+        self.dataRowHeight = (self.height-self.tabMargin-self.tabHeight) // 10
+        self.regressionFont = f'Helvetica {self.dataRowHeight // 4} bold'
+        self.regressionTextMargin = self.dataRowHeight // 2
+
+    def getRegressionData(self):
+        with open('championRegressionData.json', 'r') as championRegressionDataRead:
+            championRegressionData = json.load(championRegressionDataRead)
+        
+        with open('parsedInputData/inputSummonerDataByChamp.json', 'r') as parsedDataRead:
+            parsedData = json.load(parsedDataRead)
+
+        # [(chamipon, winrate), ...]
+        pickrates = [ ]
+        for champName in parsedData:
+            try:
+                inputWinrate = parsedData[champName][self.summonerQueryName]['winrate']
+                inputKDA = parsedData[champName][self.summonerQueryName]['KDA']
+                inputMastery = parsedData[champName][self.summonerQueryName]['masteryPercentage']
+            except:
+                inputWinrate = 0
+                inputKDA = 0
+                inputMastery = 0
+
+            outputWinrate = championRegressionData[champName]['winrateWeight'] * inputWinrate
+            outputKDA = championRegressionData[champName]['kdaWeight'] * inputKDA
+            outputMastery = championRegressionData[champName]['masteryWeight'] * inputMastery
+
+            outputPickrate = outputWinrate + outputKDA + outputMastery + championRegressionData[champName]['constant']
+            champAndPickrate = (champName, outputPickrate)
+            
+            # print(pickrates)
+            if len(pickrates) == 0:
+                pickrates.append(champAndPickrate)
+            elif len(pickrates) == 1:
+                if outputPickrate >= pickrates[0][1]:
+                    pickrates.insert(0, champAndPickrate)
+                else:
+                    pickrates.append(champAndPickrate)
+            else:
+                if outputPickrate >= pickrates[0][1]:
+                    pickrates.insert(0, champAndPickrate)
+                elif outputPickrate < pickrates[-1][1]:
+                    pickrates.append(champAndPickrate)
+                else:
+                    for i in range(0, len(pickrates) - 2):
+                        if pickrates[i][1] > outputPickrate >= pickrates[i+1][1]:
+                            pickrates.insert(i+1, champAndPickrate)
+                            break
+
+        return pickrates
+
     def mousePressed(self, event):
         if ((self.cx-self.buttonWidth//2 <= event.x <= self.cx+self.buttonWidth//2) and 
-        (self.cy-self.buttonHeight//2 <= event.y <= self.cy+self.buttonHeight//2)):
+        (self.cy-self.buttonHeight//2 <= event.y <= self.cy+self.buttonHeight//2) and
+        self.currentTab == 0):
             self.summonerQueryName = self.getUserInput('Insert summoner name here:')
-            self.inputHTML = self.getUserInput('Copy summoner champ HTML here: \n  (inspect element find last instance of "tbody.Body")')
-            if '<tr class="Row TopRanker" role="row">' not in self.inputHTML.splitlines()[1]:
-                self.showMessage('Please go to the Summoner -> Champions tab')
+            if  self.summonerQueryName == None:
+                self.showMessage('cancelled')
                 self.readyToProceed = False
             else:
-                dataTxt = open(f'rawInputData/{self.summonerQueryName}.txt', 'w')
-                dataTxt.write(self.inputHTML)
-                with open('rawInputData/inputSummoners.json', 'r') as inputSummonersRead:
-                    currentInputSummoners = json.load(inputSummonersRead)
-                    if currentInputSummoners == None:
-                        currentInputSummoners = dict()
-                with open('rawInputData/inputSummoners.json', 'w') as inputSummonersWrite:
-                    currentInputSummoners[self.summonerQueryName] = lol_watcher.summoner.by_name('na1', self.summonerQueryName)['id']
-                    currentSummoner = {self.summonerQueryName:lol_watcher.summoner.by_name('na1', self.summonerQueryName)['id']}
-                    json.dump(currentInputSummoners, inputSummonersWrite, indent=2)
-                
-                with open('parsedInputData/inputChampMasteries.json', 'w') as inputChampDataBySummoner:
-                    json.dump(findChampMasteries(lol_watcher, currentSummoner), inputChampDataBySummoner, indent=2)
+                self.inputHTML = self.getUserInput('Copy summoner champ HTML here: \n  (inspect element find last instance of "tbody.Body")')
+                if self.inputHTML == None or self.summonerQueryName == None:
+                    self.showMessage('cancelled')
+                    self.readyToProceed = False
+                elif '<tr class="Row TopRanker" role="row">' not in self.inputHTML.splitlines()[1]:
+                    self.showMessage('Please go to the Summoner -> Champions tab')
+                    self.readyToProceed = False
+                else:
+                    dataTxt = open(f'rawInputData/{self.summonerQueryName}.txt', 'w')
+                    dataTxt.write(self.inputHTML)
+                    with open('rawInputData/inputSummoners.json', 'r') as inputSummonersRead:
+                        currentInputSummoners = json.load(inputSummonersRead)
+                        if currentInputSummoners == None:
+                            currentInputSummoners = dict()
+                    with open('rawInputData/inputSummoners.json', 'w') as inputSummonersWrite:
+                        currentInputSummoners[self.summonerQueryName] = lol_watcher.summoner.by_name('na1', self.summonerQueryName)['id']
+                        currentSummoner = {self.summonerQueryName:lol_watcher.summoner.by_name('na1', self.summonerQueryName)['id']}
+                        json.dump(currentInputSummoners, inputSummonersWrite, indent=2)
+                    
+                    with open('parsedInputData/inputChampMasteries.json', 'w') as inputChampDataBySummoner:
+                        json.dump(findChampMasteries(lol_watcher, currentSummoner), inputChampDataBySummoner, indent=2)
 
-                with open('parsedInputData/InputOPggDataBySummoner.json', 'w') as opggData:
-                    json.dump(parseRankedData('rawInputData'), opggData, indent=2)
+                    with open('parsedInputData/InputOPggDataBySummoner.json', 'w') as opggData:
+                        json.dump(parseRankedData('rawInputData'), opggData, indent=2)
 
-                combineOpggDataAndMastery('parsedInputData/InputOPggDataBySummoner.json', 'parsedInputData/inputChampMasteries.json', 'parsedInputData/inputChampDataBySummoner.json')
+                    combineOpggDataAndMastery('parsedInputData/InputOPggDataBySummoner.json', 'parsedInputData/inputChampMasteries.json', 'parsedInputData/inputChampDataBySummoner.json')
 
-                percentizeMastery('parsedInputData/inputChampDataBySummoner.json')
+                    percentizeMasterySingle('parsedInputData/inputChampDataBySummoner.json', self.summonerQueryName)
 
-                addPickrateEntry('parsedInputData/inputChampDataBySummoner.json')
+                    addPickrateEntry('parsedInputData/inputChampDataBySummoner.json')
 
-                with open('parsedInputData/inputSummonerDataByChamp.json', 'w') as parsedData:
-                    json.dump(convertToByChamp('parsedInputData/inputChampDataBySummoner.json'), parsedData, indent=2)
+                    with open('parsedInputData/inputSummonerDataByChamp.json', 'w') as parsedData:
+                        json.dump(convertToByChamp('parsedInputData/inputChampDataBySummoner.json'), parsedData, indent=2)
 
-                self.readyToProceed = True
-                self.showMessage('Data is ready')
+                    self.regressionData = self.getRegressionData()
+
+                    self.readyToProceed = True
+                    self.showMessage('Data is ready')
+        elif (self.tabMargin <= event.x < self.tabMargin + self.tabWidth and
+                self.tabMargin <= event.y < self.tabMargin + self.tabHeight):
+            self.currentTab = 0
+        elif (self.tabMargin + self.tabWidth <= event.x < self.tabMargin + 2*self.tabWidth and
+                self.tabMargin <= event.y < self.tabMargin + self.tabHeight and
+                self.readyToProceed == True):
+            self.currentTab = 1
+        elif (self.tabMargin + 2*self.tabWidth <= event.x < self.tabMargin + 3*self.tabWidth and
+                self.tabMargin <= event.y < self.tabMargin + self.tabHeight and
+                self.readyToProceed == True):
+            self.currentTab = 2
 
     def drawTabs(self, canvas):
         for i in range(self.numTabs):
             x0, y0, x1, y1 = self.tabMargin + self.tabWidth*i, self.tabMargin, self.tabMargin + self.tabWidth*(i+1), self.tabMargin + self.tabHeight
             if i == self.currentTab:
-                canvas.create_rectangle(x0, y0, x1, y1, fill=self.backgroundColor, outline=self.backgroundColor, width=self.tabMargin)
+                canvas.create_rectangle(x0 + self.tabMargin, y0, x1, y1, fill=self.backgroundColor, outline=self.backgroundColor, width=self.tabMargin)
             else:
                 canvas.create_rectangle(x0, y0, x1, y1, fill=self.tabColor, width=self.tabMargin)
             canvas.create_text((x1+x0)//2, (y1+y0)//2, text=self.tabs[i], fill=self.tabTextColor, font=self.tabFont)
@@ -98,7 +175,7 @@ class clashGrabUI(App):
         self.cy+self.buttonHeight//2, fill=self.buttonColor, width=self.buttonOutline)
         canvas.create_text(self.cx, self.cy, text=self.buttonText, fill=self.buttonTextColor, font=self.buttonFont)
 
-    def drawContent(self, canvas):
+    def drawBackground(self, canvas):
         # draw background
         xTabsEnd = self.tabMargin + self.tabWidth*self.numTabs
         y0TabsEnd, y1TabsEnd = self.tabMargin, 1.5*self.tabMargin + self.tabHeight
@@ -106,16 +183,39 @@ class clashGrabUI(App):
         
         canvas.create_rectangle(0, y1TabsEnd, self.width, self.height, fill=self.backgroundColor, outline=self.backgroundColor)
         # canvas.create_line(xTabsEnd, self.tabHeight+self.tabMargin // 2, self.width, self.tabHeight+self.tabMargin // 2, )
-    
+
     def drawData(self, canvas):
-        # adfasdfas
+        for i in range(10):
+            championName = self.regressionData[i][0]
+            championPickrate = self.regressionData[i][1]
+            rowCenter = i*self.dataRowHeight + self.dataRowHeight//2
+            # round from: https://docs.python.org/3/library/functions.html#round
+            displayText = f'{championName} has {round(championPickrate*100, 2)} pick chance'
+            canvas.create_text(self.regressionTextMargin, self.tabMargin+self.tabHeight+rowCenter, text=displayText, anchor='w', font=self.regressionFont, fill=self.regressionTextColor)
+
+    def drawRegression(self, canvas):
+        with open('championRegressionData.json', 'r') as championRegressionDataRead:
+            championRegressionData = json.load(championRegressionDataRead)
+
+        for i in range(10):
+            championName = self.regressionData[i][0]
+            rowCenter = i*self.dataRowHeight + self.dataRowHeight//2
+            champWinrateWeight = round(championRegressionData[championName]['winrateWeight'], 2)
+            champKDAWeight = round(championRegressionData[championName]['kdaWeight'], 2)
+            champMasteryWeight = round(championRegressionData[championName]['masteryWeight'], 2)
+            champConstant = round(championRegressionData[championName]['constant'], 2)
+            displayText = f"{championName}'s regression weights: Winrate Weight={champWinrateWeight}, KDA Weight={champKDAWeight}, Mastery Weight={champMasteryWeight}, Constant={champConstant}"
+            canvas.create_text(self.regressionTextMargin, self.tabMargin+self.tabHeight+rowCenter, text=displayText, anchor='w', font=self.regressionFont, fill=self.regressionTextColor)
 
     def redrawAll(self, canvas):
         self.drawTabs(canvas)
-        self.drawContent(canvas)
-        self.drawButton(canvas)
-        if self.readyToProceed:
+        self.drawBackground(canvas)
+        if self.currentTab == 0:
+            self.drawButton(canvas)
+        elif self.readyToProceed and self.currentTab == 1:
             self.drawData(canvas)
+        elif self.readyToProceed and self.currentTab == 2:
+            self.drawRegression(canvas)
     
 def main():
     '''

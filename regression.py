@@ -11,7 +11,7 @@ class PickrateRegression(object):
         self.constant = 0.0
         self.percentageLearningRate = 0.01
         self.kdaLearningRate = 0.001
-        self.iterations = 1000
+        self.iterations = 100
 
     def __repr__(self):
         return {'winrateWeight': self.winrateWeight, 'kdaWeight': self.kdaWeight, 'masteryWeight':self.masteryWeight, 'constant':self.constant}
@@ -135,7 +135,7 @@ class PickrateRegression(object):
     def predictPickrate(self, summonerData):
         summonerWinrate = summonerData['winrate']
         summonerKDA = summonerData['KDA']
-        summonerMastery = summonerData['mastery']
+        summonerMastery = summonerData['masteryPercentage']
 
         predictedPickrate = (self.winrateWeight*summonerChampData[self.championName][summonerName]['winrate'] + self.kdaWeight*summonerChampData[self.championName][summonerName]['KDA'] + 
                             self.masteryWeight*summonerChampData[self.championName][summonerName]['masteryPercentage'] + self.constant)
@@ -150,3 +150,22 @@ class PickrateRegression(object):
 class PickrateRegressionEncoder(JSONEncoder):
     def default(self, o):
         return o.__dict__
+
+def findChampionRegressions():
+    championRegressions = dict()
+
+    with open('parsedSummonerData/summonerDataByChamp.json', 'r') as summonerChampData:
+        availableChampions = json.load(summonerChampData)
+#        print(f'in: {availableChampions}')
+#    print(f'out: {availableChampions}')
+
+    iterations = 0
+    for championName in availableChampions:
+        print(f'iterations: {iterations}')
+        regressionModel = PickrateRegression(championName)
+        weights = regressionModel.fitLine()
+        # print(weights)
+        championRegressions[championName] = regressionModel
+        iterations += 1
+    
+    return championRegressions

@@ -217,6 +217,21 @@ def percentizeMastery(path):
     
     return path
 
+def percentizeMasterySingle(path, summonerName):
+    with open(path, 'r') as summonerDataRead:
+        tempData = json.load(summonerDataRead)
+        # print(tempData)
+        resultData = tempData.copy()
+        totalMastery = 0
+        for champName in tempData[summonerName]:
+            # print(tempData[summonerName][champName]['mastery'])
+            totalMastery += tempData[summonerName][champName]['mastery']
+        for champName in resultData[summonerName]:
+            resultData[summonerName][champName]['masteryPercentage'] = tempData[summonerName][champName]['mastery'] / totalMastery
+
+    with open(path, 'w') as summonerDataWrite:
+        json.dump(resultData, summonerDataWrite, indent=2)
+
 def convertToByChamp(path):
     with open(path, 'r') as summonerData:
         tempData = json.load(summonerData)
