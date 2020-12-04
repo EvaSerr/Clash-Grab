@@ -162,10 +162,14 @@ class clashGrabUI(App):
             self.currentTab = 2
 
     def drawTabs(self, canvas):
+        tabOrder = [self.currentTab]
         for i in range(self.numTabs):
+            if i != self.currentTab:
+                tabOrder.append(i)
+        for i in tabOrder:
             x0, y0, x1, y1 = self.tabMargin + self.tabWidth*i, self.tabMargin, self.tabMargin + self.tabWidth*(i+1), self.tabMargin + self.tabHeight
             if i == self.currentTab:
-                canvas.create_rectangle(x0 + self.tabMargin, y0, x1, y1, fill=self.backgroundColor, outline=self.backgroundColor, width=self.tabMargin)
+                canvas.create_rectangle(x0, y0, x1, y1, fill=self.backgroundColor, outline=self.backgroundColor, width=self.tabMargin)
             else:
                 canvas.create_rectangle(x0, y0, x1, y1, fill=self.tabColor, width=self.tabMargin)
             canvas.create_text((x1+x0)//2, (y1+y0)//2, text=self.tabs[i], fill=self.tabTextColor, font=self.tabFont)
@@ -178,10 +182,10 @@ class clashGrabUI(App):
     def drawBackground(self, canvas):
         # draw background
         xTabsEnd = self.tabMargin + self.tabWidth*self.numTabs
-        y0TabsEnd, y1TabsEnd = self.tabMargin, 1.5*self.tabMargin + self.tabHeight
-        canvas.create_rectangle(xTabsEnd + self.tabMargin, y0TabsEnd, self.width, y1TabsEnd, fill='orchid4', outline='orchid4', width=self.tabMargin)
+        y0TabsEnd, y1TabsEnd = self.tabMargin, 2*self.tabMargin + self.tabHeight
+        canvas.create_rectangle(xTabsEnd + self.tabMargin, y0TabsEnd, self.width-self.tabMargin, y1TabsEnd, fill='orchid4', outline='orchid4', width=self.tabMargin)
         
-        canvas.create_rectangle(0, y1TabsEnd, self.width, self.height, fill=self.backgroundColor, outline=self.backgroundColor)
+        canvas.create_rectangle(self.tabMargin, y1TabsEnd, self.width-self.tabMargin, self.height-self.tabMargin, fill=self.backgroundColor, outline=self.backgroundColor, width=self.tabMargin)
         # canvas.create_line(xTabsEnd, self.tabHeight+self.tabMargin // 2, self.width, self.tabHeight+self.tabMargin // 2, )
 
     def drawData(self, canvas):
@@ -208,8 +212,8 @@ class clashGrabUI(App):
             canvas.create_text(self.regressionTextMargin, self.tabMargin+self.tabHeight+rowCenter, text=displayText, anchor='w', font=self.regressionFont, fill=self.regressionTextColor)
 
     def redrawAll(self, canvas):
-        self.drawTabs(canvas)
         self.drawBackground(canvas)
+        self.drawTabs(canvas)
         if self.currentTab == 0:
             self.drawButton(canvas)
         elif self.readyToProceed and self.currentTab == 1:

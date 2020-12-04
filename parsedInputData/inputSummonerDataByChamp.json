@@ -6,6 +6,8 @@
       "wins": 23,
       "losses": 10,
       "totalGames": 33,
+      "mastery": 55591,
+      "masteryPercentage": 0.06825562678263816,
       "pickrate": 0.13043478260869565
     },
     "kirbdroid": {
@@ -22,8 +24,6 @@
       "wins": 21,
       "losses": 19,
       "totalGames": 40,
-      "mastery": 40857,
-      "masteryPercentage": 0.02399247405469112,
       "pickrate": 0.05405405405405406
     }
   },
@@ -34,6 +34,8 @@
       "wins": 17,
       "losses": 16,
       "totalGames": 33,
+      "mastery": 68193,
+      "masteryPercentage": 0.08372858838999918,
       "pickrate": 0.13043478260869565
     },
     "waddlepon": {
@@ -42,8 +44,6 @@
       "wins": 7,
       "losses": 7,
       "totalGames": 14,
-      "mastery": 59477,
-      "masteryPercentage": 0.034926704832730346,
       "pickrate": 0.01891891891891892
     }
   },
@@ -54,6 +54,8 @@
       "wins": 16,
       "losses": 14,
       "totalGames": 30,
+      "mastery": 46401,
+      "masteryPercentage": 0.05697197996692258,
       "pickrate": 0.11857707509881422
     },
     "kirbdroid": {
@@ -70,8 +72,6 @@
       "wins": 25,
       "losses": 13,
       "totalGames": 38,
-      "mastery": 118861,
-      "masteryPercentage": 0.06979879723461442,
       "pickrate": 0.051351351351351354
     }
   },
@@ -82,6 +82,8 @@
       "wins": 16,
       "losses": 12,
       "totalGames": 28,
+      "mastery": 46261,
+      "masteryPercentage": 0.056800085456128226,
       "pickrate": 0.11067193675889328
     },
     "kirbdroid": {
@@ -92,14 +94,20 @@
       "totalGames": 5,
       "pickrate": 0.01845018450184502
     },
+    "saltysalmonella": {
+      "winrate": 0.5,
+      "KDA": 2.5,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "pickrate": 0.009852216748768473
+    },
     "waddlepon": {
       "winrate": 0.61904761904762,
       "KDA": 2.36,
       "wins": 13,
       "losses": 8,
       "totalGames": 21,
-      "mastery": 22701,
-      "masteryPercentage": 0.013330718200444064,
       "pickrate": 0.02837837837837838
     }
   },
@@ -110,6 +118,8 @@
       "wins": 10,
       "losses": 13,
       "totalGames": 23,
+      "mastery": 34310,
+      "masteryPercentage": 0.04212643332396099,
       "pickrate": 0.09090909090909091
     },
     "kirbdroid": {
@@ -120,14 +130,20 @@
       "totalGames": 1,
       "pickrate": 0.0036900369003690036
     },
+    "saltysalmonella": {
+      "winrate": 0.0,
+      "KDA": 2.3,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2,
+      "pickrate": 0.009852216748768473
+    },
     "waddlepon": {
       "winrate": 0.25,
       "KDA": 2.48,
       "wins": 2,
       "losses": 6,
       "totalGames": 8,
-      "mastery": 6761,
-      "masteryPercentage": 0.003970264999480301,
       "pickrate": 0.010810810810810811
     }
   },
@@ -138,6 +154,8 @@
       "wins": 15,
       "losses": 7,
       "totalGames": 22,
+      "mastery": 98246,
+      "masteryPercentage": 0.12062820076787734,
       "pickrate": 0.08695652173913043
     },
     "waddlepon": {
@@ -146,8 +164,6 @@
       "wins": 8,
       "losses": 10,
       "totalGames": 18,
-      "mastery": 43250,
-      "masteryPercentage": 0.0253977164957141,
       "pickrate": 0.024324324324324326
     }
   },
@@ -158,6 +174,8 @@
       "wins": 10,
       "losses": 8,
       "totalGames": 18,
+      "mastery": 20594,
+      "masteryPercentage": 0.025285682537850556,
       "pickrate": 0.07114624505928854
     },
     "waddlepon": {
@@ -166,8 +184,6 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
-      "mastery": 681,
-      "masteryPercentage": 0.0003999039291001457,
       "pickrate": 0.0013513513513513514
     }
   },
@@ -178,6 +194,8 @@
       "wins": 10,
       "losses": 3,
       "totalGames": 13,
+      "mastery": 21294,
+      "masteryPercentage": 0.026145155091822365,
       "pickrate": 0.05138339920948617
     },
     "kirbdroid": {
@@ -194,8 +212,6 @@
       "wins": 5,
       "losses": 3,
       "totalGames": 8,
-      "mastery": 15121,
-      "masteryPercentage": 0.008879511471253015,
       "pickrate": 0.010810810810810811
     }
   },
@@ -206,6 +222,8 @@
       "wins": 3,
       "losses": 9,
       "totalGames": 12,
+      "mastery": 18861,
+      "masteryPercentage": 0.023157874057803212,
       "pickrate": 0.04743083003952569
     },
     "waddlepon": {
@@ -214,8 +232,6 @@
       "wins": 15,
       "losses": 18,
       "totalGames": 33,
-      "mastery": 24233,
-      "masteryPercentage": 0.01423035523330959,
       "pickrate": 0.0445945945945946
     }
   },
@@ -226,6 +242,8 @@
       "wins": 1,
       "losses": 4,
       "totalGames": 5,
+      "mastery": 18469,
+      "masteryPercentage": 0.022676569427579,
       "pickrate": 0.019762845849802372
     },
     "waddlepon": {
@@ -234,8 +252,6 @@
       "wins": 4,
       "losses": 4,
       "totalGames": 8,
-      "mastery": 27258,
-      "masteryPercentage": 0.016006727311911557,
       "pickrate": 0.010810810810810811
     }
   },
@@ -246,6 +262,8 @@
       "wins": 2,
       "losses": 2,
       "totalGames": 4,
+      "mastery": 33261,
+      "masteryPercentage": 0.04083845231093752,
       "pickrate": 0.015810276679841896
     },
     "waddlepon": {
@@ -254,8 +272,6 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
-      "mastery": 16538,
-      "masteryPercentage": 0.009711617003609705,
       "pickrate": 0.0013513513513513514
     }
   },
@@ -266,6 +282,8 @@
       "wins": 1,
       "losses": 3,
       "totalGames": 4,
+      "mastery": 20388,
+      "masteryPercentage": 0.025032752043395997,
       "pickrate": 0.015810276679841896
     },
     "waddlepon": {
@@ -274,8 +292,6 @@
       "wins": 4,
       "losses": 6,
       "totalGames": 10,
-      "mastery": 34820,
-      "masteryPercentage": 0.020447363893196877,
       "pickrate": 0.013513513513513514
     }
   },
@@ -286,6 +302,8 @@
       "wins": 1,
       "losses": 3,
       "totalGames": 4,
+      "mastery": 6136,
+      "masteryPercentage": 0.00753389084453001,
       "pickrate": 0.015810276679841896
     },
     "kirbdroid": {
@@ -296,14 +314,20 @@
       "totalGames": 3,
       "pickrate": 0.01107011070110701
     },
+    "saltysalmonella": {
+      "winrate": 0.66666666666667,
+      "KDA": 3.93,
+      "wins": 2,
+      "losses": 1,
+      "totalGames": 3,
+      "pickrate": 0.014778325123152709
+    },
     "waddlepon": {
       "winrate": 1.0,
       "KDA": 3.33,
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
-      "mastery": 1037,
-      "masteryPercentage": 0.0006089579654579311,
       "pickrate": 0.0013513513513513514
     },
     "yenjamin": {
@@ -322,6 +346,8 @@
       "wins": 2,
       "losses": 1,
       "totalGames": 3,
+      "mastery": 41970,
+      "masteryPercentage": 0.05153151870028105,
       "pickrate": 0.011857707509881422
     }
   },
@@ -332,6 +358,8 @@
       "wins": 2,
       "losses": 1,
       "totalGames": 3,
+      "mastery": 20775,
+      "masteryPercentage": 0.02550791758394898,
       "pickrate": 0.011857707509881422
     },
     "waddlepon": {
@@ -340,8 +368,6 @@
       "wins": 2,
       "losses": 3,
       "totalGames": 5,
-      "mastery": 10163,
-      "masteryPercentage": 0.005968022953663408,
       "pickrate": 0.006756756756756757
     }
   },
@@ -352,6 +378,8 @@
       "wins": 1,
       "losses": 2,
       "totalGames": 3,
+      "mastery": 135063,
+      "masteryPercentage": 0.16583277365299165,
       "pickrate": 0.011857707509881422
     },
     "waddlepon": {
@@ -360,8 +388,6 @@
       "wins": 2,
       "losses": 12,
       "totalGames": 14,
-      "mastery": 37406,
-      "masteryPercentage": 0.021965941808986856,
       "pickrate": 0.01891891891891892
     }
   },
@@ -372,6 +398,8 @@
       "wins": 1,
       "losses": 2,
       "totalGames": 3,
+      "mastery": 25886,
+      "masteryPercentage": 0.031783295045877416,
       "pickrate": 0.011857707509881422
     },
     "kirbdroid": {
@@ -388,8 +416,6 @@
       "wins": 4,
       "losses": 5,
       "totalGames": 9,
-      "mastery": 38857,
-      "masteryPercentage": 0.022818013176276596,
       "pickrate": 0.012162162162162163
     }
   },
@@ -400,6 +426,8 @@
       "wins": 2,
       "losses": 0,
       "totalGames": 2,
+      "mastery": 11935,
+      "masteryPercentage": 0.014654007045219306,
       "pickrate": 0.007905138339920948
     },
     "kirbdroid": {
@@ -426,6 +454,8 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
+      "mastery": 16438,
+      "masteryPercentage": 0.020182871203126517,
       "pickrate": 0.003952569169960474
     },
     "kirbdroid": {
@@ -444,6 +474,8 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
+      "mastery": 19541,
+      "masteryPercentage": 0.02399279025309011,
       "pickrate": 0.003952569169960474
     },
     "waddlepon": {
@@ -452,8 +484,6 @@
       "wins": 9,
       "losses": 11,
       "totalGames": 20,
-      "mastery": 29033,
-      "masteryPercentage": 0.01704906134150445,
       "pickrate": 0.02702702702702703
     }
   },
@@ -464,6 +494,8 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
+      "mastery": 29456,
+      "masteryPercentage": 0.03616660507113363,
       "pickrate": 0.003952569169960474
     },
     "waddlepon": {
@@ -472,8 +504,6 @@
       "wins": 8,
       "losses": 6,
       "totalGames": 14,
-      "mastery": 40804,
-      "masteryPercentage": 0.023961350841413136,
       "pickrate": 0.01891891891891892
     }
   },
@@ -484,6 +514,8 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
+      "mastery": 5469,
+      "masteryPercentage": 0.006714936282388302,
       "pickrate": 0.003952569169960474
     },
     "kirbdroid": {
@@ -500,8 +532,6 @@
       "wins": 3,
       "losses": 6,
       "totalGames": 9,
-      "mastery": 8312,
-      "masteryPercentage": 0.004881059410690765,
       "pickrate": 0.012162162162162163
     }
   },
@@ -512,6 +542,8 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
+      "mastery": 314,
+      "masteryPercentage": 0.00038553483135306764,
       "pickrate": 0.003952569169960474
     },
     "kirbdroid": {
@@ -522,14 +554,20 @@
       "totalGames": 14,
       "pickrate": 0.05166051660516605
     },
+    "saltysalmonella": {
+      "winrate": 0.7333333333333301,
+      "KDA": 5.56,
+      "wins": 11,
+      "losses": 4,
+      "totalGames": 15,
+      "pickrate": 0.07389162561576355
+    },
     "waddlepon": {
       "winrate": 0.5,
       "KDA": 2.27,
       "wins": 1,
       "losses": 1,
       "totalGames": 2,
-      "mastery": 3400,
-      "masteryPercentage": 0.0019965834933046924,
       "pickrate": 0.002702702702702703
     }
   },
@@ -540,6 +578,8 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
+      "mastery": 4836,
+      "masteryPercentage": 0.00593772753001094,
       "pickrate": 0.003952569169960474
     }
   },
@@ -550,6 +590,8 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
+      "mastery": 3722,
+      "masteryPercentage": 0.0045699383512615216,
       "pickrate": 0.003952569169960474
     },
     "waddlepon": {
@@ -558,8 +600,6 @@
       "wins": 7,
       "losses": 6,
       "totalGames": 13,
-      "mastery": 14996,
-      "masteryPercentage": 0.008806107666352108,
       "pickrate": 0.01756756756756757
     }
   },
@@ -570,6 +610,8 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
+      "mastery": 7065,
+      "masteryPercentage": 0.008674533705444023,
       "pickrate": 0.003952569169960474
     },
     "kirbdroid": {
@@ -586,8 +628,6 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
-      "mastery": 9261,
-      "masteryPercentage": 0.005438341097498457,
       "pickrate": 0.0013513513513513514
     },
     "yenjamin": {
@@ -606,6 +646,8 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
+      "mastery": 899,
+      "masteryPercentage": 0.001103808322886649,
       "pickrate": 0.003952569169960474
     },
     "waddlepon": {
@@ -614,8 +656,6 @@
       "wins": 0,
       "losses": 4,
       "totalGames": 4,
-      "mastery": 3913,
-      "masteryPercentage": 0.0022978327086180176,
       "pickrate": 0.005405405405405406
     }
   },
@@ -626,6 +666,8 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
+      "mastery": 3079,
+      "masteryPercentage": 0.0037804514195417045,
       "pickrate": 0.003952569169960474
     }
   },
@@ -638,14 +680,20 @@
       "totalGames": 40,
       "pickrate": 0.14760147601476015
     },
+    "saltysalmonella": {
+      "winrate": 0.33333333333333004,
+      "KDA": 7.0,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3,
+      "pickrate": 0.014778325123152709
+    },
     "waddlepon": {
       "winrate": 0.0,
       "KDA": 1.16,
       "wins": 0,
       "losses": 2,
       "totalGames": 2,
-      "mastery": 3936,
-      "masteryPercentage": 0.002311339008719785,
       "pickrate": 0.002702702702702703
     }
   },
@@ -664,8 +712,6 @@
       "wins": 12,
       "losses": 9,
       "totalGames": 21,
-      "mastery": 45072,
-      "masteryPercentage": 0.02646765035594973,
       "pickrate": 0.02837837837837838
     }
   },
@@ -678,14 +724,20 @@
       "totalGames": 28,
       "pickrate": 0.1033210332103321
     },
+    "saltysalmonella": {
+      "winrate": 0.2,
+      "KDA": 3.0,
+      "wins": 1,
+      "losses": 4,
+      "totalGames": 5,
+      "pickrate": 0.024630541871921183
+    },
     "waddlepon": {
       "winrate": 0.5,
       "KDA": 1.46,
       "wins": 1,
       "losses": 1,
       "totalGames": 2,
-      "mastery": 6944,
-      "masteryPercentage": 0.00407772816985523,
       "pickrate": 0.002702702702702703
     },
     "yenjamin": {
@@ -730,8 +782,6 @@
       "wins": 2,
       "losses": 3,
       "totalGames": 5,
-      "mastery": 5812,
-      "masteryPercentage": 0.0034129833126726092,
       "pickrate": 0.006756756756756757
     }
   },
@@ -743,6 +793,14 @@
       "losses": 1,
       "totalGames": 6,
       "pickrate": 0.02214022140221402
+    },
+    "saltysalmonella": {
+      "winrate": 0.5,
+      "KDA": 2.73,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "pickrate": 0.009852216748768473
     }
   },
   "Taric": {
@@ -783,6 +841,14 @@
       "losses": 2,
       "totalGames": 5,
       "pickrate": 0.01845018450184502
+    },
+    "saltysalmonella": {
+      "winrate": 0.625,
+      "KDA": 3.79,
+      "wins": 5,
+      "losses": 3,
+      "totalGames": 8,
+      "pickrate": 0.03940886699507389
     }
   },
   "Malphite": {
@@ -800,8 +866,6 @@
       "wins": 0,
       "losses": 5,
       "totalGames": 5,
-      "mastery": 951,
-      "masteryPercentage": 0.0005584561476861065,
       "pickrate": 0.006756756756756757
     },
     "yenjamin": {
@@ -828,8 +892,6 @@
       "wins": 4,
       "losses": 5,
       "totalGames": 9,
-      "mastery": 20072,
-      "masteryPercentage": 0.01178688937576817,
       "pickrate": 0.012162162162162163
     }
   },
@@ -852,14 +914,20 @@
       "totalGames": 4,
       "pickrate": 0.014760147601476014
     },
+    "saltysalmonella": {
+      "winrate": 0.54347826086957,
+      "KDA": 2.98,
+      "wins": 25,
+      "losses": 21,
+      "totalGames": 46,
+      "pickrate": 0.22660098522167488
+    },
     "waddlepon": {
       "winrate": 0.2,
       "KDA": 1.76,
       "wins": 1,
       "losses": 4,
       "totalGames": 5,
-      "mastery": 5126,
-      "masteryPercentage": 0.003010143231376427,
       "pickrate": 0.006756756756756757
     },
     "yenjamin": {
@@ -886,8 +954,6 @@
       "wins": 4,
       "losses": 0,
       "totalGames": 4,
-      "mastery": 11993,
-      "masteryPercentage": 0.007042654657412698,
       "pickrate": 0.005405405405405406
     }
   },
@@ -906,8 +972,6 @@
       "wins": 1,
       "losses": 1,
       "totalGames": 2,
-      "mastery": 11782,
-      "masteryPercentage": 0.006918749034739965,
       "pickrate": 0.002702702702702703
     }
   },
@@ -926,8 +990,6 @@
       "wins": 17,
       "losses": 14,
       "totalGames": 31,
-      "mastery": 45608,
-      "masteryPercentage": 0.026782405871364823,
       "pickrate": 0.041891891891891894
     }
   },
@@ -950,14 +1012,20 @@
       "totalGames": 3,
       "pickrate": 0.01107011070110701
     },
+    "saltysalmonella": {
+      "winrate": 0.42424242424242004,
+      "KDA": 3.8,
+      "wins": 14,
+      "losses": 19,
+      "totalGames": 33,
+      "pickrate": 0.1625615763546798
+    },
     "waddlepon": {
       "winrate": 0.75,
       "KDA": 3.65,
       "wins": 3,
       "losses": 1,
       "totalGames": 4,
-      "mastery": 4111,
-      "masteryPercentage": 0.002414104335581056,
       "pickrate": 0.005405405405405406
     }
   },
@@ -976,8 +1044,6 @@
       "wins": 1,
       "losses": 1,
       "totalGames": 2,
-      "mastery": 5256,
-      "masteryPercentage": 0.003086483188473371,
       "pickrate": 0.002702702702702703
     },
     "yenjamin": {
@@ -998,14 +1064,20 @@
       "totalGames": 2,
       "pickrate": 0.007380073800738007
     },
+    "saltysalmonella": {
+      "winrate": 0.45945945945946,
+      "KDA": 3.73,
+      "wins": 17,
+      "losses": 20,
+      "totalGames": 37,
+      "pickrate": 0.18226600985221675
+    },
     "waddlepon": {
       "winrate": 0.0,
       "KDA": 1.36,
       "wins": 0,
       "losses": 2,
       "totalGames": 2,
-      "mastery": 7246,
-      "masteryPercentage": 0.0042550717624958235,
       "pickrate": 0.002702702702702703
     }
   },
@@ -1024,8 +1096,6 @@
       "wins": 1,
       "losses": 1,
       "totalGames": 2,
-      "mastery": 1054,
-      "masteryPercentage": 0.0006189408829244546,
       "pickrate": 0.002702702702702703
     },
     "yenjamin": {
@@ -1064,14 +1134,20 @@
       "totalGames": 2,
       "pickrate": 0.007380073800738007
     },
+    "saltysalmonella": {
+      "winrate": 1.0,
+      "KDA": 18.5,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "pickrate": 0.0049261083743842365
+    },
     "waddlepon": {
       "winrate": 0.0,
       "KDA": 1.2,
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
-      "mastery": 7049,
-      "masteryPercentage": 0.004139387365971993,
       "pickrate": 0.0013513513513513514
     }
   },
@@ -1090,8 +1166,6 @@
       "wins": 1,
       "losses": 2,
       "totalGames": 3,
-      "mastery": 4618,
-      "masteryPercentage": 0.0027118301682591377,
       "pickrate": 0.004054054054054054
     },
     "yenjamin": {
@@ -1118,8 +1192,6 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
-      "mastery": 5513,
-      "masteryPercentage": 0.0032374014113496375,
       "pickrate": 0.0013513513513513514
     },
     "yenjamin": {
@@ -1174,8 +1246,6 @@
       "wins": 1,
       "losses": 2,
       "totalGames": 3,
-      "mastery": 2992,
-      "masteryPercentage": 0.0017569934741081292,
       "pickrate": 0.004054054054054054
     },
     "yenjamin": {
@@ -1202,8 +1272,6 @@
       "wins": 5,
       "losses": 7,
       "totalGames": 12,
-      "mastery": 18548,
-      "masteryPercentage": 0.010891950186416303,
       "pickrate": 0.016216216216216217
     }
   },
@@ -1222,8 +1290,6 @@
       "wins": 2,
       "losses": 2,
       "totalGames": 4,
-      "mastery": 4456,
-      "masteryPercentage": 0.0026166988371075614,
       "pickrate": 0.005405405405405406
     },
     "yenjamin": {
@@ -1243,6 +1309,14 @@
       "losses": 0,
       "totalGames": 1,
       "pickrate": 0.0036900369003690036
+    },
+    "saltysalmonella": {
+      "winrate": 1.0,
+      "KDA": 4.71,
+      "wins": 2,
+      "losses": 0,
+      "totalGames": 2,
+      "pickrate": 0.009852216748768473
     }
   },
   "Udyr": {
@@ -1278,8 +1352,6 @@
       "wins": 3,
       "losses": 1,
       "totalGames": 4,
-      "mastery": 6918,
-      "masteryPercentage": 0.004062460178435841,
       "pickrate": 0.005405405405405406
     },
     "yenjamin": {
@@ -1306,8 +1378,6 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
-      "mastery": 7167,
-      "masteryPercentage": 0.00420868055779845,
       "pickrate": 0.0013513513513513514
     },
     "yenjamin": {
@@ -1334,8 +1404,6 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
-      "mastery": 7500,
-      "masteryPercentage": 0.004404228294054468,
       "pickrate": 0.0013513513513513514
     },
     "yenjamin": {
@@ -1362,8 +1430,6 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
-      "mastery": 4730,
-      "masteryPercentage": 0.002777599977450351,
       "pickrate": 0.0013513513513513514
     },
     "yenjamin": {
@@ -1390,8 +1456,6 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
-      "mastery": 19411,
-      "masteryPercentage": 0.01139873005545217,
       "pickrate": 0.0013513513513513514
     }
   },
@@ -1428,8 +1492,6 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
-      "mastery": 19185,
-      "masteryPercentage": 0.01126601597619133,
       "pickrate": 0.0013513513513513514
     }
   },
@@ -1458,8 +1520,6 @@
       "wins": 13,
       "losses": 5,
       "totalGames": 18,
-      "mastery": 49453,
-      "masteryPercentage": 0.029040306910116748,
       "pickrate": 0.024324324324324326
     },
     "yenjamin": {
@@ -1486,8 +1546,6 @@
       "wins": 1,
       "losses": 2,
       "totalGames": 3,
-      "mastery": 2048,
-      "masteryPercentage": 0.0012026479394964733,
       "pickrate": 0.004054054054054054
     }
   },
@@ -1506,8 +1564,6 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
-      "mastery": 8905,
-      "masteryPercentage": 0.0052292870611406715,
       "pickrate": 0.0013513513513513514
     }
   },
@@ -1539,6 +1595,162 @@
       "pickrate": 0.0036900369003690036
     }
   },
+  "Alistar": {
+    "saltysalmonella": {
+      "winrate": 0.46153846153845995,
+      "KDA": 3.21,
+      "wins": 6,
+      "losses": 7,
+      "totalGames": 13,
+      "pickrate": 0.06403940886699508
+    },
+    "yenjamin": {
+      "winrate": 0.0,
+      "KDA": 1.32,
+      "wins": 0,
+      "losses": 4,
+      "totalGames": 4,
+      "pickrate": 0.008097165991902834
+    }
+  },
+  "Hecarim": {
+    "saltysalmonella": {
+      "winrate": 0.8,
+      "KDA": 3.39,
+      "wins": 8,
+      "losses": 2,
+      "totalGames": 10,
+      "pickrate": 0.04926108374384237
+    },
+    "waddlepon": {
+      "winrate": 1.0,
+      "KDA": 6.5,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "pickrate": 0.0013513513513513514
+    },
+    "yenjamin": {
+      "winrate": 0.33333333333333004,
+      "KDA": 1.63,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3,
+      "pickrate": 0.006072874493927126
+    }
+  },
+  "Shyvana": {
+    "saltysalmonella": {
+      "winrate": 0.7142857142857101,
+      "KDA": 2.71,
+      "wins": 5,
+      "losses": 2,
+      "totalGames": 7,
+      "pickrate": 0.034482758620689655
+    }
+  },
+  "Trundle": {
+    "saltysalmonella": {
+      "winrate": 0.5,
+      "KDA": 3.4,
+      "wins": 2,
+      "losses": 2,
+      "totalGames": 4,
+      "pickrate": 0.019704433497536946
+    },
+    "yenjamin": {
+      "winrate": 0.4,
+      "KDA": 2.56,
+      "wins": 2,
+      "losses": 3,
+      "totalGames": 5,
+      "pickrate": 0.010121457489878543
+    }
+  },
+  "Xerath": {
+    "saltysalmonella": {
+      "winrate": 0.66666666666667,
+      "KDA": 5.78,
+      "wins": 2,
+      "losses": 1,
+      "totalGames": 3,
+      "pickrate": 0.014778325123152709
+    }
+  },
+  "Sona": {
+    "saltysalmonella": {
+      "winrate": 1.0,
+      "KDA": 8.33,
+      "wins": 2,
+      "losses": 0,
+      "totalGames": 2,
+      "pickrate": 0.009852216748768473
+    },
+    "yenjamin": {
+      "winrate": 0.5,
+      "KDA": 2.33,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "pickrate": 0.004048582995951417
+    }
+  },
+  "Elise": {
+    "saltysalmonella": {
+      "winrate": 1.0,
+      "KDA": 3.43,
+      "wins": 2,
+      "losses": 0,
+      "totalGames": 2,
+      "pickrate": 0.009852216748768473
+    },
+    "yenjamin": {
+      "winrate": 1.0,
+      "KDA": 1.8,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "pickrate": 0.0020242914979757085
+    }
+  },
+  "Kha'Zix": {
+    "saltysalmonella": {
+      "winrate": 1.0,
+      "KDA": 4.11,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "pickrate": 0.0049261083743842365
+    }
+  },
+  "Jarvan IV": {
+    "saltysalmonella": {
+      "winrate": 0.0,
+      "KDA": 2.25,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "pickrate": 0.0049261083743842365
+    },
+    "waddlepon": {
+      "winrate": 1.0,
+      "KDA": 6.25,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "pickrate": 0.0013513513513513514
+    }
+  },
+  "Sejuani": {
+    "saltysalmonella": {
+      "winrate": 0.0,
+      "KDA": 5.0,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "pickrate": 0.0049261083743842365
+    }
+  },
   "Twisted Fate": {
     "waddlepon": {
       "winrate": 0.51401869158878,
@@ -1546,8 +1758,6 @@
       "wins": 55,
       "losses": 52,
       "totalGames": 107,
-      "mastery": 128602,
-      "masteryPercentage": 0.07551900894293236,
       "pickrate": 0.1445945945945946
     },
     "yenjamin": {
@@ -1566,8 +1776,6 @@
       "wins": 13,
       "losses": 11,
       "totalGames": 24,
-      "mastery": 28278,
-      "masteryPercentage": 0.016605702359902965,
       "pickrate": 0.032432432432432434
     }
   },
@@ -1578,8 +1786,6 @@
       "wins": 16,
       "losses": 6,
       "totalGames": 22,
-      "mastery": 34385,
-      "masteryPercentage": 0.02019191865214172,
       "pickrate": 0.02972972972972973
     }
   },
@@ -1590,8 +1796,6 @@
       "wins": 10,
       "losses": 10,
       "totalGames": 20,
-      "mastery": 35348,
-      "masteryPercentage": 0.02075742156509831,
       "pickrate": 0.02702702702702703
     }
   },
@@ -1602,8 +1806,6 @@
       "wins": 9,
       "losses": 10,
       "totalGames": 19,
-      "mastery": 41302,
-      "masteryPercentage": 0.024253791600138352,
       "pickrate": 0.025675675675675677
     }
   },
@@ -1614,8 +1816,6 @@
       "wins": 5,
       "losses": 9,
       "totalGames": 14,
-      "mastery": 56762,
-      "masteryPercentage": 0.03333237419028263,
       "pickrate": 0.01891891891891892
     }
   },
@@ -1626,8 +1826,6 @@
       "wins": 8,
       "losses": 3,
       "totalGames": 11,
-      "mastery": 9960,
-      "masteryPercentage": 0.005848815174504333,
       "pickrate": 0.014864864864864866
     },
     "yenjamin": {
@@ -1646,8 +1844,6 @@
       "wins": 3,
       "losses": 5,
       "totalGames": 8,
-      "mastery": 62511,
-      "masteryPercentage": 0.03670836198528518,
       "pickrate": 0.010810810810810811
     }
   },
@@ -1658,8 +1854,6 @@
       "wins": 2,
       "losses": 6,
       "totalGames": 8,
-      "mastery": 22783,
-      "masteryPercentage": 0.01337887109645906,
       "pickrate": 0.010810810810810811
     }
   },
@@ -1670,8 +1864,6 @@
       "wins": 1,
       "losses": 6,
       "totalGames": 7,
-      "mastery": 18081,
-      "masteryPercentage": 0.010617713571306512,
       "pickrate": 0.00945945945945946
     },
     "yenjamin": {
@@ -1690,8 +1882,6 @@
       "wins": 3,
       "losses": 2,
       "totalGames": 5,
-      "mastery": 7603,
-      "masteryPercentage": 0.004464713029292816,
       "pickrate": 0.006756756756756757
     }
   },
@@ -1702,8 +1892,6 @@
       "wins": 2,
       "losses": 3,
       "totalGames": 5,
-      "mastery": 48102,
-      "masteryPercentage": 0.028246958586747736,
       "pickrate": 0.006756756756756757
     }
   },
@@ -1714,8 +1902,6 @@
       "wins": 2,
       "losses": 3,
       "totalGames": 5,
-      "mastery": 16090,
-      "masteryPercentage": 0.009448537766844851,
       "pickrate": 0.006756756756756757
     },
     "yenjamin": {
@@ -1734,8 +1920,6 @@
       "wins": 3,
       "losses": 1,
       "totalGames": 4,
-      "mastery": 15172,
-      "masteryPercentage": 0.008909460223652585,
       "pickrate": 0.005405405405405406
     }
   },
@@ -1746,8 +1930,6 @@
       "wins": 1,
       "losses": 2,
       "totalGames": 3,
-      "mastery": 3171,
-      "masteryPercentage": 0.0018621077227262291,
       "pickrate": 0.004054054054054054
     }
   },
@@ -1758,8 +1940,6 @@
       "wins": 1,
       "losses": 2,
       "totalGames": 3,
-      "mastery": 12099,
-      "masteryPercentage": 0.007104901083968667,
       "pickrate": 0.004054054054054054
     }
   },
@@ -1770,8 +1950,6 @@
       "wins": 1,
       "losses": 2,
       "totalGames": 3,
-      "mastery": 10873,
-      "masteryPercentage": 0.006384956565500564,
       "pickrate": 0.004054054054054054
     },
     "yenjamin": {
@@ -1790,8 +1968,6 @@
       "wins": 0,
       "losses": 3,
       "totalGames": 3,
-      "mastery": 15486,
-      "masteryPercentage": 0.009093850581563666,
       "pickrate": 0.004054054054054054
     }
   },
@@ -1802,8 +1978,6 @@
       "wins": 2,
       "losses": 0,
       "totalGames": 2,
-      "mastery": 5211,
-      "masteryPercentage": 0.0030600578187090443,
       "pickrate": 0.002702702702702703
     }
   },
@@ -1814,8 +1988,6 @@
       "wins": 2,
       "losses": 0,
       "totalGames": 2,
-      "mastery": 7899,
-      "masteryPercentage": 0.004638533239298166,
       "pickrate": 0.002702702702702703
     }
   },
@@ -1826,8 +1998,6 @@
       "wins": 1,
       "losses": 1,
       "totalGames": 2,
-      "mastery": 7595,
-      "masteryPercentage": 0.004460015185779158,
       "pickrate": 0.002702702702702703
     }
   },
@@ -1838,8 +2008,6 @@
       "wins": 1,
       "losses": 1,
       "totalGames": 2,
-      "mastery": 4511,
-      "masteryPercentage": 0.0026489965112639607,
       "pickrate": 0.002702702702702703
     }
   },
@@ -1850,8 +2018,6 @@
       "wins": 1,
       "losses": 1,
       "totalGames": 2,
-      "mastery": 23569,
-      "masteryPercentage": 0.013840434221675968,
       "pickrate": 0.002702702702702703
     },
     "yenjamin": {
@@ -1870,8 +2036,6 @@
       "wins": 1,
       "losses": 1,
       "totalGames": 2,
-      "mastery": 2394,
-      "masteryPercentage": 0.0014058296714621861,
       "pickrate": 0.002702702702702703
     },
     "yenjamin": {
@@ -1890,8 +2054,6 @@
       "wins": 1,
       "losses": 1,
       "totalGames": 2,
-      "mastery": 13011,
-      "masteryPercentage": 0.007640455244525691,
       "pickrate": 0.002702702702702703
     }
   },
@@ -1902,8 +2064,6 @@
       "wins": 0,
       "losses": 2,
       "totalGames": 2,
-      "mastery": 27458,
-      "masteryPercentage": 0.01612417339975301,
       "pickrate": 0.002702702702702703
     }
   },
@@ -1914,8 +2074,6 @@
       "wins": 0,
       "losses": 2,
       "totalGames": 2,
-      "mastery": 35032,
-      "masteryPercentage": 0.020571856746308816,
       "pickrate": 0.002702702702702703
     },
     "yenjamin": {
@@ -1934,8 +2092,6 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
-      "mastery": 21988,
-      "masteryPercentage": 0.012912022897289285,
       "pickrate": 0.0013513513513513514
     }
   },
@@ -1946,40 +2102,6 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
-      "mastery": 8281,
-      "masteryPercentage": 0.00486285526707534,
-      "pickrate": 0.0013513513513513514
-    }
-  },
-  "Hecarim": {
-    "waddlepon": {
-      "winrate": 1.0,
-      "KDA": 6.5,
-      "wins": 1,
-      "losses": 0,
-      "totalGames": 1,
-      "mastery": 818,
-      "masteryPercentage": 0.0004803544992715406,
-      "pickrate": 0.0013513513513513514
-    },
-    "yenjamin": {
-      "winrate": 0.33333333333333004,
-      "KDA": 1.63,
-      "wins": 1,
-      "losses": 2,
-      "totalGames": 3,
-      "pickrate": 0.006072874493927126
-    }
-  },
-  "Jarvan IV": {
-    "waddlepon": {
-      "winrate": 1.0,
-      "KDA": 6.25,
-      "wins": 1,
-      "losses": 0,
-      "totalGames": 1,
-      "mastery": 11423,
-      "masteryPercentage": 0.006707933307064558,
       "pickrate": 0.0013513513513513514
     }
   },
@@ -1990,8 +2112,6 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
-      "mastery": 1059,
-      "masteryPercentage": 0.0006218770351204909,
       "pickrate": 0.0013513513513513514
     },
     "yenjamin": {
@@ -2010,8 +2130,6 @@
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
-      "mastery": 6471,
-      "masteryPercentage": 0.003799968172110195,
       "pickrate": 0.0013513513513513514
     }
   },
@@ -2022,8 +2140,6 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
-      "mastery": 2661,
-      "masteryPercentage": 0.0015626201987305253,
       "pickrate": 0.0013513513513513514
     }
   },
@@ -2034,8 +2150,6 @@
       "wins": 0,
       "losses": 1,
       "totalGames": 1,
-      "mastery": 5724,
-      "masteryPercentage": 0.00336130703402237,
       "pickrate": 0.0013513513513513514
     },
     "yenjamin": {
@@ -2067,16 +2181,6 @@
       "pickrate": 0.012145748987854251
     }
   },
-  "Trundle": {
-    "yenjamin": {
-      "winrate": 0.4,
-      "KDA": 2.56,
-      "wins": 2,
-      "losses": 3,
-      "totalGames": 5,
-      "pickrate": 0.010121457489878543
-    }
-  },
   "Warwick": {
     "yenjamin": {
       "winrate": 0.75,
@@ -2087,40 +2191,10 @@
       "pickrate": 0.008097165991902834
     }
   },
-  "Alistar": {
-    "yenjamin": {
-      "winrate": 0.0,
-      "KDA": 1.32,
-      "wins": 0,
-      "losses": 4,
-      "totalGames": 4,
-      "pickrate": 0.008097165991902834
-    }
-  },
-  "Sona": {
-    "yenjamin": {
-      "winrate": 0.5,
-      "KDA": 2.33,
-      "wins": 1,
-      "losses": 1,
-      "totalGames": 2,
-      "pickrate": 0.004048582995951417
-    }
-  },
   "Poppy": {
     "yenjamin": {
       "winrate": 1.0,
       "KDA": 2.67,
-      "wins": 1,
-      "losses": 0,
-      "totalGames": 1,
-      "pickrate": 0.0020242914979757085
-    }
-  },
-  "Elise": {
-    "yenjamin": {
-      "winrate": 1.0,
-      "KDA": 1.8,
       "wins": 1,
       "losses": 0,
       "totalGames": 1,
