@@ -1,0 +1,1355 @@
+<tbody class="Body" aria-live="polite" aria-relevant="all">
+								<tr class="Row TopRanker" role="row">
+				<td class="Rank Cell">1</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/warwick/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-138">Warwick</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Warwick">
+					<a href="/champion/warwick/statistics" target="_blank">Warwick</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="52.747252747253">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 52%"></div>
+									<div class="Text Left">96W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">86L</div>
+																									<div class="Bar" style="left: 52%;"></div>
+															</div>
+							<span class="WinRatio normal">53%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="2.33">
+					<div class="KDA">
+						<span class="Kill">6.5</span> /
+						<span class="Death">5.8</span> /
+						<span class="Assist">7.1</span>
+					</div>
+					2.33:1
+				</td>
+				<td class="Value Cell">
+					11,114
+				</td>
+				<td class="Value Cell">
+					156.3 (5.6)
+				</td>
+																									<td class="Value Cell">
+						22
+					</td>
+					<td class="Value Cell">
+						12
+					</td>
+					<td class="Value Cell">
+						149,284
+					</td>
+					<td class="Value Cell">
+						35,213
+					</td>
+					<td class="Value Cell">
+													94
+											</td>
+					<td class="Value Cell">
+													7
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row TopRanker" role="row">
+				<td class="Rank Cell">2</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/garen/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-33">Garen</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Garen">
+					<a href="/champion/garen/statistics" target="_blank">Garen</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="56.756756756757">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 56%"></div>
+									<div class="Text Left">21W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">16L</div>
+																									<div class="Bar" style="left: 56%;"></div>
+															</div>
+							<span class="WinRatio normal">57%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1.91">
+					<div class="KDA">
+						<span class="Kill">7.0</span> /
+						<span class="Death">5.5</span> /
+						<span class="Assist">3.4</span>
+					</div>
+					1.91:1
+				</td>
+				<td class="Value Cell">
+					13,721
+				</td>
+				<td class="Value Cell">
+					222.4 (7.0)
+				</td>
+																									<td class="Value Cell">
+						19
+					</td>
+					<td class="Value Cell">
+						12
+					</td>
+					<td class="Value Cell">
+						187,372
+					</td>
+					<td class="Value Cell">
+						32,136
+					</td>
+					<td class="Value Cell">
+													23
+											</td>
+					<td class="Value Cell">
+													1
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row TopRanker" role="row">
+				<td class="Rank Cell">3</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/malphite/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-69">Malphite</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Malphite">
+					<a href="/champion/malphite/statistics" target="_blank">Malphite</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="38.461538461538">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 38%"></div>
+									<div class="Text Left">10W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">16L</div>
+																									<div class="Bar" style="left: 38%;"></div>
+															</div>
+							<span class="WinRatio normal">38%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="2.54">
+					<div class="KDA">
+						<span class="Kill">6.2</span> /
+						<span class="Death">5.2</span> /
+						<span class="Assist">7.1</span>
+					</div>
+					2.54:1
+				</td>
+				<td class="Value Cell">
+					10,734
+				</td>
+				<td class="Value Cell">
+					144.7 (5.0)
+				</td>
+																									<td class="Value Cell">
+						20
+					</td>
+					<td class="Value Cell">
+						14
+					</td>
+					<td class="Value Cell">
+						117,975
+					</td>
+					<td class="Value Cell">
+						20,143
+					</td>
+					<td class="Value Cell">
+													12
+											</td>
+					<td class="Value Cell">
+													2
+											</td>
+					<td class="Value Cell">
+													1
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row TopRanker" role="row">
+				<td class="Rank Cell">4</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/blitzcrank/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-12">Blitzcrank</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Blitzcrank">
+					<a href="/champion/blitzcrank/statistics" target="_blank">Blitzcrank</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="34.615384615385">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 34%"></div>
+									<div class="Text Left">9W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">17L</div>
+																									<div class="Bar" style="left: 34%;"></div>
+															</div>
+							<span class="WinRatio normal">35%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1.82">
+					<div class="KDA">
+						<span class="Kill">1.9</span> /
+						<span class="Death">6.0</span> /
+						<span class="Assist">9.1</span>
+					</div>
+					1.82:1
+				</td>
+				<td class="Value Cell">
+					7,178
+				</td>
+				<td class="Value Cell">
+					34.2 (1.2)
+				</td>
+																									<td class="Value Cell">
+						5
+					</td>
+					<td class="Value Cell">
+						14
+					</td>
+					<td class="Value Cell">
+						26,812
+					</td>
+					<td class="Value Cell">
+						19,534
+					</td>
+					<td class="Value Cell">
+													1
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row TopRanker" role="row">
+				<td class="Rank Cell">5</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/leona/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-63">Leona</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Leona">
+					<a href="/champion/leona/statistics" target="_blank">Leona</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="40.909090909091">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 40%"></div>
+									<div class="Text Left">9W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">13L</div>
+																									<div class="Bar" style="left: 40%;"></div>
+															</div>
+							<span class="WinRatio normal">41%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="2.21">
+					<div class="KDA">
+						<span class="Kill">2.0</span> /
+						<span class="Death">5.9</span> /
+						<span class="Assist">11.0</span>
+					</div>
+					2.21:1
+				</td>
+				<td class="Value Cell">
+					7,950
+				</td>
+				<td class="Value Cell">
+					37.2 (1.2)
+				</td>
+																									<td class="Value Cell">
+						9
+					</td>
+					<td class="Value Cell">
+						15
+					</td>
+					<td class="Value Cell">
+						26,619
+					</td>
+					<td class="Value Cell">
+						19,262
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row TopRanker" role="row">
+				<td class="Rank Cell">6</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/pyke/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-89">Pyke</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Pyke">
+					<a href="/champion/pyke/statistics" target="_blank">Pyke</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="61.538461538462">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 61%"></div>
+									<div class="Text Left">8W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">5L</div>
+																									<div class="Bar" style="left: 61%;"></div>
+															</div>
+							<span class="WinRatio red">62%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1.6">
+					<div class="KDA">
+						<span class="Kill">5.2</span> /
+						<span class="Death">7.5</span> /
+						<span class="Assist">6.9</span>
+					</div>
+					1.6:1
+				</td>
+				<td class="Value Cell">
+					10,140
+				</td>
+				<td class="Value Cell">
+					46.2 (1.5)
+				</td>
+																									<td class="Value Cell">
+						8
+					</td>
+					<td class="Value Cell">
+						14
+					</td>
+					<td class="Value Cell">
+						29,966
+					</td>
+					<td class="Value Cell">
+						20,499
+					</td>
+					<td class="Value Cell">
+													5
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row TopRanker" role="row">
+				<td class="Rank Cell">7</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/monkeyking/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-74">Wukong</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Wukong">
+					<a href="/champion/monkeyking/statistics" target="_blank">Wukong</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="33.333333333333">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 33%"></div>
+									<div class="Text Left">3W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">6L</div>
+																									<div class="Bar" style="left: 33%;"></div>
+															</div>
+							<span class="WinRatio normal">33%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1.9">
+					<div class="KDA">
+						<span class="Kill">3.8</span> /
+						<span class="Death">5.4</span> /
+						<span class="Assist">6.6</span>
+					</div>
+					1.9:1
+				</td>
+				<td class="Value Cell">
+					10,517
+				</td>
+				<td class="Value Cell">
+					160.0 (5.6)
+				</td>
+																									<td class="Value Cell">
+						9
+					</td>
+					<td class="Value Cell">
+						10
+					</td>
+					<td class="Value Cell">
+						136,759
+					</td>
+					<td class="Value Cell">
+						25,756
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">8</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/alistar/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-3">Alistar</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Alistar">
+					<a href="/champion/alistar/statistics" target="_blank">Alistar</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="0">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																									<div class="Fill Right"></div>
+									<div class="Text Right">8L</div>
+																							</div>
+							<span class="WinRatio normal">0%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1.5">
+					<div class="KDA">
+						<span class="Kill">2.1</span> /
+						<span class="Death">9.3</span> /
+						<span class="Assist">11.8</span>
+					</div>
+					1.5:1
+				</td>
+				<td class="Value Cell">
+					8,175
+				</td>
+				<td class="Value Cell">
+					39.5 (1.2)
+				</td>
+																									<td class="Value Cell">
+						4
+					</td>
+					<td class="Value Cell">
+						13
+					</td>
+					<td class="Value Cell">
+						33,837
+					</td>
+					<td class="Value Cell">
+						32,303
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">9</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/nocturne/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-82">Nocturne</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Nocturne">
+					<a href="/champion/nocturne/statistics" target="_blank">Nocturne</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="33.333333333333">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 33%"></div>
+									<div class="Text Left">2W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">4L</div>
+																									<div class="Bar" style="left: 33%;"></div>
+															</div>
+							<span class="WinRatio normal">33%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="2.16">
+					<div class="KDA">
+						<span class="Kill">4.3</span> /
+						<span class="Death">5.2</span> /
+						<span class="Assist">6.8</span>
+					</div>
+					2.16:1
+				</td>
+				<td class="Value Cell">
+					10,578
+				</td>
+				<td class="Value Cell">
+					178.7 (6.3)
+				</td>
+																									<td class="Value Cell">
+						7
+					</td>
+					<td class="Value Cell">
+						7
+					</td>
+					<td class="Value Cell">
+						176,857
+					</td>
+					<td class="Value Cell">
+						29,679
+					</td>
+					<td class="Value Cell">
+													1
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">10</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/malzahar/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-70">Malzahar</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Malzahar">
+					<a href="/champion/malzahar/statistics" target="_blank">Malzahar</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="40">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 40%"></div>
+									<div class="Text Left">2W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">3L</div>
+																									<div class="Bar" style="left: 40%;"></div>
+															</div>
+							<span class="WinRatio normal">40%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="2.07">
+					<div class="KDA">
+						<span class="Kill">7.2</span> /
+						<span class="Death">8.2</span> /
+						<span class="Assist">9.8</span>
+					</div>
+					2.07:1
+				</td>
+				<td class="Value Cell">
+					16,313
+				</td>
+				<td class="Value Cell">
+					272.4 (7.1)
+				</td>
+																									<td class="Value Cell">
+						13
+					</td>
+					<td class="Value Cell">
+						12
+					</td>
+					<td class="Value Cell">
+						277,882
+					</td>
+					<td class="Value Cell">
+						22,243
+					</td>
+					<td class="Value Cell">
+													2
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">11</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/shyvana/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-107">Shyvana</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Shyvana">
+					<a href="/champion/shyvana/statistics" target="_blank">Shyvana</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="66.666666666667">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 66%"></div>
+									<div class="Text Left">2W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">1L</div>
+																									<div class="Bar" style="left: 66%;"></div>
+															</div>
+							<span class="WinRatio red">67%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1.43">
+					<div class="KDA">
+						<span class="Kill">4.3</span> /
+						<span class="Death">9.3</span> /
+						<span class="Assist">9.0</span>
+					</div>
+					1.43:1
+				</td>
+				<td class="Value Cell">
+					12,481
+				</td>
+				<td class="Value Cell">
+					208.0 (6.7)
+				</td>
+																									<td class="Value Cell">
+						7
+					</td>
+					<td class="Value Cell">
+						10
+					</td>
+					<td class="Value Cell">
+						219,730
+					</td>
+					<td class="Value Cell">
+						37,194
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">12</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/xinzhao/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-141">Xin Zhao</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Xin Zhao">
+					<a href="/champion/xinzhao/statistics" target="_blank">Xin Zhao</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="66.666666666667">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 66%"></div>
+									<div class="Text Left">2W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">1L</div>
+																									<div class="Bar" style="left: 66%;"></div>
+															</div>
+							<span class="WinRatio red">67%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="2.25">
+					<div class="KDA">
+						<span class="Kill">5.0</span> /
+						<span class="Death">4.0</span> /
+						<span class="Assist">4.0</span>
+					</div>
+					2.25:1
+				</td>
+				<td class="Value Cell">
+					9,974
+				</td>
+				<td class="Value Cell">
+					152.7 (5.9)
+				</td>
+																									<td class="Value Cell">
+						6
+					</td>
+					<td class="Value Cell">
+						5
+					</td>
+					<td class="Value Cell">
+						138,110
+					</td>
+					<td class="Value Cell">
+						27,618
+					</td>
+					<td class="Value Cell">
+													2
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">13</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/rammus/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-93">Rammus</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Rammus">
+					<a href="/champion/rammus/statistics" target="_blank">Rammus</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="33.333333333333">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 33%"></div>
+									<div class="Text Left">1W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">2L</div>
+																									<div class="Bar" style="left: 33%;"></div>
+															</div>
+							<span class="WinRatio normal">33%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1.31">
+					<div class="KDA">
+						<span class="Kill">1.7</span> /
+						<span class="Death">5.3</span> /
+						<span class="Assist">5.3</span>
+					</div>
+					1.31:1
+				</td>
+				<td class="Value Cell">
+					7,070
+				</td>
+				<td class="Value Cell">
+					101.3 (4.5)
+				</td>
+																									<td class="Value Cell">
+						3
+					</td>
+					<td class="Value Cell">
+						8
+					</td>
+					<td class="Value Cell">
+						91,511
+					</td>
+					<td class="Value Cell">
+						19,713
+					</td>
+					<td class="Value Cell">
+													1
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">14</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/pantheon/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-87">Pantheon</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Pantheon">
+					<a href="/champion/pantheon/statistics" target="_blank">Pantheon</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="50">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 50%"></div>
+									<div class="Text Left">1W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">1L</div>
+																									<div class="Bar" style="left: 50%;"></div>
+															</div>
+							<span class="WinRatio normal">50%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1.92">
+					<div class="KDA">
+						<span class="Kill">5.0</span> /
+						<span class="Death">6.0</span> /
+						<span class="Assist">6.5</span>
+					</div>
+					1.92:1
+				</td>
+				<td class="Value Cell">
+					7,687
+				</td>
+				<td class="Value Cell">
+					91.0 (4.2)
+				</td>
+																									<td class="Value Cell">
+						5
+					</td>
+					<td class="Value Cell">
+						10
+					</td>
+					<td class="Value Cell">
+						74,979
+					</td>
+					<td class="Value Cell">
+						17,199
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">15</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/udyr/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-128">Udyr</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Udyr">
+					<a href="/champion/udyr/statistics" target="_blank">Udyr</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="50">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 50%"></div>
+									<div class="Text Left">1W</div>
+																									<div class="Fill Right"></div>
+									<div class="Text Right">1L</div>
+																									<div class="Bar" style="left: 50%;"></div>
+															</div>
+							<span class="WinRatio normal">50%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1.67">
+					<div class="KDA">
+						<span class="Kill">4.5</span> /
+						<span class="Death">4.5</span> /
+						<span class="Assist">3.0</span>
+					</div>
+					1.67:1
+				</td>
+				<td class="Value Cell">
+					9,433
+				</td>
+				<td class="Value Cell">
+					147.0 (6.4)
+				</td>
+																									<td class="Value Cell">
+						5
+					</td>
+					<td class="Value Cell">
+						5
+					</td>
+					<td class="Value Cell">
+						146,622
+					</td>
+					<td class="Value Cell">
+						26,140
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">16</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/thresh/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-122">Thresh</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Thresh">
+					<a href="/champion/thresh/statistics" target="_blank">Thresh</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="0">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																									<div class="Fill Right"></div>
+									<div class="Text Right">2L</div>
+																							</div>
+							<span class="WinRatio normal">0%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1">
+					<div class="KDA">
+						<span class="Kill">1.5</span> /
+						<span class="Death">5.5</span> /
+						<span class="Assist">4.0</span>
+					</div>
+					1:1
+				</td>
+				<td class="Value Cell">
+					5,580
+				</td>
+				<td class="Value Cell">
+					29.5 (1.3)
+				</td>
+																									<td class="Value Cell">
+						3
+					</td>
+					<td class="Value Cell">
+						7
+					</td>
+					<td class="Value Cell">
+						15,774
+					</td>
+					<td class="Value Cell">
+						11,580
+					</td>
+					<td class="Value Cell">
+													1
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">17</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/brand/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-13">Brand</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Brand">
+					<a href="/champion/brand/statistics" target="_blank">Brand</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="0">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																									<div class="Fill Right"></div>
+									<div class="Text Right">2L</div>
+																							</div>
+							<span class="WinRatio normal">0%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="0.5">
+					<div class="KDA">
+						<span class="Kill">1.0</span> /
+						<span class="Death">7.0</span> /
+						<span class="Assist">2.5</span>
+					</div>
+					0.5:1
+				</td>
+				<td class="Value Cell">
+					5,007
+				</td>
+				<td class="Value Cell">
+					24.0 (1.1)
+				</td>
+																									<td class="Value Cell">
+						2
+					</td>
+					<td class="Value Cell">
+						9
+					</td>
+					<td class="Value Cell">
+						22,989
+					</td>
+					<td class="Value Cell">
+						13,037
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">18</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/leesin/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-62">Lee Sin</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Lee Sin">
+					<a href="/champion/leesin/statistics" target="_blank">Lee Sin</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="0">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																									<div class="Fill Right"></div>
+									<div class="Text Right">2L</div>
+																							</div>
+							<span class="WinRatio normal">0%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="0.73">
+					<div class="KDA">
+						<span class="Kill">2.0</span> /
+						<span class="Death">7.5</span> /
+						<span class="Assist">3.5</span>
+					</div>
+					0.73:1
+				</td>
+				<td class="Value Cell">
+					6,681
+				</td>
+				<td class="Value Cell">
+					97.5 (4.3)
+				</td>
+																									<td class="Value Cell">
+						2
+					</td>
+					<td class="Value Cell">
+						11
+					</td>
+					<td class="Value Cell">
+						80,172
+					</td>
+					<td class="Value Cell">
+						21,363
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">19</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/darius/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-20">Darius</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Darius">
+					<a href="/champion/darius/statistics" target="_blank">Darius</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="0">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																									<div class="Fill Right"></div>
+									<div class="Text Right">2L</div>
+																							</div>
+							<span class="WinRatio normal">0%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="0.59">
+					<div class="KDA">
+						<span class="Kill">5.0</span> /
+						<span class="Death">8.5</span> /
+						<span class="Assist">0.0</span>
+					</div>
+					0.59:1
+				</td>
+				<td class="Value Cell">
+					10,042
+				</td>
+				<td class="Value Cell">
+					163.0 (5.9)
+				</td>
+																									<td class="Value Cell">
+						5
+					</td>
+					<td class="Value Cell">
+						11
+					</td>
+					<td class="Value Cell">
+						126,896
+					</td>
+					<td class="Value Cell">
+						30,719
+					</td>
+					<td class="Value Cell">
+													1
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">20</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/syndra/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-116">Syndra</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Syndra">
+					<a href="/champion/syndra/statistics" target="_blank">Syndra</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="100">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 100%"></div>
+									<div class="Text Left">1W</div>
+																															</div>
+							<span class="WinRatio red">100%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="0.42">
+					<div class="KDA">
+						<span class="Kill">2.0</span> /
+						<span class="Death">12.0</span> /
+						<span class="Assist">3.0</span>
+					</div>
+					0.42:1
+				</td>
+				<td class="Value Cell">
+					9,910
+				</td>
+				<td class="Value Cell">
+					108.0 (2.8)
+				</td>
+																									<td class="Value Cell">
+						2
+					</td>
+					<td class="Value Cell">
+						12
+					</td>
+					<td class="Value Cell">
+						86,505
+					</td>
+					<td class="Value Cell">
+						24,670
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">21</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/nunu/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-83">Nunu &amp; Willump</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Nunu &amp; Willump">
+					<a href="/champion/nunu/statistics" target="_blank">Nunu &amp; Willump</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="100">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																	<div class="Fill Left" style="width: 100%"></div>
+									<div class="Text Left">1W</div>
+																															</div>
+							<span class="WinRatio red">100%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="2.17">
+					<div class="KDA">
+						<span class="Kill">4.0</span> /
+						<span class="Death">6.0</span> /
+						<span class="Assist">9.0</span>
+					</div>
+					2.17:1
+				</td>
+				<td class="Value Cell">
+					12,938
+				</td>
+				<td class="Value Cell">
+					180.0 (5.0)
+				</td>
+																									<td class="Value Cell">
+						4
+					</td>
+					<td class="Value Cell">
+						6
+					</td>
+					<td class="Value Cell">
+						193,360
+					</td>
+					<td class="Value Cell">
+						48,386
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">22</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/ornn/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-86">Ornn</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Ornn">
+					<a href="/champion/ornn/statistics" target="_blank">Ornn</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="0">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																									<div class="Fill Right"></div>
+									<div class="Text Right">1L</div>
+																							</div>
+							<span class="WinRatio normal">0%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="0.67">
+					<div class="KDA">
+						<span class="Kill">0.0</span> /
+						<span class="Death">12.0</span> /
+						<span class="Assist">8.0</span>
+					</div>
+					0.67:1
+				</td>
+				<td class="Value Cell">
+					7,156
+				</td>
+				<td class="Value Cell">
+					64.0 (1.9)
+				</td>
+																									<td class="Value Cell">
+						0
+					</td>
+					<td class="Value Cell">
+						12
+					</td>
+					<td class="Value Cell">
+						57,453
+					</td>
+					<td class="Value Cell">
+						28,958
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">23</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/yuumi/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-145">Yuumi</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Yuumi">
+					<a href="/champion/yuumi/statistics" target="_blank">Yuumi</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="0">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																									<div class="Fill Right"></div>
+									<div class="Text Right">1L</div>
+																							</div>
+							<span class="WinRatio normal">0%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="1.14">
+					<div class="KDA">
+						<span class="Kill">2.0</span> /
+						<span class="Death">7.0</span> /
+						<span class="Assist">6.0</span>
+					</div>
+					1.14:1
+				</td>
+				<td class="Value Cell">
+					5,637
+				</td>
+				<td class="Value Cell">
+					10.0 (0.4)
+				</td>
+																									<td class="Value Cell">
+						2
+					</td>
+					<td class="Value Cell">
+						7
+					</td>
+					<td class="Value Cell">
+						8,969
+					</td>
+					<td class="Value Cell">
+						8,450
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+								<tr class="Row " role="row">
+				<td class="Rank Cell">24</td>
+				<td class="ChampionImage Cell">
+					<a href="/champion/graves/statistics" target="_blank">
+						<div class="Image __sprite __spc32 __spc32-36">Graves</div>
+					</a>
+				</td>
+				<td class="ChampionName Cell" data-value="Graves">
+					<a href="/champion/graves/statistics" target="_blank">Graves</a>
+				</td>
+									<td class="RatioGraph Cell" data-value="0">
+						<div class="WinRatioGraph">
+							<div class="Graph">
+																									<div class="Fill Right"></div>
+									<div class="Text Right">1L</div>
+																							</div>
+							<span class="WinRatio normal">0%</span>
+						</div>
+					</td>
+								<td class="KDA Cell normal" data-value="0.86">
+					<div class="KDA">
+						<span class="Kill">1.0</span> /
+						<span class="Death">7.0</span> /
+						<span class="Assist">5.0</span>
+					</div>
+					0.86:1
+				</td>
+				<td class="Value Cell">
+					9,126
+				</td>
+				<td class="Value Cell">
+					173.0 (6.0)
+				</td>
+																									<td class="Value Cell">
+						1
+					</td>
+					<td class="Value Cell">
+						7
+					</td>
+					<td class="Value Cell">
+						156,405
+					</td>
+					<td class="Value Cell">
+						22,625
+					</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+					<td class="Value Cell">
+											</td>
+							</tr>
+			</tbody>

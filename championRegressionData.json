@@ -1,0 +1,1522 @@
+{
+  "Evelynn": {
+    "championName": "Evelynn",
+    "winrateWeight": 0.09999999999999998,
+    "kdaWeight": -0.014000000000000005,
+    "masteryWeight": 0.9800000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Urgot": {
+    "championName": "Urgot",
+    "winrateWeight": 0.07999999999999999,
+    "kdaWeight": -0.011000000000000003,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Vi": {
+    "championName": "Vi",
+    "winrateWeight": 0.06999999999999999,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.7700000000000005,
+    "constant": -0.01,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Illaoi": {
+    "championName": "Illaoi",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.5200000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Neeko": {
+    "championName": "Neeko",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.009000000000000001,
+    "masteryWeight": 0.9500000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Kayle": {
+    "championName": "Kayle",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.8200000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Morgana": {
+    "championName": "Morgana",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.7300000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Volibear": {
+    "championName": "Volibear",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.7000000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Kai'Sa": {
+    "championName": "Kai'Sa",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.5700000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Jhin": {
+    "championName": "Jhin",
+    "winrateWeight": 0.06999999999999999,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.5200000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Vayne": {
+    "championName": "Vayne",
+    "winrateWeight": 0.07999999999999999,
+    "kdaWeight": -0.011000000000000003,
+    "masteryWeight": 0.7100000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Sion": {
+    "championName": "Sion",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.005,
+    "masteryWeight": 0.45000000000000023,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Lux": {
+    "championName": "Lux",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.46000000000000024,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Kayn": {
+    "championName": "Kayn",
+    "winrateWeight": 0.06999999999999999,
+    "kdaWeight": -0.008,
+    "masteryWeight": 0.5100000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Lulu": {
+    "championName": "Lulu",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.38000000000000017,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Pantheon": {
+    "championName": "Pantheon",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.5200000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Sylas": {
+    "championName": "Sylas",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.7700000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Jinx": {
+    "championName": "Jinx",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.7000000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Mordekaiser": {
+    "championName": "Mordekaiser",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.9000000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Jax": {
+    "championName": "Jax",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.48000000000000026,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Aphelios": {
+    "championName": "Aphelios",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.006,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Udyr": {
+    "championName": "Udyr",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.12999999999999998,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Senna": {
+    "championName": "Senna",
+    "winrateWeight": 0.08999999999999998,
+    "kdaWeight": -0.008,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Ezreal": {
+    "championName": "Ezreal",
+    "winrateWeight": 0.06999999999999999,
+    "kdaWeight": -0.005,
+    "masteryWeight": 0.4200000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Tryndamere": {
+    "championName": "Tryndamere",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.005,
+    "masteryWeight": 0.5700000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Camille": {
+    "championName": "Camille",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.4400000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Brand": {
+    "championName": "Brand",
+    "winrateWeight": 0.01,
+    "kdaWeight": 0.0,
+    "masteryWeight": 0.20000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Twitch": {
+    "championName": "Twitch",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.3000000000000001,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Poppy": {
+    "championName": "Poppy",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.007,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Ashe": {
+    "championName": "Ashe",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.5300000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Nautilus": {
+    "championName": "Nautilus",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.6900000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Garen": {
+    "championName": "Garen",
+    "winrateWeight": 0.11999999999999997,
+    "kdaWeight": -0.009000000000000001,
+    "masteryWeight": 0.7100000000000004,
+    "constant": -0.01,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Sivir": {
+    "championName": "Sivir",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.4000000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Aatrox": {
+    "championName": "Aatrox",
+    "winrateWeight": 0.06999999999999999,
+    "kdaWeight": -0.007,
+    "masteryWeight": 0.6800000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Nami": {
+    "championName": "Nami",
+    "winrateWeight": 0.09999999999999998,
+    "kdaWeight": -0.012000000000000004,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Miss Fortune": {
+    "championName": "Miss Fortune",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.5600000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Karma": {
+    "championName": "Karma",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.7600000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Alistar": {
+    "championName": "Alistar",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.7900000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Janna": {
+    "championName": "Janna",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.6200000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Nasus": {
+    "championName": "Nasus",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.008,
+    "masteryWeight": 0.8100000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Bard": {
+    "championName": "Bard",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.6500000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Yuumi": {
+    "championName": "Yuumi",
+    "winrateWeight": 0.09999999999999998,
+    "kdaWeight": -0.005,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Kindred": {
+    "championName": "Kindred",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.2700000000000001,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Pyke": {
+    "championName": "Pyke",
+    "winrateWeight": 0.09999999999999998,
+    "kdaWeight": -0.016000000000000007,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Veigar": {
+    "championName": "Veigar",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.007,
+    "masteryWeight": 0.9200000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Rakan": {
+    "championName": "Rakan",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.6300000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Twisted Fate": {
+    "championName": "Twisted Fate",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.9700000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Xayah": {
+    "championName": "Xayah",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.4100000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Darius": {
+    "championName": "Darius",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.007,
+    "masteryWeight": 0.6800000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Thresh": {
+    "championName": "Thresh",
+    "winrateWeight": 0.09999999999999998,
+    "kdaWeight": -0.011000000000000003,
+    "masteryWeight": 0.6700000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Quinn": {
+    "championName": "Quinn",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": 0.0,
+    "masteryWeight": 0.34000000000000014,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Singed": {
+    "championName": "Singed",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.006,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Xerath": {
+    "championName": "Xerath",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.37000000000000016,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Zyra": {
+    "championName": "Zyra",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.004,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Malphite": {
+    "championName": "Malphite",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.46000000000000024,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Sona": {
+    "championName": "Sona",
+    "winrateWeight": 0.12999999999999998,
+    "kdaWeight": -0.011000000000000003,
+    "masteryWeight": 0.7600000000000005,
+    "constant": -0.01,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Varus": {
+    "championName": "Varus",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.005,
+    "masteryWeight": 0.8000000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Kassadin": {
+    "championName": "Kassadin",
+    "winrateWeight": 0.06999999999999999,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.8700000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Caitlyn": {
+    "championName": "Caitlyn",
+    "winrateWeight": 0.06999999999999999,
+    "kdaWeight": -0.007,
+    "masteryWeight": 0.6100000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Diana": {
+    "championName": "Diana",
+    "winrateWeight": 0.07999999999999999,
+    "kdaWeight": -0.006,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Cassiopeia": {
+    "championName": "Cassiopeia",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.5600000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Lucian": {
+    "championName": "Lucian",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.005,
+    "masteryWeight": 0.6200000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Master Yi": {
+    "championName": "Master Yi",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.009000000000000001,
+    "masteryWeight": 0.5300000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Kog'Maw": {
+    "championName": "Kog'Maw",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.004,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Tahm Kench": {
+    "championName": "Tahm Kench",
+    "winrateWeight": 0.01,
+    "kdaWeight": 0.0,
+    "masteryWeight": 0.7300000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Katarina": {
+    "championName": "Katarina",
+    "winrateWeight": 0.15000000000000002,
+    "kdaWeight": -0.01900000000000001,
+    "masteryWeight": 0.6500000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Zed": {
+    "championName": "Zed",
+    "winrateWeight": 0.07999999999999999,
+    "kdaWeight": -0.007,
+    "masteryWeight": 0.4900000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Vladimir": {
+    "championName": "Vladimir",
+    "winrateWeight": 0.06999999999999999,
+    "kdaWeight": -0.008,
+    "masteryWeight": 0.6600000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Galio": {
+    "championName": "Galio",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.8000000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Irelia": {
+    "championName": "Irelia",
+    "winrateWeight": 0.09999999999999998,
+    "kdaWeight": -0.009000000000000001,
+    "masteryWeight": 0.6600000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Tristana": {
+    "championName": "Tristana",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.5900000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Soraka": {
+    "championName": "Soraka",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.6700000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Syndra": {
+    "championName": "Syndra",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.003,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Talon": {
+    "championName": "Talon",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.008,
+    "masteryWeight": 0.46000000000000024,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Taric": {
+    "championName": "Taric",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.004,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Yasuo": {
+    "championName": "Yasuo",
+    "winrateWeight": 0.09999999999999998,
+    "kdaWeight": -0.010000000000000002,
+    "masteryWeight": 0.48000000000000026,
+    "constant": -0.01,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Shyvana": {
+    "championName": "Shyvana",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.22000000000000008,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Orianna": {
+    "championName": "Orianna",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.5300000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Yone": {
+    "championName": "Yone",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.004,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Ahri": {
+    "championName": "Ahri",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.7700000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Akali": {
+    "championName": "Akali",
+    "winrateWeight": 0.06999999999999999,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.7000000000000004,
+    "constant": -0.01,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Fiora": {
+    "championName": "Fiora",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.5000000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Sett": {
+    "championName": "Sett",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.9000000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Wukong": {
+    "championName": "Wukong",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.6900000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Hecarim": {
+    "championName": "Hecarim",
+    "winrateWeight": 0.07999999999999999,
+    "kdaWeight": -0.008,
+    "masteryWeight": 0.8400000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Graves": {
+    "championName": "Graves",
+    "winrateWeight": 0.07999999999999999,
+    "kdaWeight": -0.011000000000000003,
+    "masteryWeight": 0.9700000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Lee Sin": {
+    "championName": "Lee Sin",
+    "winrateWeight": 0.06999999999999999,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.3300000000000001,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Renekton": {
+    "championName": "Renekton",
+    "winrateWeight": 0.03,
+    "kdaWeight": 0.0,
+    "masteryWeight": 0.19000000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Rek'Sai": {
+    "championName": "Rek'Sai",
+    "winrateWeight": 0.11999999999999997,
+    "kdaWeight": -0.012000000000000004,
+    "masteryWeight": 0.8300000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Qiyana": {
+    "championName": "Qiyana",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.48000000000000026,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "LeBlanc": {
+    "championName": "LeBlanc",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.5200000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Ryze": {
+    "championName": "Ryze",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.3900000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Viktor": {
+    "championName": "Viktor",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.26000000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Gangplank": {
+    "championName": "Gangplank",
+    "winrateWeight": 0.01,
+    "kdaWeight": 0.001,
+    "masteryWeight": 0.2900000000000001,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Gragas": {
+    "championName": "Gragas",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.9600000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Taliyah": {
+    "championName": "Taliyah",
+    "winrateWeight": 0.01,
+    "kdaWeight": 0.0,
+    "masteryWeight": 0.4000000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Sejuani": {
+    "championName": "Sejuani",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.6700000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Olaf": {
+    "championName": "Olaf",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.005,
+    "masteryWeight": 0.9400000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Riven": {
+    "championName": "Riven",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.26000000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Rumble": {
+    "championName": "Rumble",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.5500000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Blitzcrank": {
+    "championName": "Blitzcrank",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.6800000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Ekko": {
+    "championName": "Ekko",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.6900000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Jarvan IV": {
+    "championName": "Jarvan IV",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.3000000000000001,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Leona": {
+    "championName": "Leona",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.005,
+    "masteryWeight": 0.6500000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Annie": {
+    "championName": "Annie",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.5900000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Fizz": {
+    "championName": "Fizz",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.25000000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Trundle": {
+    "championName": "Trundle",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": 0.0,
+    "masteryWeight": 0.5600000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Shen": {
+    "championName": "Shen",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.5800000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Yorick": {
+    "championName": "Yorick",
+    "winrateWeight": 0.12999999999999998,
+    "kdaWeight": -0.016000000000000007,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Kled": {
+    "championName": "Kled",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.45000000000000023,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Skarner": {
+    "championName": "Skarner",
+    "winrateWeight": 0.01,
+    "kdaWeight": 0.0,
+    "masteryWeight": 0.10999999999999997,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Rammus": {
+    "championName": "Rammus",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.3200000000000001,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Teemo": {
+    "championName": "Teemo",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.008,
+    "masteryWeight": 0.9300000000000006,
+    "constant": -0.01,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Gnar": {
+    "championName": "Gnar",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.9000000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Cho'Gath": {
+    "championName": "Cho'Gath",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.005,
+    "masteryWeight": 0.4900000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Draven": {
+    "championName": "Draven",
+    "winrateWeight": 0.14,
+    "kdaWeight": -0.01900000000000001,
+    "masteryWeight": 1.0000000000000007,
+    "constant": -0.01,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Maokai": {
+    "championName": "Maokai",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.7500000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Ornn": {
+    "championName": "Ornn",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.6200000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Amumu": {
+    "championName": "Amumu",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.9700000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Anivia": {
+    "championName": "Anivia",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.47000000000000025,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Braum": {
+    "championName": "Braum",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.6800000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Warwick": {
+    "championName": "Warwick",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.008,
+    "masteryWeight": 0.9400000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Azir": {
+    "championName": "Azir",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.7000000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Nidalee": {
+    "championName": "Nidalee",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.8100000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Kha'Zix": {
+    "championName": "Kha'Zix",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.010000000000000002,
+    "masteryWeight": 0.8700000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Fiddlesticks": {
+    "championName": "Fiddlesticks",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.20000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Lillia": {
+    "championName": "Lillia",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.3000000000000001,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Swain": {
+    "championName": "Swain",
+    "winrateWeight": 0.060000000000000005,
+    "kdaWeight": -0.007,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Zilean": {
+    "championName": "Zilean",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.7600000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Seraphine": {
+    "championName": "Seraphine",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.4900000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Corki": {
+    "championName": "Corki",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.26000000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Kalista": {
+    "championName": "Kalista",
+    "winrateWeight": 0.12999999999999998,
+    "kdaWeight": -0.02100000000000001,
+    "masteryWeight": 0.9700000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Rengar": {
+    "championName": "Rengar",
+    "winrateWeight": 0.22000000000000008,
+    "kdaWeight": -0.028000000000000018,
+    "masteryWeight": 0.7400000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Nocturne": {
+    "championName": "Nocturne",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.005,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Malzahar": {
+    "championName": "Malzahar",
+    "winrateWeight": 0.07999999999999999,
+    "kdaWeight": -0.009000000000000001,
+    "masteryWeight": 0.8400000000000005,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Samira": {
+    "championName": "Samira",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.46000000000000024,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Nunu & Willump": {
+    "championName": "Nunu & Willump",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.6500000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Shaco": {
+    "championName": "Shaco",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.008,
+    "masteryWeight": 0.9700000000000006,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Elise": {
+    "championName": "Elise",
+    "winrateWeight": 0.08999999999999998,
+    "kdaWeight": -0.006,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Ivern": {
+    "championName": "Ivern",
+    "winrateWeight": 0.01,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.6400000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Zac": {
+    "championName": "Zac",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": 0.0,
+    "masteryWeight": 0.36000000000000015,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Lissandra": {
+    "championName": "Lissandra",
+    "winrateWeight": 0.08999999999999998,
+    "kdaWeight": -0.013000000000000005,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Zoe": {
+    "championName": "Zoe",
+    "winrateWeight": 0.12999999999999998,
+    "kdaWeight": -0.011000000000000003,
+    "masteryWeight": 0.9200000000000006,
+    "constant": -0.01,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Xin Zhao": {
+    "championName": "Xin Zhao",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.006,
+    "masteryWeight": 0.7500000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Dr. Mundo": {
+    "championName": "Dr. Mundo",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.4000000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Jayce": {
+    "championName": "Jayce",
+    "winrateWeight": 0.04,
+    "kdaWeight": -0.003,
+    "masteryWeight": 0.5700000000000003,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Ziggs": {
+    "championName": "Ziggs",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.7100000000000004,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Vel'Koz": {
+    "championName": "Vel'Koz",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.004,
+    "masteryWeight": 0.4000000000000002,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Karthus": {
+    "championName": "Karthus",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.001,
+    "masteryWeight": 0.2900000000000001,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Aurelion Sol": {
+    "championName": "Aurelion Sol",
+    "winrateWeight": 0.019999999999999997,
+    "kdaWeight": -0.002,
+    "masteryWeight": 0.35000000000000014,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Heimerdinger": {
+    "championName": "Heimerdinger",
+    "winrateWeight": 0.05000000000000001,
+    "kdaWeight": -0.009000000000000001,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  },
+  "Kennen": {
+    "championName": "Kennen",
+    "winrateWeight": 0.03,
+    "kdaWeight": -0.005,
+    "masteryWeight": 1.0000000000000007,
+    "constant": 0.0,
+    "percentageLearningRate": 0.01,
+    "kdaLearningRate": 0.001,
+    "iterations": 100
+  }
+}

@@ -63,15 +63,55 @@ def clashApiDemo(lol_watcher):
 
 def riotApiDemo(lol_watcher):
     print(f'Input your region: ', end='')
-    region = input()
+    summonerRegion = input()
 
     print(f'\nInput your summoner name: ', end='')
     summonerName = input()
-    summonerData = lol_watcher.summoner.by_name(region, summonerName)
+    summonerData = lol_watcher.summoner.by_name(summonerRegion, summonerName)
+    # print(summonerData)
     summonerId = summonerData['id']
+    print(f'summonerId: {summonerId}')
+    accountId = summonerData['accountId']
+    print(f'accountId: {accountId}')
+    myQueueType = 'RANKED_SOLO_5x5'
+    myQueueTypeSet = {'RANKED_SOLO_5x5'}
+    # print(type(myQueueTypeSet))
 
-    rankedData = lol_watcher.league.by_summoner(region, summonerId)
-    print(rankedData)
+    rankedData = lol_watcher.league.by_summoner(summonerRegion, summonerId)
+    # print(rankedData)
     sumTier, sumRank = rankedData[1]['tier'], rankedData[1]['rank']
-    leagueUUID = lol_watcher.league.entries(region, 'RANKED_SOLO_5x5', sumTier, sumRank)
-    print(f'leagueUUID: {leagueUUID}')
+    print(sumTier, sumRank)
+    leagueUUID = lol_watcher.league.entries(summonerRegion, myQueueType, sumTier, sumRank)
+    # print(f'leagueUUID: {leagueUUID}')
+    leagueSummoners = set()
+    for rankedSoloData in leagueUUID:
+        leagueSummoners.add(rankedSoloData['summonerId'])
+
+    versions = lol_watcher.data_dragon.versions_for_region(summonerRegion)
+    champions_version = versions['n']['champion']
+
+    current_champ_list = lol_watcher.data_dragon.champions(champions_version)
+    # print(current_champ_list)
+    champData = current_champ_list['data']
+    # print(champData)
+    champKeys = dict()
+    for champ in champData:
+        champKeys[champ] = champData[champ]['key']
+    # print(champKeys)
+    
+    matchHist = lol_watcher.match.matchlist_by_account(summonerRegion, accountId, queue={420}, season={13}, champion={champKeys['Ashe']})
+    # print(matchHist)
+
+def findSummonerList(lol_watcher):
+    # queues Gold IV - I, Platinum IV - I, Diamond IV - I
+    summonerRegion = 'na1'
+    rankList = ['GOLD', 'PLATINUM', 'DIAMOND']
+    divisionList = ['IV', 'III', 'II', 'I']
+    queueType = 'RANKED_SOLO_5x5'
+
+    summonerNames = []
+    for rank in rankList:
+        for division in divisionList:
+            leagueUUID = lol_watcher.league.entries(summonerRegion, queueType, division, rank)
+            for summonerData in leagueUUID:
+                summonerNames.append(leagueUUID['summonerName'])

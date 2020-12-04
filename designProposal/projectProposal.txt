@@ -1,0 +1,98 @@
+Project Description:
+    This term project is called "Clash Grab". The final aim of this project is
+    to be able to somewhat accurately predict the likelihood of a given player
+    picking a given champion in the draft phase of League of Legend's Clash
+    Gamemode. It will also display a multitude of organized, unprocessed data
+    in case the user wishes to use it to draw other conclusions as well.
+
+Competitive Analysis:
+    While other websites and applications provide data and some data analysis
+    this data is not player specific enough to really be useful in Clash's
+    drafting stage, which resembles the drafting stages of professional League
+    of Legends matches. In particular, while these websties provide basic data
+    one of their main downfalls is not providing patch specific predictions.
+    The two most popular League of Legends analysis tools are provided here:
+
+    Op.gg
+        This is potentially the most popular site/app with which to look at
+        League of Legends data and analysis. One of the most commonly used tools
+        is it's "Champion Tier" feature, which categorises different champions
+        into different "power levels" based on a given patch's meta. However,
+        the main failing of this when it comes to clash is its inability to
+        account for player specific data, especially given that its analysis is
+        conducted on more or less "high-elo" korean player data. For example,
+        if one player "mains" one champion that is possibly a Tier 3 champion,
+        espcially at lower-elos and especially on the NA server, that player is
+        more likely to pick that main in a game then they are to pick an
+        unfamiliar champion that is Tier 1. And most likely, they will perform
+        better with their main too.
+
+    U.gg
+        U.gg does things extremely similarly to Op.gg; however, it allows the
+        user to specify more parameters with regard to data analysis. That being
+        said it has the same failing as Op.gg. While it provides tierlists and
+        even a (paid) tool to theoretically provide data useful to improving
+        ones own gameplay (I cannot speak to the efficacy of this particular 
+        tool), it does not provide the player specific functionality as
+        previously described.
+
+Structural Plan:
+    The MVP iteration of my project will theoretically have 3 separate python
+    files, each containing an object of its own. These files will be a "main"
+    file to concatenate the others, "parseData" file to parse acquired raw data,
+    and a "regression" file to implement the regression that will be used for
+    predictions in this project. 
+
+    "parseData" will contain the object "summonerData" that will define the
+    necessary data points for implementing a regression model and functions that
+    manipulate said data (returning it, concatenating it, comparing it, etc.).
+
+    "regression" will contain the object "pickPrediction" that will define the
+    model and the training functions for the regression model to be implemented.
+
+    There will be 2 sub-directories: "rawSummonerData" and "parsedSummonerData".
+    The first contains a list of all summoners to query and a .txt file for each
+    summoner, containing the JS that defines their season 10 ranked statistics
+    as given by Op.gg. The second sub-directory contains jsons of parsed data
+    given as dictionaries such as mastery points per summoner per champion, 
+    average KDA per summoner per champion, etc.
+
+Algorithmic Plan:
+    There are two main algorithmic components to the main part of the project.
+
+    The first is a parsing algorithm that takes in the data necessary for
+    implementation of a regression model, parses it, cleans it, and stores it in
+    easily readable files. 
+
+    The second component is the development of the "Multiple Linear Regression"
+    model that will be employed to make pickrate predictions. First given season
+    10 League of Legends ranked data, the efficacy of the algorithm will be
+    developed and checked, then it will be employed for use, hopefully given
+    developing preseason 11 data.
+
+Timeline Plan:
+    The vast majority of the data parsing is already completed.
+
+    - by end of day 11.1.2020:
+        complete implementation of gradient descent regression training
+        model
+
+    - by end of day 12.2.2020:
+        complete the implementation of objects and file structure
+
+    - by end of day 12.3.2020:
+        basic UI implementation complete
+
+    - by end of day 12.4.2020:
+        verify MVP completeness
+
+    - from then on:
+        implement Riot API features, more data
+        possibly ML implementation
+
+Version Control Plan:
+    My plan is to use github. Find attached verification of updates in the
+    current directory, under the file name "clashGrabGithub.jpg"
+
+Module List:
+    -json, os
