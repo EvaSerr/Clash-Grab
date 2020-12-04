@@ -1,6 +1,8 @@
 from riotwatcher import LolWatcher, ApiError
 import json, os
 
+# raw data is taken from OP.GG
+
 lol_watcher = LolWatcher('RGAPI-d4e17890-be4b-4fdf-921d-328090cc960b')
 
 def findSummonerList(lol_watcher):
@@ -83,6 +85,8 @@ def parseRankedData(path):
     summonerList = os.listdir(path)
     s10ChampDataParsed = dict()
     for summonerTxt in summonerList:
+        if summonerTxt[len(summonerTxt)-4:] != '.txt':
+            continue
         with open(path + '/' + summonerTxt) as s10ChampDataTxt:
             # read and split by champion, pop unnecessary JS header
             s10ChampDataRaw = s10ChampDataTxt.read()
