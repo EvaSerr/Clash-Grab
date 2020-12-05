@@ -4,13 +4,22 @@ from cmu_112_graphics import *
 
 class clashGrabUI(App):
     def appStarted(self):
+        # colors taken from https://coolors.co/084887-758bfd-aeb8fe-f1f2f6-416165
+        self.yaleBlue = '#084887'
+        self.cornFlowerBlue = '#758BFD'
+        self.maximumBluePurple = '#AEB8FE'
+        self.cultured = '#F1F2F6'
+        self.deepSpaceSparkle = '#416165'
+
         self.numTabs = 3
         self.tabWidth = self.width // 8
         self.tabHeight = self.height // 12
         self.tabMargin = min(self.width, self.height) // 200
         self.tabFont = f'Helvetica {self.tabHeight // 4} bold'
-        self.tabColor = 'orchid3'
-        self.tabTextColor = 'thistle1'
+        self.tabColor = self.cornFlowerBlue
+        self.tabTextColor = self.cultured
+        self.noTabColor = 'white'
+        self.outlineColor = self.cultured
 
         self.tabs = ['Home', 'Data', 'Regression']
         self.currentTab = 0
@@ -18,7 +27,7 @@ class clashGrabUI(App):
         self.summonerQueryName = ''
         self.regressionData = [ ]
 
-        self.backgroundColor = 'orchid2'
+        self.backgroundColor = self.maximumBluePurple
 
         self.cx = self.width // 2
         self.cy = self.height // 2
@@ -26,17 +35,17 @@ class clashGrabUI(App):
         self.buttonHeight = self.height // 4
         self.buttonText = 'Click to enter data'
         self.buttonFont = f'Helvetica {self.buttonHeight // 6} bold'
-        self.buttonTextColor = 'thistle2'
-        self.buttonColor = 'orchid4'
+        self.buttonTextColor = self.cultured
+        self.buttonColor = self.cornFlowerBlue
         self.buttonOutline = min(self.width, self.height) // 100
 
         self.dataRowHeight = (self.height-self.tabMargin-self.tabHeight) // 10
         self.regressionFont = f'Helvetica {self.dataRowHeight // 4} bold'
-        self.regressionTextColor = 'thistle1'
+        self.regressionTextColor = self.cultured
         self.regressionTextMargin = self.dataRowHeight // 2
 
         self.readyToProceed = False
-
+    # update GUI sizes
     def timerFired(self):
         self.numTabs = 3
         self.tabWidth = self.width // 8
@@ -55,6 +64,7 @@ class clashGrabUI(App):
         self.regressionFont = f'Helvetica {self.dataRowHeight // 4} bold'
         self.regressionTextMargin = self.dataRowHeight // 2
 
+    # 
     def getRegressionData(self):
         with open('championRegressionData.json', 'r') as championRegressionDataRead:
             championRegressionData = json.load(championRegressionDataRead)
@@ -65,7 +75,7 @@ class clashGrabUI(App):
         # [(chamipon, winrate), ...]
         pickrates = [ ]
         for champName in parsedData:
-            try:
+            try: # if not played, initialize values as 0
                 inputWinrate = parsedData[champName][self.summonerQueryName]['winrate']
                 inputKDA = parsedData[champName][self.summonerQueryName]['KDA']
                 inputMastery = parsedData[champName][self.summonerQueryName]['masteryPercentage']
@@ -74,6 +84,7 @@ class clashGrabUI(App):
                 inputKDA = 0
                 inputMastery = 0
 
+            # add independent variables scaled by weight
             outputWinrate = championRegressionData[champName]['winrateWeight'] * inputWinrate
             outputKDA = championRegressionData[champName]['kdaWeight'] * inputKDA
             outputMastery = championRegressionData[champName]['masteryWeight'] * inputMastery
@@ -81,7 +92,7 @@ class clashGrabUI(App):
             outputPickrate = outputWinrate + outputKDA + outputMastery + championRegressionData[champName]['constant']
             champAndPickrate = (champName, outputPickrate)
             
-            # print(pickrates)
+            # make list of champ pickrates, highest pickrate first
             if len(pickrates) == 0:
                 pickrates.append(champAndPickrate)
             elif len(pickrates) == 1:
@@ -103,10 +114,13 @@ class clashGrabUI(App):
         return pickrates
 
     def mousePressed(self, event):
+        # if button pressed, parse data and get regressions
         if ((self.cx-self.buttonWidth//2 <= event.x <= self.cx+self.buttonWidth//2) and 
         (self.cy-self.buttonHeight//2 <= event.y <= self.cy+self.buttonHeight//2) and
         self.currentTab == 0):
+            # copied from: https://www.cs.cmu.edu/~112/notes/notes-animations-part3.html#ioMethods
             self.summonerQueryName = self.getUserInput('Insert summoner name here:')
+            # account for incorrect inputs
             if  self.summonerQueryName == None:
                 self.showMessage('cancelled')
                 self.readyToProceed = False
@@ -119,12 +133,16 @@ class clashGrabUI(App):
                     self.showMessage('Please go to the Summoner -> Champions tab')
                     self.readyToProceed = False
                 else:
+                    # make .txt file with OPgg HTML for given summoner
                     dataTxt = open(f'rawInputData/{self.summonerQueryName}.txt', 'w')
                     dataTxt.write(self.inputHTML)
+                    # get all summoners queried
                     with open('rawInputData/inputSummoners.json', 'r') as inputSummonersRead:
                         currentInputSummoners = json.load(inputSummonersRead)
+                        # account for initial query
                         if currentInputSummoners == None:
                             currentInputSummoners = dict()
+                    # get masteries and summoner ID, write to file
                     with open('rawInputData/inputSummoners.json', 'w') as inputSummonersWrite:
                         currentInputSummoners[self.summonerQueryName] = lol_watcher.summoner.by_name('na1', self.summonerQueryName)['id']
                         currentSummoner = {self.summonerQueryName:lol_watcher.summoner.by_name('na1', self.summonerQueryName)['id']}
@@ -133,6 +151,7 @@ class clashGrabUI(App):
                     with open('parsedInputData/inputChampMasteries.json', 'w') as inputChampDataBySummoner:
                         json.dump(findChampMasteries(lol_watcher, currentSummoner), inputChampDataBySummoner, indent=2)
 
+                    # parse and process data
                     with open('parsedInputData/InputOPggDataBySummoner.json', 'w') as opggData:
                         json.dump(parseRankedData('rawInputData'), opggData, indent=2)
 
@@ -145,10 +164,12 @@ class clashGrabUI(App):
                     with open('parsedInputData/inputSummonerDataByChamp.json', 'w') as parsedData:
                         json.dump(convertToByChamp('parsedInputData/inputChampDataBySummoner.json'), parsedData, indent=2)
 
+                    # get regression outputs
                     self.regressionData = self.getRegressionData()
 
                     self.readyToProceed = True
                     self.showMessage('Data is ready')
+        # move to the tab that's been clicked
         elif (self.tabMargin <= event.x < self.tabMargin + self.tabWidth and
                 self.tabMargin <= event.y < self.tabMargin + self.tabHeight):
             self.currentTab = 0
@@ -171,36 +192,38 @@ class clashGrabUI(App):
             if i == self.currentTab:
                 canvas.create_rectangle(x0, y0, x1, y1, fill=self.backgroundColor, outline=self.backgroundColor, width=self.tabMargin)
             else:
-                canvas.create_rectangle(x0, y0, x1, y1, fill=self.tabColor, width=self.tabMargin)
+                canvas.create_rectangle(x0, y0, x1, y1, fill=self.tabColor, outline=self.outlineColor, width=self.tabMargin)
             canvas.create_text((x1+x0)//2, (y1+y0)//2, text=self.tabs[i], fill=self.tabTextColor, font=self.tabFont)
 
     def drawButton(self, canvas):
         canvas.create_rectangle(self.cx-self.buttonWidth//2, self.cy-self.buttonHeight//2, self.cx+self.buttonWidth//2, 
-        self.cy+self.buttonHeight//2, fill=self.buttonColor, width=self.buttonOutline)
+        self.cy+self.buttonHeight//2, fill=self.buttonColor, outline=self.outlineColor, width=self.tabMargin)
         canvas.create_text(self.cx, self.cy, text=self.buttonText, fill=self.buttonTextColor, font=self.buttonFont)
 
     def drawBackground(self, canvas):
         # draw background
         xTabsEnd = self.tabMargin + self.tabWidth*self.numTabs
         y0TabsEnd, y1TabsEnd = self.tabMargin, 2*self.tabMargin + self.tabHeight
-        canvas.create_rectangle(xTabsEnd + self.tabMargin, y0TabsEnd, self.width-self.tabMargin, y1TabsEnd, fill='orchid4', outline='orchid4', width=self.tabMargin)
+        canvas.create_rectangle(xTabsEnd + self.tabMargin, y0TabsEnd, self.width-self.tabMargin, y1TabsEnd, fill=self.noTabColor, outline=self.noTabColor, width=self.tabMargin)
         
         canvas.create_rectangle(self.tabMargin, y1TabsEnd, self.width-self.tabMargin, self.height-self.tabMargin, fill=self.backgroundColor, outline=self.backgroundColor, width=self.tabMargin)
         # canvas.create_line(xTabsEnd, self.tabHeight+self.tabMargin // 2, self.width, self.tabHeight+self.tabMargin // 2, )
 
     def drawData(self, canvas):
+        # get likelihoods only for top 10 champs
         for i in range(10):
             championName = self.regressionData[i][0]
             championPickrate = self.regressionData[i][1]
             rowCenter = i*self.dataRowHeight + self.dataRowHeight//2
             # round from: https://docs.python.org/3/library/functions.html#round
-            displayText = f'{championName} has {round(championPickrate*100, 2)} pick chance'
+            displayText = f'{championName}: {round(championPickrate*100, 2)} pick chance'
             canvas.create_text(self.regressionTextMargin, self.tabMargin+self.tabHeight+rowCenter, text=displayText, anchor='w', font=self.regressionFont, fill=self.regressionTextColor)
 
     def drawRegression(self, canvas):
         with open('championRegressionData.json', 'r') as championRegressionDataRead:
             championRegressionData = json.load(championRegressionDataRead)
 
+        # get regression data only for top 10 champs
         for i in range(10):
             championName = self.regressionData[i][0]
             rowCenter = i*self.dataRowHeight + self.dataRowHeight//2
