@@ -2,7 +2,7 @@
 ## Project Summary
 Clash Grab is a 15-112 Term Project meant to help with the drafting stage of the game league of legends: specifically targetted towards the draft phase in the gamemode "Clash".  
 
-It gathers raw data from Op.gg, specifically KDA, Winrate, and Pickrate for each champion played in any ranked gamemode (Summoner's Rift 5v5 or Flex). These along with champion mastery are used as variables in a Multiple Linear Regression with the independent variables being KDA, Winrate, and Mastery for every champion played by every summoner in the dataset with Pickrate being the associated dependent variable.
+It gathers raw data from Op.gg, specifically KDA, Winrate, and Pickrate for each champion played in any ranked gamemode (Summoner's Rift 5v5 or Flex). This data is gathered from 50 Summoners from each division of the Gold rank. These along with champion mastery are used as variables in a Multiple Linear Regression with the independent variables being KDA, Winrate, and Mastery for every champion played by every summoner in the dataset with Pickrate being the associated dependent variable.
 
 ## Usage
 On running main, the application will open. At this point the only selectable tab will be "Home". After selecting the "Enter data here" button, a new window will pop up, within which you will enter the Summoner Name of the user who you wish to query. Subsequently, a new window will pop up asking for the raw data associated with that summoner. The instructions for getting said data are as follows:  
