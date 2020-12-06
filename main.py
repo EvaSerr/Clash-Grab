@@ -11,7 +11,7 @@ class clashGrabUI(App):
         self.cultured = '#F1F2F6'
         self.deepSpaceSparkle = '#416165'
 
-        self.numTabs = 3
+        self.numTabs = 5
         self.tabWidth = self.width // 8
         self.tabHeight = self.height // 12
         self.tabMargin = min(self.width, self.height) // 200
@@ -21,7 +21,7 @@ class clashGrabUI(App):
         self.noTabColor = 'white'
         self.outlineColor = self.cultured
 
-        self.tabs = ['Home', 'Data', 'Regression']
+        self.tabs = ['Home', 'Data', 'Regression', 'Instructions', 'Analysis']
         self.currentTab = 0
         self.inputHTML = ''
         self.summonerQueryName = ''
@@ -44,10 +44,33 @@ class clashGrabUI(App):
         self.regressionTextColor = self.cultured
         self.regressionTextMargin = self.dataRowHeight // 2
 
+        self.instructions = ['1. Head to Op.gg', 
+                            '2. Search the Summoner Name that was previously entered', 
+                            '3. Head to the champions tab for that summoner', 
+                            '4. Select Season 2020',
+                            '5. Open the page inspection',
+                            '6. Search "tbody.Body" within that page',
+                            '7. Go to the last entry',
+                            '8. Copy that header',
+                            '9. Paste into the entry window',
+                            '10. Proceed']
+
+        self.analysis = ['Observations:',
+                        'For champions with lower overall pickrates (across all summoners), mastery weighting tends to approach 1.',
+                        'KDA weighting is never positive, but sometimes negative. This may be because if a given summoner has', 
+                        'played a given champion a low number of times,', 
+                        'they may have much higher average KDA then if they had played is many time: ie pickrate high, KDA low.',
+                        'Winrate weighting is a magnitude lower than mastery weighting. Probably, pckrate is more dependent on', 
+                        'character enjoyment over performance.',
+                        'Anomalies:',
+                        'The most prevalent anomaly is that if a champion has been played a very few number of times, one may have', 
+                        '100% winrate on that champion.',
+                        'Thereby, if the mastery weight is also relatively low, the winrate may make the predicted pick chance far', 
+                        'higher then it should be.']
+
         self.readyToProceed = False
     # update GUI sizes
     def timerFired(self):
-        self.numTabs = 3
         self.tabWidth = self.width // 8
         self.tabHeight = self.height // 12
         self.tabMargin = min(self.width, self.height) // 200
@@ -181,6 +204,12 @@ class clashGrabUI(App):
                 self.tabMargin <= event.y < self.tabMargin + self.tabHeight and
                 self.readyToProceed == True):
             self.currentTab = 2
+        elif (self.tabMargin + 3*self.tabWidth <= event.x < self.tabMargin + 4*self.tabWidth and
+                self.tabMargin <= event.y < self.tabMargin + self.tabHeight):
+            self.currentTab = 3
+        elif (self.tabMargin + 4*self.tabWidth <= event.x < self.tabMargin + 5*self.tabWidth and
+                self.tabMargin <= event.y < self.tabMargin + self.tabHeight):
+            self.currentTab = 4
 
     def drawTabs(self, canvas):
         tabOrder = [self.currentTab]
@@ -234,6 +263,21 @@ class clashGrabUI(App):
             displayText = f"{championName}'s regression weights: Winrate Weight={champWinrateWeight}, KDA Weight={champKDAWeight}, Mastery Weight={champMasteryWeight}, Constant={champConstant}"
             canvas.create_text(self.regressionTextMargin, self.tabMargin+self.tabHeight+rowCenter, text=displayText, anchor='w', font=self.regressionFont, fill=self.regressionTextColor)
 
+    def drawInstructions(self, canvas):
+        printInstructions = ''
+        for instruction in self.instructions:
+            printInstructions += instruction + '\n'
+        canvas.create_text(self.regressionTextMargin, self.tabMargin+self.tabHeight+self.dataRowHeight//2, text=printInstructions, anchor='nw', font=self.regressionFont, fill=self.regressionTextColor)
+    
+    def drawAnalysis(self, canvas):
+        printAnalysis = ''
+        for info in self.analysis:
+            if info in ['Obervations:', 'Anomalies:']:
+                printAnalysis += '\n' + info + '\n'
+            else:
+                printAnalysis += info + '\n'
+        canvas.create_text(self.regressionTextMargin, self.tabMargin+self.tabHeight+self.dataRowHeight//2, text=printAnalysis, anchor='nw', font=self.regressionFont, fill=self.regressionTextColor)
+
     def redrawAll(self, canvas):
         self.drawBackground(canvas)
         self.drawTabs(canvas)
@@ -243,6 +287,10 @@ class clashGrabUI(App):
             self.drawData(canvas)
         elif self.readyToProceed and self.currentTab == 2:
             self.drawRegression(canvas)
+        elif self.currentTab == 3:
+            self.drawInstructions(canvas)
+        elif self.currentTab == 4:
+            self.drawAnalysis(canvas)
     
 def main():
     '''
