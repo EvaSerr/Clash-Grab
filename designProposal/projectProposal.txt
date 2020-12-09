@@ -109,4 +109,12 @@ TP2 Update:
 
 TP3 Update:
     The pertinent updates to the design simplify the usage of and expand the 
-    featureset of Clash Grab.
+    featureset of Clash Grab. More tabs have been added to provide instruction,
+    some analysis, and some changeable settings. Due to having achieved MVP,
+    this project now employs the Riot Watcher module, a wrapper for the Riot
+    API in order to simplify the process of using the app, and eliminating the
+    need for physical web-scraping. Much of this module implementation has been
+    added in the file "getData.py". It's output files are contained in the foler
+    "APIData". Some images have also been added for visual clarity.
+    "main copy.py" is now also present as a form of short term backup in between
+    github pushes.
