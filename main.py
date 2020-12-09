@@ -1,3 +1,6 @@
+################################################################################
+# define and draw UI, get queried summoner data and find regression            "
+################################################################################
 from parseData import *
 from regression import *
 from getData import *
@@ -6,13 +9,14 @@ from cmu_112_graphics import *
 class clashGrabUI(App):
     def appStarted(self):
         # colors taken from https://coolors.co/084887-758bfd-aeb8fe-f1f2f6-416165
+        # setting the color scheme of the UI
         self.yaleBlue = '#084887'
         self.cornFlowerBlue = '#758BFD'
         self.maximumBluePurple = '#AEB8FE'
         self.cultured = '#F1F2F6'
         self.deepSpaceSparkle = '#416165'
 
-        self.region = 'na1'
+        self.region = 'na1' # region stays constant
         self.queue = '420' # Ranked Solo 5x5
         self.season='13' # season 2019
         self.clashFilter = False
@@ -84,8 +88,8 @@ class clashGrabUI(App):
         # image creation from: https://www.cs.cmu.edu/~112/notes/notes-animations-part3.html#imageSize
         # champion images from: https://developer.riotgames.com/docs/lol under section "Data Dragon"
         self.imageOriginalSize = 120
-        self.imageSize = (self.height-self.tabMargin-self.tabHeight) // 14
-        self.imageDict = dict()
+        self.imageSize = (self.height-self.tabMargin-self.tabHeight) // 14 # this is done by just dividing on both sides
+        self.imageDict = dict() # make a dictionary of the loaded champion profile images for easy access
         champIconList = os.listdir('champion')
         for champIconPath in champIconList:
             champIcon = self.loadImage('champion/' + champIconPath)
@@ -94,6 +98,7 @@ class clashGrabUI(App):
             self.imageDict[champIconPath[:-4]] = champIconScaled
 
         # image from: https://fontspool.com/generator/league-of-legends-font
+        # addinga title in the form of an image
         self.titleOriginalSize = 1000
         self.titleTargetSize = 1.75*self.buttonWidth
         self.titleScale = self.titleTargetSize / self.titleOriginalSize
@@ -102,6 +107,7 @@ class clashGrabUI(App):
 
     # update GUI sizes
     def timerFired(self):
+        # making sure to resize as the window size changes
         self.tabWidth = self.width // 8
         self.tabHeight = self.height // 12
         self.tabMargin = min(self.width, self.height) // 200
@@ -135,17 +141,17 @@ class clashGrabUI(App):
         self.queueButtonHeight = (self.height - 3*self.tabMargin - self.tabHeight) // 4 - 10*self.queueButtonMargin
         self.queueButtonFont = f'Helvetica {self.buttonHeight // 4} bold'
 
-    def getRegressionData(self, regressionPath='championRegressionData.json'):
+    def getRegressionData(self, regressionPath='championRegressionData.json'): # default to manually scraped regression
         with open(regressionPath, 'r') as championRegressionDataRead:
             championRegressionData = json.load(championRegressionDataRead)
         
-        with open('APIData/inputSummonerByChamp.json', 'r') as parsedDataRead:
+        with open('APIData/inputSummonerByChamp.json', 'r') as parsedDataRead: # get input summoner information
             parsedData = json.load(parsedDataRead)
 
         # [(champion, winrate), ...]
         pickrates = [ ]
         for champName in parsedData:
-            try: # if not played, initialize values as 0
+            try: # if not played, initialize values as 0, winrate, KDA, masteryPercentage per champion
                 inputWinrate = parsedData[champName][self.summonerQueryName]['winrate']
                 inputKDA = parsedData[champName][self.summonerQueryName]['KDA']
                 inputMastery = parsedData[champName][self.summonerQueryName]['masteryPercentage']
@@ -187,12 +193,13 @@ class clashGrabUI(App):
         # gather data and find regression with api (takes a very long time depending on variables)
         # currently set to look at Ranked Solo 5x5
         loadAllSummonersDict = findSummonerDict(lol_watcher, clashFilter=self.clashFilter, summonerLimit=self.summonerLimit)
-        with open('APIData/allSummoners.json', 'w') as allSummonersWrite:
+        with open('APIData/allSummoners.json', 'w') as allSummonersWrite: # get all summoners with keys
             json.dump(loadAllSummonersDict, allSummonersWrite, indent=2)
 
         with open('APIData/allSummoners.json', 'r') as allSummonersRead:
             allSummonersDict = json.load(allSummonersRead)
 
+        # get matchlist, use it to get the data required. Does not have mastery data.
         noMasteryDataBySummoner = dict()
         for summonerName in allSummonersDict:
             summoner = Summoner(summonerName, 'na1')
@@ -207,14 +214,17 @@ class clashGrabUI(App):
         with open('APIData/noMasteryDataBySummoner.json', 'w') as noMasteryDataBySummonerWrite:
             json.dump(noMasteryDataBySummoner, noMasteryDataBySummonerWrite, indent=2)
         
+        # add the mastery data fo the previous
         with open('APIData/dataBySummoner.json', 'w') as dataBySummonerWrite:
             json.dump(addMasteryData('APIData/noMasteryDataBySummoner.json', 'APIData/allSummoners.json'), dataBySummonerWrite, indent=2)
         
-
+        # turns mastery into a percent of total player mastery
         percentizeMastery('APIData/dataBySummoner.json')
 
+        # add pickrate for eah champion
         addPickrateEntry('APIData/dataBySummoner.json')
         
+        # instead of summoners as keys, champions
         with open('APIData/dataByChamp.json', 'w') as parsedData:
             json.dump(convertToByChamp('APIData/dataBySummoner.json'), parsedData, indent=2)
         
@@ -226,7 +236,7 @@ class clashGrabUI(App):
     
 
     def mousePressed(self, event):
-        # if button pressed, parse data and get regressions
+        # if big button pressed, parse data and get regressions
         if ((self.cx-self.buttonWidth//2 <= event.x <= self.cx+self.buttonWidth//2) and 
         (self.cy-self.buttonHeight//2 <= event.y <= self.cy+self.buttonHeight//2) and
         self.currentTab == 0):
@@ -237,6 +247,7 @@ class clashGrabUI(App):
                 self.showMessage('cancelled')
                 self.readyToProceed = False
             else:
+                # using summoner name to query for Id and then 
                 inputSummoner = Summoner(self.summonerQueryName, self.region)
                 print('getting matchlistQueue')
                 matchlistQueue = inputSummoner.getMatchlistQueue(queue=self.queue, season=self.season)
@@ -271,7 +282,7 @@ class clashGrabUI(App):
               self.currentTab == 0):
               self.readyToProceed = False
               self.getAPIRegression()
-        # move to the tab that's been clicked
+        # move to the tab or button that's been clicked
         elif (self.tabMargin <= event.x < self.tabMargin + self.tabWidth and
                 self.tabMargin <= event.y < self.tabMargin + self.tabHeight):
             self.currentTab = 0
