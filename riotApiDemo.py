@@ -2,7 +2,7 @@
 # https://riot-watcher.readthedocs.io/en/latest/index.html
 from riotwatcher import LolWatcher, ApiError
 
-lol_watcher = LolWatcher('RGAPI-d4e17890-be4b-4fdf-921d-328090cc960b')
+lol_watcher = LolWatcher('development key')
 
 def riotWatcherExample(lol_watcher):
     my_region = 'na1'

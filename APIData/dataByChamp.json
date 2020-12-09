@@ -1,0 +1,1392 @@
+{
+  "Miss Fortune": {
+    "Harukon": {
+      "winrate": 0.0,
+      "KDA": 1.0909090909090908,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 716,
+      "masteryPercentage": 0.0034214336571589676,
+      "pickrate": 0.01
+    },
+    "Chogath Jungle": {
+      "winrate": 1.0,
+      "KDA": 6.666666666666667,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 3693,
+      "masteryPercentage": 0.017686273382948765,
+      "pickrate": 0.01
+    }
+  },
+  "Kayle": {
+    "Harukon": {
+      "winrate": 0.3333333333333333,
+      "KDA": 2.0,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3,
+      "mastery": 10350,
+      "masteryPercentage": 0.04945787479273089,
+      "pickrate": 0.03
+    },
+    "Dakg\u00f8gi": {
+      "winrate": 0.0,
+      "KDA": 2.75,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2,
+      "mastery": 3635,
+      "masteryPercentage": 0.010195981633208326,
+      "pickrate": 0.02
+    }
+  },
+  "Riven": {
+    "Harukon": {
+      "winrate": 0.625,
+      "KDA": 3.4551724137931035,
+      "wins": 20,
+      "losses": 12,
+      "totalGames": 32,
+      "mastery": 29693,
+      "masteryPercentage": 0.1418891474609235,
+      "pickrate": 0.32
+    }
+  },
+  "Senna": {
+    "Harukon": {
+      "winrate": 0.75,
+      "KDA": 6.333333333333333,
+      "wins": 3,
+      "losses": 1,
+      "totalGames": 4,
+      "mastery": 3655,
+      "masteryPercentage": 0.017465558682843614,
+      "pickrate": 0.04
+    }
+  },
+  "Ashe": {
+    "Harukon": {
+      "winrate": 0.6666666666666666,
+      "KDA": 3.0555555555555554,
+      "wins": 2,
+      "losses": 1,
+      "totalGames": 3,
+      "mastery": 8212,
+      "masteryPercentage": 0.03924135920752715,
+      "pickrate": 0.03
+    },
+    "Dakg\u00f8gi": {
+      "winrate": 0.0,
+      "KDA": 0.7,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 6641,
+      "masteryPercentage": 0.018627651726585006,
+      "pickrate": 0.01
+    }
+  },
+  "Kai'Sa": {
+    "Harukon": {
+      "winrate": 0.6666666666666666,
+      "KDA": 4.46875,
+      "wins": 6,
+      "losses": 3,
+      "totalGames": 9,
+      "mastery": 5875,
+      "masteryPercentage": 0.02807391443548734,
+      "pickrate": 0.09
+    },
+    "StabNoob": {
+      "winrate": 0.0,
+      "KDA": 0.75,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 165,
+      "masteryPercentage": 0.0004883809726773045,
+      "pickrate": 0.01
+    }
+  },
+  "Katarina": {
+    "Harukon": {
+      "winrate": 0.8,
+      "KDA": 4.15,
+      "wins": 4,
+      "losses": 1,
+      "totalGames": 5,
+      "mastery": 14031,
+      "masteryPercentage": 0.06704767547988474,
+      "pickrate": 0.05
+    }
+  },
+  "Samira": {
+    "Harukon": {
+      "winrate": 0.7777777777777778,
+      "KDA": 3.3404255319148937,
+      "wins": 7,
+      "losses": 2,
+      "totalGames": 9,
+      "mastery": 6678,
+      "masteryPercentage": 0.031911080953222884,
+      "pickrate": 0.09
+    }
+  },
+  "LeBlanc": {
+    "Harukon": {
+      "winrate": 0.4444444444444444,
+      "KDA": 4.0606060606060606,
+      "wins": 4,
+      "losses": 4,
+      "totalGames": 9,
+      "mastery": 16977,
+      "masteryPercentage": 0.08112525027596061,
+      "pickrate": 0.09
+    },
+    "Hiruma Yuichi": {
+      "winrate": 1.0,
+      "KDA": 2.1666666666666665,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 3311,
+      "masteryPercentage": 0.015377255965595074,
+      "pickrate": 0.01
+    }
+  },
+  "Irelia": {
+    "Harukon": {
+      "winrate": 0.25,
+      "KDA": 2.9696969696969697,
+      "wins": 1,
+      "losses": 3,
+      "totalGames": 4,
+      "mastery": 1952,
+      "masteryPercentage": 0.009327707400522772,
+      "pickrate": 0.04
+    },
+    "Enfi": {
+      "winrate": 0.5,
+      "KDA": 1.4760479041916168,
+      "wins": 26,
+      "losses": 26,
+      "totalGames": 52,
+      "mastery": 92043,
+      "masteryPercentage": 0.5942628772129179,
+      "pickrate": 0.52
+    }
+  },
+  "Cho'Gath": {
+    "Harukon": {
+      "winrate": 1.0,
+      "KDA": 3.2857142857142856,
+      "wins": 3,
+      "losses": 0,
+      "totalGames": 3,
+      "mastery": 2904,
+      "masteryPercentage": 0.01387687617372855,
+      "pickrate": 0.03
+    },
+    "Chogath Jungle": {
+      "winrate": 0.38461538461538464,
+      "KDA": 1.9651162790697674,
+      "wins": 5,
+      "losses": 8,
+      "totalGames": 13,
+      "mastery": 77630,
+      "masteryPercentage": 0.37178050439163624,
+      "pickrate": 0.13
+    }
+  },
+  "Zoe": {
+    "Harukon": {
+      "winrate": 0.5,
+      "KDA": 2.4444444444444446,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "mastery": 28864,
+      "masteryPercentage": 0.13792773893887772,
+      "pickrate": 0.02
+    },
+    "Hiruma Yuichi": {
+      "winrate": 0.5,
+      "KDA": 3.343283582089552,
+      "wins": 8,
+      "losses": 8,
+      "totalGames": 16,
+      "mastery": 37382,
+      "masteryPercentage": 0.17361298172934914,
+      "pickrate": 0.16
+    }
+  },
+  "Tristana": {
+    "Harukon": {
+      "winrate": 0.0,
+      "KDA": 3.1538461538461537,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2,
+      "mastery": 4444,
+      "masteryPercentage": 0.02123582565979672,
+      "pickrate": 0.02
+    }
+  },
+  "Sivir": {
+    "Harukon": {
+      "winrate": 1.0,
+      "KDA": 4.666666666666667,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 4096,
+      "masteryPercentage": 0.019572894217490408,
+      "pickrate": 0.01
+    }
+  },
+  "Camille": {
+    "Harukon": {
+      "winrate": 0.8,
+      "KDA": 6.214285714285714,
+      "wins": 4,
+      "losses": 1,
+      "totalGames": 5,
+      "mastery": 47698,
+      "masteryPercentage": 0.22792673544576597,
+      "pickrate": 0.05
+    }
+  },
+  "Fiora": {
+    "Harukon": {
+      "winrate": 1.0,
+      "KDA": 5.375,
+      "wins": 2,
+      "losses": 0,
+      "totalGames": 2,
+      "mastery": 5407,
+      "masteryPercentage": 0.025837558357902985,
+      "pickrate": 0.02
+    },
+    "Enfi": {
+      "winrate": 0.5,
+      "KDA": 1.1428571428571428,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "mastery": 4796,
+      "masteryPercentage": 0.03096470952829823,
+      "pickrate": 0.02
+    }
+  },
+  "Morgana": {
+    "Harukon": {
+      "winrate": 1.0,
+      "KDA": 5.75,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 7447,
+      "masteryPercentage": 0.03558577715762965,
+      "pickrate": 0.01
+    }
+  },
+  "Ryze": {
+    "Harukon": {
+      "winrate": 0.0,
+      "KDA": 1.3333333333333333,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 169,
+      "masteryPercentage": 0.0008075730280165719,
+      "pickrate": 0.01
+    },
+    "Hiruma Yuichi": {
+      "winrate": 0.3333333333333333,
+      "KDA": 1.2608695652173914,
+      "wins": 3,
+      "losses": 6,
+      "totalGames": 9,
+      "mastery": 19623,
+      "masteryPercentage": 0.09113497245933921,
+      "pickrate": 0.09
+    }
+  },
+  "Kassadin": {
+    "Harukon": {
+      "winrate": 0.6666666666666666,
+      "KDA": 6.142857142857143,
+      "wins": 2,
+      "losses": 1,
+      "totalGames": 3,
+      "mastery": 4512,
+      "masteryPercentage": 0.021560766286454276,
+      "pickrate": 0.03
+    }
+  },
+  "Poppy": {
+    "Harukon": {
+      "winrate": 1.0,
+      "KDA": 14.0,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 5589,
+      "masteryPercentage": 0.026707252388074677,
+      "pickrate": 0.01
+    }
+  },
+  "Ekko": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.5,
+      "KDA": 2.0610687022900764,
+      "wins": 23,
+      "losses": 23,
+      "totalGames": 46,
+      "mastery": 104003,
+      "masteryPercentage": 0.29172288247553385,
+      "pickrate": 0.46
+    },
+    "Chogath Jungle": {
+      "winrate": 0.4,
+      "KDA": 2.769230769230769,
+      "wins": 2,
+      "losses": 3,
+      "totalGames": 5,
+      "mastery": 2513,
+      "masteryPercentage": 0.01203509477697001,
+      "pickrate": 0.05
+    },
+    "Hiruma Yuichi": {
+      "winrate": 0.3333333333333333,
+      "KDA": 2.097560975609756,
+      "wins": 2,
+      "losses": 4,
+      "totalGames": 6,
+      "mastery": 21908,
+      "masteryPercentage": 0.10174718323595798,
+      "pickrate": 0.06
+    },
+    "play to think": {
+      "winrate": 0.0,
+      "KDA": 1.2857142857142858,
+      "wins": 0,
+      "losses": 4,
+      "totalGames": 4,
+      "mastery": 7401,
+      "masteryPercentage": 0.05030895038440361,
+      "pickrate": 0.04
+    }
+  },
+  "Orianna": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.25,
+      "KDA": 1.65,
+      "wins": 1,
+      "losses": 3,
+      "totalGames": 4,
+      "mastery": 9358,
+      "masteryPercentage": 0.02624869219355255,
+      "pickrate": 0.04
+    }
+  },
+  "Kindred": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.25,
+      "KDA": 1.5172413793103448,
+      "wins": 1,
+      "losses": 3,
+      "totalGames": 4,
+      "mastery": 4222,
+      "masteryPercentage": 0.011842485407264252,
+      "pickrate": 0.04
+    }
+  },
+  "Twisted Fate": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.0,
+      "KDA": 1.9,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2,
+      "mastery": 6996,
+      "masteryPercentage": 0.019623407842070274,
+      "pickrate": 0.02
+    },
+    "Hiruma Yuichi": {
+      "winrate": 1.0,
+      "KDA": 5.0,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 1480,
+      "masteryPercentage": 0.006873554463630537,
+      "pickrate": 0.01
+    }
+  },
+  "Lucian": {
+    "Dakg\u00f8gi": {
+      "winrate": 1.0,
+      "KDA": 1.25,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 4929,
+      "masteryPercentage": 0.01382558279782224,
+      "pickrate": 0.01
+    }
+  },
+  "Vladimir": {
+    "Dakg\u00f8gi": {
+      "winrate": 1.0,
+      "KDA": 12.0,
+      "wins": 2,
+      "losses": 0,
+      "totalGames": 2,
+      "mastery": 7869,
+      "masteryPercentage": 0.022072126402122784,
+      "pickrate": 0.02
+    },
+    "Hiruma Yuichi": {
+      "winrate": 0.75,
+      "KDA": 2.3980582524271843,
+      "wins": 15,
+      "losses": 5,
+      "totalGames": 20,
+      "mastery": 18858,
+      "masteryPercentage": 0.08758208788861126,
+      "pickrate": 0.2
+    }
+  },
+  "Yasuo": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.7142857142857143,
+      "KDA": 2.7674418604651163,
+      "wins": 5,
+      "losses": 2,
+      "totalGames": 7,
+      "mastery": 128281,
+      "masteryPercentage": 0.3598213809875096,
+      "pickrate": 0.07
+    },
+    "StabNoob": {
+      "winrate": 1.0,
+      "KDA": 4.9,
+      "wins": 3,
+      "losses": 0,
+      "totalGames": 3,
+      "mastery": 7384,
+      "masteryPercentage": 0.0218557884984801,
+      "pickrate": 0.03
+    },
+    "Hiruma Yuichi": {
+      "winrate": 0.5263157894736842,
+      "KDA": 1.984251968503937,
+      "wins": 10,
+      "losses": 9,
+      "totalGames": 19,
+      "mastery": 31528,
+      "masteryPercentage": 0.14642528724955647,
+      "pickrate": 0.19
+    }
+  },
+  "Aatrox": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.0,
+      "KDA": 0.2727272727272727,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 5691,
+      "masteryPercentage": 0.01596295226261034,
+      "pickrate": 0.01
+    },
+    "StabNoob": {
+      "winrate": 1.0,
+      "KDA": 2.4,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 2441,
+      "masteryPercentage": 0.007225078510941214,
+      "pickrate": 0.01
+    }
+  },
+  "Mordekaiser": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.0,
+      "KDA": 2.0,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 2917,
+      "masteryPercentage": 0.008182029827804315,
+      "pickrate": 0.01
+    },
+    "Chogath Jungle": {
+      "winrate": 0.0,
+      "KDA": 0.8,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 3075,
+      "masteryPercentage": 0.014726588316427688,
+      "pickrate": 0.01
+    },
+    "Hiruma Yuichi": {
+      "winrate": 0.0,
+      "KDA": 0.5,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 139,
+      "masteryPercentage": 0.0006455568043544896,
+      "pickrate": 0.01
+    }
+  },
+  "Gangplank": {
+    "Dakg\u00f8gi": {
+      "winrate": 1.0,
+      "KDA": 2.142857142857143,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 1479,
+      "masteryPercentage": 0.004148516323387927,
+      "pickrate": 0.01
+    },
+    "StabNoob": {
+      "winrate": 0.0,
+      "KDA": 0.8571428571428571,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 151,
+      "masteryPercentage": 0.00044694258711680594,
+      "pickrate": 0.01
+    }
+  },
+  "Blitzcrank": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.0,
+      "KDA": 0.16666666666666666,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 1949,
+      "masteryPercentage": 0.005466841321354341,
+      "pickrate": 0.01
+    }
+  },
+  "Shen": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.42857142857142855,
+      "KDA": 2.945945945945946,
+      "wins": 3,
+      "losses": 4,
+      "totalGames": 7,
+      "mastery": 6811,
+      "masteryPercentage": 0.01910449268329626,
+      "pickrate": 0.07
+    }
+  },
+  "Ezreal": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.0,
+      "KDA": 1.5,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 5128,
+      "masteryPercentage": 0.014383767211854828,
+      "pickrate": 0.01
+    }
+  },
+  "Zed": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.7142857142857143,
+      "KDA": 3.081081081081081,
+      "wins": 5,
+      "losses": 2,
+      "totalGames": 7,
+      "mastery": 25446,
+      "masteryPercentage": 0.07137467637926247,
+      "pickrate": 0.07
+    }
+  },
+  "Fizz": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.3333333333333333,
+      "KDA": 1.8181818181818181,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3,
+      "mastery": 8955,
+      "masteryPercentage": 0.025118298631466453,
+      "pickrate": 0.03
+    }
+  },
+  "Pantheon": {
+    "Dakg\u00f8gi": {
+      "winrate": 1.0,
+      "KDA": 2.3333333333333335,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 4707,
+      "masteryPercentage": 0.013202884607293422,
+      "pickrate": 0.01
+    }
+  },
+  "Galio": {
+    "Dakg\u00f8gi": {
+      "winrate": 1.0,
+      "KDA": 4.0,
+      "wins": 2,
+      "losses": 0,
+      "totalGames": 2,
+      "mastery": 4752,
+      "masteryPercentage": 0.013329107213481696,
+      "pickrate": 0.02
+    }
+  },
+  "Yone": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.5,
+      "KDA": 1.8333333333333333,
+      "wins": 2,
+      "losses": 2,
+      "totalGames": 4,
+      "mastery": 9573,
+      "masteryPercentage": 0.02685175575645208,
+      "pickrate": 0.04
+    }
+  },
+  "Malphite": {
+    "Dakg\u00f8gi": {
+      "winrate": 0.0,
+      "KDA": 1.7777777777777777,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 2258,
+      "masteryPercentage": 0.006333569883847152,
+      "pickrate": 0.01
+    }
+  },
+  "Nunu & Willump": {
+    "Dakg\u00f8gi": {
+      "winrate": 1.0,
+      "KDA": 5.2,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 913,
+      "masteryPercentage": 0.002560916432219863,
+      "pickrate": 0.01
+    },
+    "Chogath Jungle": {
+      "winrate": 0.0,
+      "KDA": 3.3333333333333335,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2,
+      "mastery": 2256,
+      "masteryPercentage": 0.010804287233125485,
+      "pickrate": 0.02
+    },
+    "StabNoob": {
+      "winrate": 0.0,
+      "KDA": 2.5714285714285716,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 2121,
+      "masteryPercentage": 0.0062779154124155325,
+      "pickrate": 0.01
+    }
+  },
+  "Tryndamere": {
+    "Enfi": {
+      "winrate": 0.55,
+      "KDA": 1.8737373737373737,
+      "wins": 22,
+      "losses": 17,
+      "totalGames": 40,
+      "mastery": 46589,
+      "masteryPercentage": 0.30079542373100215,
+      "pickrate": 0.4
+    },
+    "Hiruma Yuichi": {
+      "winrate": 0.3333333333333333,
+      "KDA": 1.1428571428571428,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3,
+      "mastery": 1695,
+      "masteryPercentage": 0.007872077578279568,
+      "pickrate": 0.03
+    }
+  },
+  "Master Yi": {
+    "Enfi": {
+      "winrate": 0.0,
+      "KDA": 0.7,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 7058,
+      "masteryPercentage": 0.04556899913484756,
+      "pickrate": 0.01
+    },
+    "StabNoob": {
+      "winrate": 0.0,
+      "KDA": 1.8888888888888888,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 2144,
+      "masteryPercentage": 0.006345992760122066,
+      "pickrate": 0.01
+    },
+    "Hiruma Yuichi": {
+      "winrate": 1.0,
+      "KDA": 1.8888888888888888,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 20784,
+      "masteryPercentage": 0.09652699727844398,
+      "pickrate": 0.01
+    }
+  },
+  "Nasus": {
+    "Enfi": {
+      "winrate": 0.6,
+      "KDA": 2.08,
+      "wins": 3,
+      "losses": 2,
+      "totalGames": 5,
+      "mastery": 4400,
+      "masteryPercentage": 0.02840799039293416,
+      "pickrate": 0.05
+    }
+  },
+  "Graves": {
+    "Chogath Jungle": {
+      "winrate": 0.0,
+      "KDA": 0.5555555555555556,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 282,
+      "masteryPercentage": 0.0013505359041406856,
+      "pickrate": 0.01
+    },
+    "StabNoob": {
+      "winrate": 0.625,
+      "KDA": 3.0303030303030303,
+      "wins": 5,
+      "losses": 3,
+      "totalGames": 8,
+      "mastery": 8663,
+      "masteryPercentage": 0.02564148100789993,
+      "pickrate": 0.08
+    },
+    "play to think": {
+      "winrate": 0.4,
+      "KDA": 2.0357142857142856,
+      "wins": 2,
+      "losses": 3,
+      "totalGames": 5,
+      "mastery": 16880,
+      "masteryPercentage": 0.11474328908103405,
+      "pickrate": 0.05
+    }
+  },
+  "Sylas": {
+    "Chogath Jungle": {
+      "winrate": 0.0,
+      "KDA": 1.6666666666666667,
+      "wins": 0,
+      "losses": 3,
+      "totalGames": 3,
+      "mastery": 1284,
+      "masteryPercentage": 0.006149248584810781,
+      "pickrate": 0.03
+    },
+    "StabNoob": {
+      "winrate": 0.5,
+      "KDA": 3.5555555555555554,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "mastery": 3633,
+      "masteryPercentage": 0.010753261052949378,
+      "pickrate": 0.02
+    },
+    "Hiruma Yuichi": {
+      "winrate": 0.3333333333333333,
+      "KDA": 2.4285714285714284,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3,
+      "mastery": 2187,
+      "masteryPercentage": 0.010157070008081071,
+      "pickrate": 0.03
+    }
+  },
+  "Evelynn": {
+    "Chogath Jungle": {
+      "winrate": 0.3333333333333333,
+      "KDA": 1.3157894736842106,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3,
+      "mastery": 1039,
+      "masteryPercentage": 0.004975910653908413,
+      "pickrate": 0.03
+    },
+    "StabNoob": {
+      "winrate": 0.5714285714285714,
+      "KDA": 3.5357142857142856,
+      "wins": 4,
+      "losses": 3,
+      "totalGames": 7,
+      "mastery": 10400,
+      "masteryPercentage": 0.030782800702084646,
+      "pickrate": 0.07
+    }
+  },
+  "Sett": {
+    "Chogath Jungle": {
+      "winrate": 0.0,
+      "KDA": 1.4444444444444444,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 214,
+      "masteryPercentage": 0.0010248747641351302,
+      "pickrate": 0.01
+    },
+    "play to think": {
+      "winrate": 0.0,
+      "KDA": 0.8333333333333334,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 152,
+      "masteryPercentage": 0.0010332334087865625,
+      "pickrate": 0.01
+    }
+  },
+  "Gragas": {
+    "Chogath Jungle": {
+      "winrate": 0.45454545454545453,
+      "KDA": 2.8823529411764706,
+      "wins": 5,
+      "losses": 6,
+      "totalGames": 11,
+      "mastery": 6816,
+      "masteryPercentage": 0.03264274015114508,
+      "pickrate": 0.11
+    },
+    "StabNoob": {
+      "winrate": 0.5,
+      "KDA": 3.5714285714285716,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "mastery": 2787,
+      "masteryPercentage": 0.008249198611222107,
+      "pickrate": 0.02
+    },
+    "Hiruma Yuichi": {
+      "winrate": 1.0,
+      "KDA": 5.6,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 5346,
+      "masteryPercentage": 0.02482839335308706,
+      "pickrate": 0.01
+    }
+  },
+  "Volibear": {
+    "Chogath Jungle": {
+      "winrate": 0.5,
+      "KDA": 4.0,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "mastery": 2035,
+      "masteryPercentage": 0.00974588852810743,
+      "pickrate": 0.02
+    }
+  },
+  "Trundle": {
+    "Chogath Jungle": {
+      "winrate": 0.6666666666666666,
+      "KDA": 3.272727272727273,
+      "wins": 2,
+      "losses": 1,
+      "totalGames": 3,
+      "mastery": 3033,
+      "masteryPercentage": 0.01452544467113014,
+      "pickrate": 0.03
+    }
+  },
+  "Taric": {
+    "Chogath Jungle": {
+      "winrate": 0.6190476190476191,
+      "KDA": 3.183673469387755,
+      "wins": 13,
+      "losses": 8,
+      "totalGames": 21,
+      "mastery": 71037,
+      "masteryPercentage": 0.34020574121433295,
+      "pickrate": 0.21
+    }
+  },
+  "Jarvan IV": {
+    "Chogath Jungle": {
+      "winrate": 0.5217391304347826,
+      "KDA": 3.6814159292035398,
+      "wins": 12,
+      "losses": 11,
+      "totalGames": 23,
+      "mastery": 17265,
+      "masteryPercentage": 0.08268440562052815,
+      "pickrate": 0.23
+    },
+    "play to think": {
+      "winrate": 0.4,
+      "KDA": 2.78125,
+      "wins": 2,
+      "losses": 3,
+      "totalGames": 5,
+      "mastery": 2161,
+      "masteryPercentage": 0.014689588134130011,
+      "pickrate": 0.05
+    }
+  },
+  "Amumu": {
+    "Chogath Jungle": {
+      "winrate": 0.2857142857142857,
+      "KDA": 2.395348837209302,
+      "wins": 2,
+      "losses": 5,
+      "totalGames": 7,
+      "mastery": 13788,
+      "masteryPercentage": 0.06603258527053821,
+      "pickrate": 0.07
+    }
+  },
+  "Xin Zhao": {
+    "Chogath Jungle": {
+      "winrate": 0.5,
+      "KDA": 2.625,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "mastery": 1148,
+      "masteryPercentage": 0.00549792630479967,
+      "pickrate": 0.02
+    },
+    "StabNoob": {
+      "winrate": 1.0,
+      "KDA": 4.666666666666667,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 2093,
+      "masteryPercentage": 0.006195038641294535,
+      "pickrate": 0.01
+    }
+  },
+  "Yuumi": {
+    "Chogath Jungle": {
+      "winrate": 0.0,
+      "KDA": 0.3333333333333333,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 1698,
+      "masteryPercentage": 0.008131950231315192,
+      "pickrate": 0.01
+    },
+    "StabNoob": {
+      "winrate": 1.0,
+      "KDA": 6.333333333333333,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 1017,
+      "masteryPercentage": 0.003010202722501931,
+      "pickrate": 0.01
+    }
+  },
+  "Leona": {
+    "StabNoob": {
+      "winrate": 1.0,
+      "KDA": 9.5,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 972,
+      "masteryPercentage": 0.0028770079117717575,
+      "pickrate": 0.01
+    }
+  },
+  "Lillia": {
+    "StabNoob": {
+      "winrate": 0.5,
+      "KDA": 2.875,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "mastery": 1291,
+      "masteryPercentage": 0.0038212111256145462,
+      "pickrate": 0.02
+    },
+    "play to think": {
+      "winrate": 0.0,
+      "KDA": 0.7058823529411765,
+      "wins": 0,
+      "losses": 3,
+      "totalGames": 3,
+      "mastery": 309,
+      "masteryPercentage": 0.0021004547586516305,
+      "pickrate": 0.03
+    }
+  },
+  "Hecarim": {
+    "StabNoob": {
+      "winrate": 0.3333333333333333,
+      "KDA": 2.0,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3,
+      "mastery": 1234,
+      "masteryPercentage": 0.003652497698689659,
+      "pickrate": 0.03
+    }
+  },
+  "Rengar": {
+    "StabNoob": {
+      "winrate": 0.5,
+      "KDA": 2.72972972972973,
+      "wins": 19,
+      "losses": 19,
+      "totalGames": 38,
+      "mastery": 252889,
+      "masteryPercentage": 0.7485222775720658,
+      "pickrate": 0.38
+    }
+  },
+  "Kayn": {
+    "StabNoob": {
+      "winrate": 0.0,
+      "KDA": 4.666666666666667,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 992,
+      "masteryPercentage": 0.0029362056054296126,
+      "pickrate": 0.01
+    }
+  },
+  "Akali": {
+    "StabNoob": {
+      "winrate": 1.0,
+      "KDA": 3.0,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 1096,
+      "masteryPercentage": 0.0032440336124504587,
+      "pickrate": 0.01
+    },
+    "Hiruma Yuichi": {
+      "winrate": 1.0,
+      "KDA": 2.3333333333333335,
+      "wins": 3,
+      "losses": 0,
+      "totalGames": 3,
+      "mastery": 7117,
+      "masteryPercentage": 0.03305343724166117,
+      "pickrate": 0.03
+    }
+  },
+  "Wukong": {
+    "StabNoob": {
+      "winrate": 0.0,
+      "KDA": 1.4,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 473,
+      "masteryPercentage": 0.0014000254550082729,
+      "pickrate": 0.01
+    }
+  },
+  "Thresh": {
+    "StabNoob": {
+      "winrate": 0.375,
+      "KDA": 1.9318181818181819,
+      "wins": 3,
+      "losses": 5,
+      "totalGames": 8,
+      "mastery": 4223,
+      "masteryPercentage": 0.012499593015856103,
+      "pickrate": 0.08
+    }
+  },
+  "Kha'Zix": {
+    "StabNoob": {
+      "winrate": 0.5,
+      "KDA": 1.7222222222222223,
+      "wins": 2,
+      "losses": 2,
+      "totalGames": 4,
+      "mastery": 18451,
+      "masteryPercentage": 0.05461283228405421,
+      "pickrate": 0.04
+    },
+    "play to think": {
+      "winrate": 0.6086956521739131,
+      "KDA": 2.4297752808988764,
+      "wins": 42,
+      "losses": 27,
+      "totalGames": 69,
+      "mastery": 70094,
+      "masteryPercentage": 0.47647014839135077,
+      "pickrate": 0.69
+    }
+  },
+  "Elise": {
+    "StabNoob": {
+      "winrate": 1.0,
+      "KDA": 3.090909090909091,
+      "wins": 3,
+      "losses": 0,
+      "totalGames": 3,
+      "mastery": 2906,
+      "masteryPercentage": 0.008601424888486345,
+      "pickrate": 0.03
+    },
+    "play to think": {
+      "winrate": 0.42857142857142855,
+      "KDA": 2.236842105263158,
+      "wins": 3,
+      "losses": 4,
+      "totalGames": 7,
+      "mastery": 9788,
+      "masteryPercentage": 0.06653479345528207,
+      "pickrate": 0.07
+    }
+  },
+  "Lee Sin": {
+    "StabNoob": {
+      "winrate": 0.0,
+      "KDA": 2.0,
+      "wins": 0,
+      "losses": 4,
+      "totalGames": 4,
+      "mastery": 6442,
+      "masteryPercentage": 0.019067577127195125,
+      "pickrate": 0.04
+    },
+    "play to think": {
+      "winrate": 0.5,
+      "KDA": 1.25,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "mastery": 27140,
+      "masteryPercentage": 0.18448654417412702,
+      "pickrate": 0.02
+    }
+  },
+  "Garen": {
+    "StabNoob": {
+      "winrate": 0.0,
+      "KDA": 0.7142857142857143,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 282,
+      "masteryPercentage": 0.0008346874805757568,
+      "pickrate": 0.01
+    },
+    "Hiruma Yuichi": {
+      "winrate": 1.0,
+      "KDA": 3.4,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 4300,
+      "masteryPercentage": 0.019970462292980613,
+      "pickrate": 0.01
+    }
+  },
+  "Shyvana": {
+    "StabNoob": {
+      "winrate": 0.5,
+      "KDA": 1.3333333333333333,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "mastery": 1061,
+      "masteryPercentage": 0.0031404376485492124,
+      "pickrate": 0.02
+    }
+  },
+  "Warwick": {
+    "StabNoob": {
+      "winrate": 0.5,
+      "KDA": 2.8333333333333335,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2,
+      "mastery": 2540,
+      "masteryPercentage": 0.007518107094547597,
+      "pickrate": 0.02
+    }
+  },
+  "Darius": {
+    "Hiruma Yuichi": {
+      "winrate": 1.0,
+      "KDA": 2.56,
+      "wins": 4,
+      "losses": 0,
+      "totalGames": 4,
+      "mastery": 8821,
+      "masteryPercentage": 0.0409673134619493,
+      "pickrate": 0.04
+    }
+  },
+  "Aphelios": {
+    "Hiruma Yuichi": {
+      "winrate": 1.0,
+      "KDA": 13.0,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 672,
+      "masteryPercentage": 0.0031209652699727844,
+      "pickrate": 0.01
+    }
+  },
+  "Jax": {
+    "Hiruma Yuichi": {
+      "winrate": 0.5,
+      "KDA": 2.3333333333333335,
+      "wins": 3,
+      "losses": 3,
+      "totalGames": 6,
+      "mastery": 27203,
+      "masteryPercentage": 0.1263387176176632,
+      "pickrate": 0.06
+    }
+  },
+  "Neeko": {
+    "Hiruma Yuichi": {
+      "winrate": 0.5,
+      "KDA": 2.0,
+      "wins": 2,
+      "losses": 2,
+      "totalGames": 4,
+      "mastery": 2964,
+      "masteryPercentage": 0.013765686101487103,
+      "pickrate": 0.04
+    }
+  },
+  "Sona": {
+    "xTc4": {
+      "winrate": 0.49382716049382713,
+      "KDA": 4.205980066445183,
+      "wins": 40,
+      "losses": 41,
+      "totalGames": 81,
+      "mastery": 673126,
+      "masteryPercentage": 0.9524460405187808,
+      "pickrate": 0.81
+    }
+  },
+  "Janna": {
+    "xTc4": {
+      "winrate": 0.5625,
+      "KDA": 3.74,
+      "wins": 9,
+      "losses": 7,
+      "totalGames": 16,
+      "mastery": 24082,
+      "masteryPercentage": 0.034075055112673225,
+      "pickrate": 0.16
+    }
+  },
+  "Soraka": {
+    "xTc4": {
+      "winrate": 0.0,
+      "KDA": 3.0,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 140,
+      "masteryPercentage": 0.00019809433252114658,
+      "pickrate": 0.01
+    }
+  },
+  "Karma": {
+    "xTc4": {
+      "winrate": 0.0,
+      "KDA": 1.5,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 9209,
+      "masteryPercentage": 0.01303036220133742,
+      "pickrate": 0.01
+    }
+  },
+  "Zyra": {
+    "xTc4": {
+      "winrate": 0.0,
+      "KDA": 3.0,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 177,
+      "masteryPercentage": 0.0002504478346874496,
+      "pickrate": 0.01
+    }
+  },
+  "Nidalee": {
+    "play to think": {
+      "winrate": 0.0,
+      "KDA": 1.2142857142857142,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2,
+      "mastery": 7725,
+      "masteryPercentage": 0.05251136896629076,
+      "pickrate": 0.02
+    }
+  },
+  "Olaf": {
+    "play to think": {
+      "winrate": 0.0,
+      "KDA": 1.5833333333333333,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2,
+      "mastery": 5461,
+      "masteryPercentage": 0.03712162924594354,
+      "pickrate": 0.02
+    }
+  }
+}

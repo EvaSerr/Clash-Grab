@@ -1,0 +1,879 @@
+{
+  "Harukon": {
+    "Miss Fortune": {
+      "winrate": 0.0,
+      "KDA": 1.0909090909090908,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Kayle": {
+      "winrate": 0.3333333333333333,
+      "KDA": 2.0,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3
+    },
+    "Riven": {
+      "winrate": 0.625,
+      "KDA": 3.4551724137931035,
+      "wins": 20,
+      "losses": 12,
+      "totalGames": 32
+    },
+    "Senna": {
+      "winrate": 0.75,
+      "KDA": 6.333333333333333,
+      "wins": 3,
+      "losses": 1,
+      "totalGames": 4
+    },
+    "Ashe": {
+      "winrate": 0.6666666666666666,
+      "KDA": 3.0555555555555554,
+      "wins": 2,
+      "losses": 1,
+      "totalGames": 3
+    },
+    "Kai'Sa": {
+      "winrate": 0.6666666666666666,
+      "KDA": 4.46875,
+      "wins": 6,
+      "losses": 3,
+      "totalGames": 9
+    },
+    "Katarina": {
+      "winrate": 0.8,
+      "KDA": 4.15,
+      "wins": 4,
+      "losses": 1,
+      "totalGames": 5
+    },
+    "Samira": {
+      "winrate": 0.7777777777777778,
+      "KDA": 3.3404255319148937,
+      "wins": 7,
+      "losses": 2,
+      "totalGames": 9
+    },
+    "LeBlanc": {
+      "winrate": 0.4444444444444444,
+      "KDA": 4.0606060606060606,
+      "wins": 4,
+      "losses": 4,
+      "totalGames": 9
+    },
+    "Irelia": {
+      "winrate": 0.25,
+      "KDA": 2.9696969696969697,
+      "wins": 1,
+      "losses": 3,
+      "totalGames": 4
+    },
+    "Cho'Gath": {
+      "winrate": 1.0,
+      "KDA": 3.2857142857142856,
+      "wins": 3,
+      "losses": 0,
+      "totalGames": 3
+    },
+    "Zoe": {
+      "winrate": 0.5,
+      "KDA": 2.4444444444444446,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2
+    },
+    "Tristana": {
+      "winrate": 0.0,
+      "KDA": 3.1538461538461537,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2
+    },
+    "Sivir": {
+      "winrate": 1.0,
+      "KDA": 4.666666666666667,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Camille": {
+      "winrate": 0.8,
+      "KDA": 6.214285714285714,
+      "wins": 4,
+      "losses": 1,
+      "totalGames": 5
+    },
+    "Fiora": {
+      "winrate": 1.0,
+      "KDA": 5.375,
+      "wins": 2,
+      "losses": 0,
+      "totalGames": 2
+    },
+    "Morgana": {
+      "winrate": 1.0,
+      "KDA": 5.75,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Ryze": {
+      "winrate": 0.0,
+      "KDA": 1.3333333333333333,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Kassadin": {
+      "winrate": 0.6666666666666666,
+      "KDA": 6.142857142857143,
+      "wins": 2,
+      "losses": 1,
+      "totalGames": 3
+    },
+    "Poppy": {
+      "winrate": 1.0,
+      "KDA": 14.0,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    }
+  },
+  "Dakg\u00f8gi": {
+    "Kayle": {
+      "winrate": 0.0,
+      "KDA": 2.75,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2
+    },
+    "Ekko": {
+      "winrate": 0.5,
+      "KDA": 2.0610687022900764,
+      "wins": 23,
+      "losses": 23,
+      "totalGames": 46
+    },
+    "Orianna": {
+      "winrate": 0.25,
+      "KDA": 1.65,
+      "wins": 1,
+      "losses": 3,
+      "totalGames": 4
+    },
+    "Kindred": {
+      "winrate": 0.25,
+      "KDA": 1.5172413793103448,
+      "wins": 1,
+      "losses": 3,
+      "totalGames": 4
+    },
+    "Twisted Fate": {
+      "winrate": 0.0,
+      "KDA": 1.9,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2
+    },
+    "Lucian": {
+      "winrate": 1.0,
+      "KDA": 1.25,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Vladimir": {
+      "winrate": 1.0,
+      "KDA": 12.0,
+      "wins": 2,
+      "losses": 0,
+      "totalGames": 2
+    },
+    "Yasuo": {
+      "winrate": 0.7142857142857143,
+      "KDA": 2.7674418604651163,
+      "wins": 5,
+      "losses": 2,
+      "totalGames": 7
+    },
+    "Aatrox": {
+      "winrate": 0.0,
+      "KDA": 0.2727272727272727,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Mordekaiser": {
+      "winrate": 0.0,
+      "KDA": 2.0,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Gangplank": {
+      "winrate": 1.0,
+      "KDA": 2.142857142857143,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Blitzcrank": {
+      "winrate": 0.0,
+      "KDA": 0.16666666666666666,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Shen": {
+      "winrate": 0.42857142857142855,
+      "KDA": 2.945945945945946,
+      "wins": 3,
+      "losses": 4,
+      "totalGames": 7
+    },
+    "Ezreal": {
+      "winrate": 0.0,
+      "KDA": 1.5,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Zed": {
+      "winrate": 0.7142857142857143,
+      "KDA": 3.081081081081081,
+      "wins": 5,
+      "losses": 2,
+      "totalGames": 7
+    },
+    "Fizz": {
+      "winrate": 0.3333333333333333,
+      "KDA": 1.8181818181818181,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3
+    },
+    "Pantheon": {
+      "winrate": 1.0,
+      "KDA": 2.3333333333333335,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Galio": {
+      "winrate": 1.0,
+      "KDA": 4.0,
+      "wins": 2,
+      "losses": 0,
+      "totalGames": 2
+    },
+    "Yone": {
+      "winrate": 0.5,
+      "KDA": 1.8333333333333333,
+      "wins": 2,
+      "losses": 2,
+      "totalGames": 4
+    },
+    "Ashe": {
+      "winrate": 0.0,
+      "KDA": 0.7,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Malphite": {
+      "winrate": 0.0,
+      "KDA": 1.7777777777777777,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Nunu & Willump": {
+      "winrate": 1.0,
+      "KDA": 5.2,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    }
+  },
+  "Enfi": {
+    "Irelia": {
+      "winrate": 0.5,
+      "KDA": 1.4760479041916168,
+      "wins": 26,
+      "losses": 26,
+      "totalGames": 52
+    },
+    "Tryndamere": {
+      "winrate": 0.55,
+      "KDA": 1.8737373737373737,
+      "wins": 22,
+      "losses": 17,
+      "totalGames": 40
+    },
+    "Master Yi": {
+      "winrate": 0.0,
+      "KDA": 0.7,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Nasus": {
+      "winrate": 0.6,
+      "KDA": 2.08,
+      "wins": 3,
+      "losses": 2,
+      "totalGames": 5
+    },
+    "Fiora": {
+      "winrate": 0.5,
+      "KDA": 1.1428571428571428,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2
+    }
+  },
+  "Chogath Jungle": {
+    "Graves": {
+      "winrate": 0.0,
+      "KDA": 0.5555555555555556,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Ekko": {
+      "winrate": 0.4,
+      "KDA": 2.769230769230769,
+      "wins": 2,
+      "losses": 3,
+      "totalGames": 5
+    },
+    "Sylas": {
+      "winrate": 0.0,
+      "KDA": 1.6666666666666667,
+      "wins": 0,
+      "losses": 3,
+      "totalGames": 3
+    },
+    "Evelynn": {
+      "winrate": 0.3333333333333333,
+      "KDA": 1.3157894736842106,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3
+    },
+    "Sett": {
+      "winrate": 0.0,
+      "KDA": 1.4444444444444444,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Gragas": {
+      "winrate": 0.45454545454545453,
+      "KDA": 2.8823529411764706,
+      "wins": 5,
+      "losses": 6,
+      "totalGames": 11
+    },
+    "Volibear": {
+      "winrate": 0.5,
+      "KDA": 4.0,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2
+    },
+    "Trundle": {
+      "winrate": 0.6666666666666666,
+      "KDA": 3.272727272727273,
+      "wins": 2,
+      "losses": 1,
+      "totalGames": 3
+    },
+    "Taric": {
+      "winrate": 0.6190476190476191,
+      "KDA": 3.183673469387755,
+      "wins": 13,
+      "losses": 8,
+      "totalGames": 21
+    },
+    "Jarvan IV": {
+      "winrate": 0.5217391304347826,
+      "KDA": 3.6814159292035398,
+      "wins": 12,
+      "losses": 11,
+      "totalGames": 23
+    },
+    "Cho'Gath": {
+      "winrate": 0.38461538461538464,
+      "KDA": 1.9651162790697674,
+      "wins": 5,
+      "losses": 8,
+      "totalGames": 13
+    },
+    "Miss Fortune": {
+      "winrate": 1.0,
+      "KDA": 6.666666666666667,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Amumu": {
+      "winrate": 0.2857142857142857,
+      "KDA": 2.395348837209302,
+      "wins": 2,
+      "losses": 5,
+      "totalGames": 7
+    },
+    "Mordekaiser": {
+      "winrate": 0.0,
+      "KDA": 0.8,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Nunu & Willump": {
+      "winrate": 0.0,
+      "KDA": 3.3333333333333335,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2
+    },
+    "Xin Zhao": {
+      "winrate": 0.5,
+      "KDA": 2.625,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2
+    },
+    "Yuumi": {
+      "winrate": 0.0,
+      "KDA": 0.3333333333333333,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    }
+  },
+  "StabNoob": {
+    "Leona": {
+      "winrate": 1.0,
+      "KDA": 9.5,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Evelynn": {
+      "winrate": 0.5714285714285714,
+      "KDA": 3.5357142857142856,
+      "wins": 4,
+      "losses": 3,
+      "totalGames": 7
+    },
+    "Graves": {
+      "winrate": 0.625,
+      "KDA": 3.0303030303030303,
+      "wins": 5,
+      "losses": 3,
+      "totalGames": 8
+    },
+    "Lillia": {
+      "winrate": 0.5,
+      "KDA": 2.875,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2
+    },
+    "Hecarim": {
+      "winrate": 0.3333333333333333,
+      "KDA": 2.0,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3
+    },
+    "Rengar": {
+      "winrate": 0.5,
+      "KDA": 2.72972972972973,
+      "wins": 19,
+      "losses": 19,
+      "totalGames": 38
+    },
+    "Yuumi": {
+      "winrate": 1.0,
+      "KDA": 6.333333333333333,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Sylas": {
+      "winrate": 0.5,
+      "KDA": 3.5555555555555554,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2
+    },
+    "Gragas": {
+      "winrate": 0.5,
+      "KDA": 3.5714285714285716,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2
+    },
+    "Kayn": {
+      "winrate": 0.0,
+      "KDA": 4.666666666666667,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Gangplank": {
+      "winrate": 0.0,
+      "KDA": 0.8571428571428571,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Akali": {
+      "winrate": 1.0,
+      "KDA": 3.0,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Kai'Sa": {
+      "winrate": 0.0,
+      "KDA": 0.75,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Wukong": {
+      "winrate": 0.0,
+      "KDA": 1.4,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Thresh": {
+      "winrate": 0.375,
+      "KDA": 1.9318181818181819,
+      "wins": 3,
+      "losses": 5,
+      "totalGames": 8
+    },
+    "Yasuo": {
+      "winrate": 1.0,
+      "KDA": 4.9,
+      "wins": 3,
+      "losses": 0,
+      "totalGames": 3
+    },
+    "Nunu & Willump": {
+      "winrate": 0.0,
+      "KDA": 2.5714285714285716,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Aatrox": {
+      "winrate": 1.0,
+      "KDA": 2.4,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Kha'Zix": {
+      "winrate": 0.5,
+      "KDA": 1.7222222222222223,
+      "wins": 2,
+      "losses": 2,
+      "totalGames": 4
+    },
+    "Xin Zhao": {
+      "winrate": 1.0,
+      "KDA": 4.666666666666667,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Elise": {
+      "winrate": 1.0,
+      "KDA": 3.090909090909091,
+      "wins": 3,
+      "losses": 0,
+      "totalGames": 3
+    },
+    "Lee Sin": {
+      "winrate": 0.0,
+      "KDA": 2.0,
+      "wins": 0,
+      "losses": 4,
+      "totalGames": 4
+    },
+    "Garen": {
+      "winrate": 0.0,
+      "KDA": 0.7142857142857143,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Shyvana": {
+      "winrate": 0.5,
+      "KDA": 1.3333333333333333,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2
+    },
+    "Master Yi": {
+      "winrate": 0.0,
+      "KDA": 1.8888888888888888,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Warwick": {
+      "winrate": 0.5,
+      "KDA": 2.8333333333333335,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2
+    }
+  },
+  "Hiruma Yuichi": {
+    "Zoe": {
+      "winrate": 0.5,
+      "KDA": 3.343283582089552,
+      "wins": 8,
+      "losses": 8,
+      "totalGames": 16
+    },
+    "Yasuo": {
+      "winrate": 0.5263157894736842,
+      "KDA": 1.984251968503937,
+      "wins": 10,
+      "losses": 9,
+      "totalGames": 19
+    },
+    "Ekko": {
+      "winrate": 0.3333333333333333,
+      "KDA": 2.097560975609756,
+      "wins": 2,
+      "losses": 4,
+      "totalGames": 6
+    },
+    "Sylas": {
+      "winrate": 0.3333333333333333,
+      "KDA": 2.4285714285714284,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3
+    },
+    "Darius": {
+      "winrate": 1.0,
+      "KDA": 2.56,
+      "wins": 4,
+      "losses": 0,
+      "totalGames": 4
+    },
+    "Twisted Fate": {
+      "winrate": 1.0,
+      "KDA": 5.0,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Vladimir": {
+      "winrate": 0.75,
+      "KDA": 2.3980582524271843,
+      "wins": 15,
+      "losses": 5,
+      "totalGames": 20
+    },
+    "Ryze": {
+      "winrate": 0.3333333333333333,
+      "KDA": 1.2608695652173914,
+      "wins": 3,
+      "losses": 6,
+      "totalGames": 9
+    },
+    "Aphelios": {
+      "winrate": 1.0,
+      "KDA": 13.0,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Jax": {
+      "winrate": 0.5,
+      "KDA": 2.3333333333333335,
+      "wins": 3,
+      "losses": 3,
+      "totalGames": 6
+    },
+    "LeBlanc": {
+      "winrate": 1.0,
+      "KDA": 2.1666666666666665,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Akali": {
+      "winrate": 1.0,
+      "KDA": 2.3333333333333335,
+      "wins": 3,
+      "losses": 0,
+      "totalGames": 3
+    },
+    "Master Yi": {
+      "winrate": 1.0,
+      "KDA": 1.8888888888888888,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Gragas": {
+      "winrate": 1.0,
+      "KDA": 5.6,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    },
+    "Neeko": {
+      "winrate": 0.5,
+      "KDA": 2.0,
+      "wins": 2,
+      "losses": 2,
+      "totalGames": 4
+    },
+    "Tryndamere": {
+      "winrate": 0.3333333333333333,
+      "KDA": 1.1428571428571428,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3
+    },
+    "Mordekaiser": {
+      "winrate": 0.0,
+      "KDA": 0.5,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Garen": {
+      "winrate": 1.0,
+      "KDA": 3.4,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1
+    }
+  },
+  "xTc4": {
+    "Sona": {
+      "winrate": 0.49382716049382713,
+      "KDA": 4.205980066445183,
+      "wins": 40,
+      "losses": 41,
+      "totalGames": 81
+    },
+    "Janna": {
+      "winrate": 0.5625,
+      "KDA": 3.74,
+      "wins": 9,
+      "losses": 7,
+      "totalGames": 16
+    },
+    "Soraka": {
+      "winrate": 0.0,
+      "KDA": 3.0,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Karma": {
+      "winrate": 0.0,
+      "KDA": 1.5,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Zyra": {
+      "winrate": 0.0,
+      "KDA": 3.0,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    }
+  },
+  "play to think": {
+    "Kha'Zix": {
+      "winrate": 0.6086956521739131,
+      "KDA": 2.4297752808988764,
+      "wins": 42,
+      "losses": 27,
+      "totalGames": 69
+    },
+    "Ekko": {
+      "winrate": 0.0,
+      "KDA": 1.2857142857142858,
+      "wins": 0,
+      "losses": 4,
+      "totalGames": 4
+    },
+    "Graves": {
+      "winrate": 0.4,
+      "KDA": 2.0357142857142856,
+      "wins": 2,
+      "losses": 3,
+      "totalGames": 5
+    },
+    "Nidalee": {
+      "winrate": 0.0,
+      "KDA": 1.2142857142857142,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2
+    },
+    "Lillia": {
+      "winrate": 0.0,
+      "KDA": 0.7058823529411765,
+      "wins": 0,
+      "losses": 3,
+      "totalGames": 3
+    },
+    "Sett": {
+      "winrate": 0.0,
+      "KDA": 0.8333333333333334,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1
+    },
+    "Jarvan IV": {
+      "winrate": 0.4,
+      "KDA": 2.78125,
+      "wins": 2,
+      "losses": 3,
+      "totalGames": 5
+    },
+    "Elise": {
+      "winrate": 0.42857142857142855,
+      "KDA": 2.236842105263158,
+      "wins": 3,
+      "losses": 4,
+      "totalGames": 7
+    },
+    "Lee Sin": {
+      "winrate": 0.5,
+      "KDA": 1.25,
+      "wins": 1,
+      "losses": 1,
+      "totalGames": 2
+    },
+    "Olaf": {
+      "winrate": 0.0,
+      "KDA": 1.5833333333333333,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2
+    }
+  }
+}

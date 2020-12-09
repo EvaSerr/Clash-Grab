@@ -1,0 +1,50 @@
+{
+  "Lux": {
+    "polowish": {
+      "winrate": 0.41304347826086957,
+      "KDA": 1.6327868852459015,
+      "wins": 19,
+      "losses": 27,
+      "totalGames": 46,
+      "mastery": 119238,
+      "masteryPercentage": 0.7992680180180181,
+      "pickrate": 0.6865671641791045
+    }
+  },
+  "Morgana": {
+    "polowish": {
+      "winrate": 0.5333333333333333,
+      "KDA": 2.5921052631578947,
+      "wins": 8,
+      "losses": 7,
+      "totalGames": 15,
+      "mastery": 17745,
+      "masteryPercentage": 0.11894707207207207,
+      "pickrate": 0.22388059701492538
+    }
+  },
+  "Lulu": {
+    "polowish": {
+      "winrate": 0.0,
+      "KDA": 0.42857142857142855,
+      "wins": 0,
+      "losses": 3,
+      "totalGames": 3,
+      "mastery": 6298,
+      "masteryPercentage": 0.042216323466323466,
+      "pickrate": 0.04477611940298507
+    }
+  },
+  "Nami": {
+    "polowish": {
+      "winrate": 0.3333333333333333,
+      "KDA": 0.8888888888888888,
+      "wins": 1,
+      "losses": 2,
+      "totalGames": 3,
+      "mastery": 5903,
+      "masteryPercentage": 0.03956858644358644,
+      "pickrate": 0.04477611940298507
+    }
+  }
+}
