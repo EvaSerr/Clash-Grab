@@ -96,3 +96,17 @@ Version Control Plan:
 
 Module List:
     -json, os
+
+TP2 Update:
+    The only updates to the design are with regards to organization and
+    structure. There is now no class for 'summoner', the data parsing is done
+    with helper functions not in a class. Furthermore, there is a 'main.py'
+    which runs the main application and combines the 'regreession.py' and
+    'parseData.py' files. New folders have also been added for raw and parsed
+    input data so that summoner search history can be stored and is compatible
+    with the current form of the data parsing functions. A readme has also been
+    added.
+
+TP3 Update:
+    The pertinent updates to the design simplify the usage of and expand the 
+    featureset of Clash Grab.

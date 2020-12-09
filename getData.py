@@ -28,7 +28,7 @@ def findSummonerDict(lol_watcher, clashFilter=False, summonerLimit=False, region
             for i in range(pages):
                 leagueUUID = lol_watcher.league.entries(region, queueType, tier, division, page=(i+1))
                 for summonerData in leagueUUID:
-                    if not numSummoners >= 2: 
+                    if not numSummoners >= 50: 
                         doing += 1
                         print(f'doing: {doing}')
                         if clashFilter:
