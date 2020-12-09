@@ -1,3 +1,7 @@
+################################################################################
+# defines a class for regression, allowing it to fit lines, return loss, etc.  #
+################################################################################
+
 import json, os, string
 from json import JSONEncoder
 
@@ -68,8 +72,8 @@ class PickrateRegression(object):
     
     def fitLine(self):
         prevMSE = self.getMSE()
-        # print(f'prevMSE: {prevMSE}')
 
+        # for each weight iterate up and down and see if the MSE decreases
         for i in range(self.iterations):
             self.winrateWeight += self.percentageLearningRate
             tempMSE = self.getMSE()
@@ -100,20 +104,16 @@ class PickrateRegression(object):
         
         for i in range(self.iterations):
             self.kdaWeight += self.kdaLearningRate
-            # print(f'self.kdaWeight BIG: {self.kdaWeight}')
             tempMSE = self.getMSE()
-            # print(f'tempMSE: {tempMSE}')
             if tempMSE < prevMSE:
                 prevMSE = tempMSE
             else:
                 self.kdaWeight -= 2 * self.kdaLearningRate
-                # print(f'self.kdaWeight SMALL: {self.kdaWeight}')
                 tempMSE = self.getMSE()
                 if tempMSE < prevMSE:
                     prevMSE = tempMSE
                 else:
                     self.kdaWeight += self.kdaLearningRate
-                    # print(f'self.kdaWeight FINAL: {self.kdaWeight}')
                     break
 
         for i in range(self.iterations):
@@ -132,6 +132,7 @@ class PickrateRegression(object):
 
         return {'winrateWeight': self.winrateWeight, 'kdaWeight': self.kdaWeight, 'masteryWeight':self.masteryWeight, 'constant':self.constant}
 
+    # apply the given weightings
     def predictPickrate(self, summonerData):
         summonerWinrate = summonerData['winrate']
         summonerKDA = summonerData['KDA']
@@ -147,24 +148,23 @@ class PickrateRegression(object):
 
 # copied from: https://pynative.com/make-python-class-json-serializable/
 
+# encode so the class can be dumped to jsons
 class PickrateRegressionEncoder(JSONEncoder):
     def default(self, o):
         return o.__dict__
 
+# just get regressions for each champion in hte dataset
 def findChampionRegressions(path='parsedSummonerData/summonerDataByChamp.json'):
     championRegressions = dict()
 
     with open(path, 'r') as summonerChampData:
         availableChampions = json.load(summonerChampData)
-#        print(f'in: {availableChampions}')
-#    print(f'out: {availableChampions}')
 
     iterations = 0
     for championName in availableChampions:
         print(f'iterations: {iterations}')
         regressionModel = PickrateRegression(championName)
         weights = regressionModel.fitLine()
-        # print(weights)
         championRegressions[championName] = regressionModel
         iterations += 1
     

@@ -1,50 +1,146 @@
 {
-  "Lux": {
-    "polowish": {
-      "winrate": 0.41304347826086957,
-      "KDA": 1.6327868852459015,
-      "wins": 19,
-      "losses": 27,
-      "totalGames": 46,
-      "mastery": 119238,
-      "masteryPercentage": 0.7992680180180181,
-      "pickrate": 0.6865671641791045
-    }
-  },
-  "Morgana": {
-    "polowish": {
-      "winrate": 0.5333333333333333,
-      "KDA": 2.5921052631578947,
-      "wins": 8,
-      "losses": 7,
-      "totalGames": 15,
-      "mastery": 17745,
-      "masteryPercentage": 0.11894707207207207,
-      "pickrate": 0.22388059701492538
-    }
-  },
-  "Lulu": {
-    "polowish": {
-      "winrate": 0.0,
-      "KDA": 0.42857142857142855,
-      "wins": 0,
-      "losses": 3,
-      "totalGames": 3,
-      "mastery": 6298,
-      "masteryPercentage": 0.042216323466323466,
-      "pickrate": 0.04477611940298507
-    }
-  },
-  "Nami": {
-    "polowish": {
+  "Jhin": {
+    "funghi3": {
       "winrate": 0.3333333333333333,
-      "KDA": 0.8888888888888888,
+      "KDA": 2.066666666666667,
       "wins": 1,
       "losses": 2,
       "totalGames": 3,
-      "mastery": 5903,
-      "masteryPercentage": 0.03956858644358644,
-      "pickrate": 0.04477611940298507
+      "mastery": 18616,
+      "masteryPercentage": 0.040241935832529906,
+      "pickrate": 0.03
+    }
+  },
+  "Samira": {
+    "funghi3": {
+      "winrate": 0.42857142857142855,
+      "KDA": 2.962025316455696,
+      "wins": 6,
+      "losses": 8,
+      "totalGames": 14,
+      "mastery": 20594,
+      "masteryPercentage": 0.04451774959900735,
+      "pickrate": 0.14
+    }
+  },
+  "Vayne": {
+    "funghi3": {
+      "winrate": 0.6,
+      "KDA": 3.097560975609756,
+      "wins": 6,
+      "losses": 4,
+      "totalGames": 10,
+      "mastery": 98246,
+      "masteryPercentage": 0.21237694605730195,
+      "pickrate": 0.1
+    }
+  },
+  "Ashe": {
+    "funghi3": {
+      "winrate": 0.6923076923076923,
+      "KDA": 3.5043478260869567,
+      "wins": 18,
+      "losses": 8,
+      "totalGames": 26,
+      "mastery": 55740,
+      "masteryPercentage": 0.12049234547191755,
+      "pickrate": 0.26
+    }
+  },
+  "Ezreal": {
+    "funghi3": {
+      "winrate": 0.4782608695652174,
+      "KDA": 3.1931818181818183,
+      "wins": 11,
+      "losses": 12,
+      "totalGames": 23,
+      "mastery": 46401,
+      "masteryPercentage": 0.10030436530754298,
+      "pickrate": 0.23
+    }
+  },
+  "Senna": {
+    "funghi3": {
+      "winrate": 0.375,
+      "KDA": 4.119047619047619,
+      "wins": 3,
+      "losses": 5,
+      "totalGames": 8,
+      "mastery": 34310,
+      "masteryPercentage": 0.07416742685937372,
+      "pickrate": 0.08
+    }
+  },
+  "Caitlyn": {
+    "funghi3": {
+      "winrate": 0.0,
+      "KDA": 1.625,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 20388,
+      "masteryPercentage": 0.044072442401891905,
+      "pickrate": 0.01
+    }
+  },
+  "Aphelios": {
+    "funghi3": {
+      "winrate": 0.0,
+      "KDA": 1.3333333333333333,
+      "wins": 0,
+      "losses": 2,
+      "totalGames": 2,
+      "mastery": 19592,
+      "masteryPercentage": 0.04235174080527106,
+      "pickrate": 0.02
+    }
+  },
+  "Wukong": {
+    "funghi3": {
+      "winrate": 1.0,
+      "KDA": 7.0,
+      "wins": 1,
+      "losses": 0,
+      "totalGames": 1,
+      "mastery": 11935,
+      "masteryPercentage": 0.025799715522198348,
+      "pickrate": 0.01
+    }
+  },
+  "Kai'Sa": {
+    "funghi3": {
+      "winrate": 1.0,
+      "KDA": 5.75,
+      "wins": 2,
+      "losses": 0,
+      "totalGames": 2,
+      "mastery": 69225,
+      "masteryPercentage": 0.1496426733995962,
+      "pickrate": 0.02
+    }
+  },
+  "Varus": {
+    "funghi3": {
+      "winrate": 0.7142857142857143,
+      "KDA": 3.9310344827586206,
+      "wins": 5,
+      "losses": 2,
+      "totalGames": 7,
+      "mastery": 21294,
+      "masteryPercentage": 0.046030929395030715,
+      "pickrate": 0.07
+    }
+  },
+  "Miss Fortune": {
+    "funghi3": {
+      "winrate": 0.6666666666666666,
+      "KDA": 4.6,
+      "wins": 2,
+      "losses": 1,
+      "totalGames": 3,
+      "mastery": 46261,
+      "masteryPercentage": 0.10000172934833831,
+      "pickrate": 0.03
     }
   }
 }

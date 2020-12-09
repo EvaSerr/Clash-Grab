@@ -1,3 +1,7 @@
+################################################################################
+# Parsing raw HTML taken from Op.gg                                            #
+################################################################################
+
 from riotwatcher import LolWatcher, ApiError
 import json, os
 
@@ -105,15 +109,12 @@ def parseRankedData(path):
                             tempParse.append(jsLine)
                             break
 
-                # print(f'tempParse: {tempParse}')
                 tempParsedGeneral = tempParse[:2] + [tempParse[len(tempParse) - 3]]
-                # print(f'tempParsedGeneral: {tempParsedGeneral}')
                 tempParsedGames = []
                 if len(tempParse) == 7:
                     tempParsedGames = tempParse[2:4]
                 else:
                     tempParsedGames = [tempParse[2]]
-                # print(f'tempParsedGames: {tempParsedGames}')
                 
                 tempParsedKA = tempParse[5:]
                 kPlusA = 0
@@ -139,11 +140,8 @@ def parseRankedData(path):
                 totalGames = 0
                 for tempGameDataRaw in tempParsedGames:
                     # parse format for win/losses
-                    # print(f'classSplit1: {classSplit}')
                     classSplit = tempGameDataRaw.split('>')
-                    # print(f'classSplit2: {classSplit}')
                     classSplit = classSplit[1].split('<')
-                    # print(f'classSplit3: {classSplit}')
                     classSplit = classSplit[0]
 
                     totalGames += int(classSplit[:-1])
@@ -165,6 +163,7 @@ def parseRankedData(path):
         s10ChampDataParsed[summonerTxt[:len(summonerTxt) - 4]] = s10ChampDataParsedBySummoner
     return s10ChampDataParsed
 
+# adds pickrate to the summoner dictionary
 def addPickrateEntry(path):
     pickrateData = dict()
     with open(path, 'r') as winsLossesData:
@@ -184,6 +183,7 @@ def addPickrateEntry(path):
         
     return path
 
+# combines the dictionary containing champ mastery with the other stats
 def combineOpggDataAndMastery(pathOpggData, pathMastery, pathTarget):
     with open(pathOpggData, 'r') as parsedOPGG:
         tempCombination = json.load(parsedOPGG)
@@ -199,6 +199,7 @@ def combineOpggDataAndMastery(pathOpggData, pathMastery, pathTarget):
     
     return pathTarget
 
+# make each mastery a percent of a player's total mastery
 def percentizeMastery(path):
     with open(path, 'r') as summonerDataRead:
         tempData = json.load(summonerDataRead)
@@ -217,6 +218,7 @@ def percentizeMastery(path):
     
     return path
 
+# percentize mastery for only one entry
 def percentizeMasterySingle(path, summonerName):
     with open(path, 'r') as summonerDataRead:
         tempData = json.load(summonerDataRead)
@@ -232,6 +234,7 @@ def percentizeMasterySingle(path, summonerName):
     with open(path, 'w') as summonerDataWrite:
         json.dump(resultData, summonerDataWrite, indent=2)
 
+# instead of champ data keyed by summoner, we would like summonerData beyed by champs
 def convertToByChamp(path):
     with open(path, 'r') as summonerDataRead:
         tempDataBySummoner = json.load(summonerDataRead)
