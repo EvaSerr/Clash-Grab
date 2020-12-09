@@ -52,16 +52,11 @@ class clashGrabUI(App):
         self.regressionTextColor = self.cultured
         self.regressionTextMargin = self.dataRowHeight // 2
 
-        self.instructions = ['1. Head to Op.gg', 
-                            '2. Search the Summoner Name that was previously entered', 
-                            '3. Head to the champions tab for that summoner', 
-                            '4. Select Season 2020',
-                            '5. Open the page inspection',
-                            '6. Search "tbody.Body" within that page',
-                            '7. Go to the last entry',
-                            '8. Copy that header',
-                            '9. Paste into the entry window',
-                            '10. Proceed']
+        self.instructions = ['1. Click on the button labelled "Click to enter data"', 
+                            '2. In the search bar that appears, enter a summoner name', 
+                            '3. Wait until a pop-up informs you that the data is ready', 
+                            '4. Select the data tab (or any other)',
+                            '5. Employ said pick predictions in your next game if you so choose!']
 
         self.analysis = ['Observations:',
                         'For champions with lower overall pickrates (across all summoners), mastery weighting tends to approach 1.',
@@ -76,7 +71,7 @@ class clashGrabUI(App):
                         'Thereby, if the mastery weight is also relatively low, the winrate may make the predicted pick chance far', 
                         'higher then it should be.']
 
-        self.queueButtons = ['Ranked Solo', 'Ranked Flex', 'Clash', 'API Regression']
+        self.queueButtons = ['Ranked Solo', 'Ranked Flex (API crashes here)', 'Clash', 'API Regression']
         self.currentQueueButton = 0
         self.numQueueButtons = len(self.queueButtons) - 1
         self.queueButtonMargin = 2*self.tabMargin

@@ -8,7 +8,7 @@ import json, os
 # for API docs                                                                               #
 #                                                                                            #
 ##############################################################################################
-lol_watcher = LolWatcher('RGAPI-d4e17890-be4b-4fdf-921d-328090cc960b')
+lol_watcher = LolWatcher('development key')
 
 # region = 'na1'
 

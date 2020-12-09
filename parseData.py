@@ -3,7 +3,7 @@ import json, os
 
 # raw data is taken from OP.GG
 
-lol_watcher = LolWatcher('RGAPI-d4e17890-be4b-4fdf-921d-328090cc960b')
+lol_watcher = LolWatcher('development key')
 
 def findSummonerListLimited(lol_watcher):
     # queues Gold IV - I, Platinum IV - I, Diamond IV - I
