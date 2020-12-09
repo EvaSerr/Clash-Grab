@@ -151,10 +151,10 @@ class PickrateRegressionEncoder(JSONEncoder):
     def default(self, o):
         return o.__dict__
 
-def findChampionRegressions():
+def findChampionRegressions(path='parsedSummonerData/summonerDataByChamp.json'):
     championRegressions = dict()
 
-    with open('parsedSummonerData/summonerDataByChamp.json', 'r') as summonerChampData:
+    with open(path, 'r') as summonerChampData:
         availableChampions = json.load(summonerChampData)
 #        print(f'in: {availableChampions}')
 #    print(f'out: {availableChampions}')

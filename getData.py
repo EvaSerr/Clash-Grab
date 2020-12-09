@@ -28,7 +28,7 @@ def findSummonerDict(lol_watcher, clashFilter=False, summonerLimit=False, region
             for i in range(pages):
                 leagueUUID = lol_watcher.league.entries(region, queueType, tier, division, page=(i+1))
                 for summonerData in leagueUUID:
-                    if not numSummoners >= 10: 
+                    if not numSummoners >= 2: 
                         doing += 1
                         print(f'doing: {doing}')
                         if clashFilter:
@@ -119,7 +119,7 @@ def addMasteryData(pathSummonerData, pathSummonersDict, region='na1'):
     summonerDataWithMastery = summonerData.copy()
     for summonerName in summonerData:
         summonerChampMasteries = championMasteries[summonerName]
-        for championName in summonerChampMasteries:
+        for championName in summonerData[summonerName]:
             summonerDataWithMastery[summonerName][championName]['mastery'] = summonerChampMasteries[championName]
 
     return summonerDataWithMastery
@@ -240,6 +240,7 @@ class Summoner(object):
                 try:
                     matchData = lol_watcher.match.by_id(self.region, match)
                 except ApiError as err: # error code copied from: https://riot-watcher.readthedocs.io/en/latest/
+                    # error codes from: https://developer.riotgames.com/apis#match-v4
                     if err.response.status_code == 429:
                         print('We should retry in {} seconds.'.format(err.headers['Retry-After']))
                         print('this retry-after is handled by default by the RiotWatcher library')
@@ -249,6 +250,24 @@ class Summoner(object):
                         continue
                     elif err.response.status_code == 504:
                         print(f"Gateway Timeout for match: {match}")
+                        continue
+                    elif err.response.status_code == 401:
+                        print(f"Unauthorized")
+                        continue
+                    elif err.response.status_code == 403:
+                        print(f"Forbidden")
+                        continue
+                    elif err.response.status_code == 405:
+                        print(f"Method not allowed")
+                        continue
+                    elif err.response.status_code == 415:
+                        print(f"Unsupported media type")
+                        continue
+                    elif err.response.status_code == 500:
+                        print(f"Internal server error for match: {match}")
+                        continue
+                    elif err.response.status_code == 502:
+                        print(f"Bad gateway for match: {match}")
                         continue
                     else:
                         raise

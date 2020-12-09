@@ -74,6 +74,24 @@ class clashGrabUI(App):
                         'higher then it should be.']
 
         self.readyToProceed = False
+
+        # image creation from: https://www.cs.cmu.edu/~112/notes/notes-animations-part3.html#imageSize
+        self.imageOriginalSize = 120
+        self.imageSize = (self.height-self.tabMargin-self.tabHeight) // 14
+        self.imageDict = dict()
+        champIconList = os.listdir('champion')
+        for champIconPath in champIconList:
+            champIcon = self.loadImage('champion/' + champIconPath)
+            imageScaled = self.imageSize / self.imageOriginalSize
+            champIconScaled = self.scaleImage(champIcon, imageScaled)
+            self.imageDict[champIconPath[:-4]] = champIconScaled
+
+        self.titleOriginalSize = 1000
+        self.titleTargetSize = 1.75*self.buttonWidth
+        self.titleScale = self.titleTargetSize / self.titleOriginalSize
+        self.title = self.loadImage('clashGrabTitle.png')
+        self.titleScaled = self.scaleImage(self.title, self.titleScale)
+
     # update GUI sizes
     def timerFired(self):
         self.tabWidth = self.width // 8
@@ -92,15 +110,27 @@ class clashGrabUI(App):
         self.regressionFont = f'Helvetica {self.dataRowHeight // 4} bold'
         self.regressionTextMargin = self.dataRowHeight // 2
 
-    # 
-    def getRegressionData(self):
-        with open('championRegressionData.json', 'r') as championRegressionDataRead:
+        self.imageSize = (self.height-self.tabMargin-self.tabHeight) // 14
+        self.imageDict = dict()
+        champIconList = os.listdir('champion')
+        for champIconPath in champIconList:
+            champIcon = self.loadImage('champion/' + champIconPath)
+            imageScaled = self.imageSize / self.imageOriginalSize
+            champIconScaled = self.scaleImage(champIcon, imageScaled)
+            self.imageDict[champIconPath[:-4]] = champIconScaled
+
+        self.titleTargetSize = 1.75*self.buttonWidth
+        self.titleScale = self.titleTargetSize / self.titleOriginalSize
+        self.titleScaled = self.scaleImage(self.title, self.titleScale)
+
+    def getRegressionData(self, regressionPath='championRegressionData.json'):
+        with open(regressionPath, 'r') as championRegressionDataRead:
             championRegressionData = json.load(championRegressionDataRead)
         
         with open('APIData/inputSummonerByChamp.json', 'r') as parsedDataRead:
             parsedData = json.load(parsedDataRead)
 
-        # [(chamipon, winrate), ...]
+        # [(champion, winrate), ...]
         pickrates = [ ]
         for champName in parsedData:
             try: # if not played, initialize values as 0
@@ -153,47 +183,6 @@ class clashGrabUI(App):
                 self.showMessage('cancelled')
                 self.readyToProceed = False
             else:
-                # the following comment is deprecated code
-                '''
-                self.inputHTML = self.getUserInput('Copy summoner champ HTML here: \n  (inspect element find last instance of "tbody.Body")')
-                if self.inputHTML == None or self.summonerQueryName == None:
-                    self.showMessage('cancelled')
-                    self.readyToProceed = False
-                elif '<tr class="Row TopRanker" role="row">' not in self.inputHTML.splitlines()[1]:
-                    self.showMessage('Please go to the Summoner -> Champions tab')
-                    self.readyToProceed = False
-                else:
-                    # make .txt file with OPgg HTML for given summoner
-                    dataTxt = open(f'rawInputData/{self.summonerQueryName}.txt', 'w')
-                    dataTxt.write(self.inputHTML)
-                    # get all summoners queried
-                    with open('rawInputData/inputSummoners.json', 'r') as inputSummonersRead:
-                        currentInputSummoners = json.load(inputSummonersRead)
-                        # account for initial query
-                        if currentInputSummoners == None:
-                            currentInputSummoners = dict()
-                    # get masteries and summoner ID, write to file
-                    with open('rawInputData/inputSummoners.json', 'w') as inputSummonersWrite:
-                        currentInputSummoners[self.summonerQueryName] = lol_watcher.summoner.by_name('na1', self.summonerQueryName)['id']
-                        currentSummoner = {self.summonerQueryName:lol_watcher.summoner.by_name('na1', self.summonerQueryName)['id']}
-                        json.dump(currentInputSummoners, inputSummonersWrite, indent=2)
-                    
-                    with open('parsedInputData/inputChampMasteries.json', 'w') as inputChampDataBySummoner:
-                        json.dump(findChampMasteries(lol_watcher, currentSummoner), inputChampDataBySummoner, indent=2)
-
-                    # parse and process data
-                    with open('parsedInputData/InputOPggDataBySummoner.json', 'w') as opggData:
-                        json.dump(parseRankedData('rawInputData'), opggData, indent=2)
-
-                    combineOpggDataAndMastery('parsedInputData/InputOPggDataBySummoner.json', 'parsedInputData/inputChampMasteries.json', 'parsedInputData/inputChampDataBySummoner.json')
-
-                    percentizeMasterySingle('parsedInputData/inputChampDataBySummoner.json', self.summonerQueryName)
-
-                    addPickrateEntry('parsedInputData/inputChampDataBySummoner.json')
-
-                    with open('parsedInputData/inputSummonerDataByChamp.json', 'w') as parsedData:
-                        json.dump(convertToByChamp('parsedInputData/inputChampDataBySummoner.json'), parsedData, indent=2)
-                    '''
                 inputSummoner = Summoner(self.summonerQueryName, self.region)
                 print('getting matchlistQueue')
                 matchlistQueue = inputSummoner.getMatchlistQueue(queue=self.queue, season=self.season)
@@ -256,6 +245,11 @@ class clashGrabUI(App):
         self.cy+self.buttonHeight//2, fill=self.buttonColor, outline=self.outlineColor, width=self.tabMargin)
         canvas.create_text(self.cx, self.cy, text=self.buttonText, fill=self.buttonTextColor, font=self.buttonFont)
 
+    def drawTitle(self, canvas):
+        cx = self.cx
+        cy = (2*self.tabMargin + self.tabHeight + self.cy-self.buttonHeight//2) // 2
+        canvas.create_image(cx, cy, image=ImageTk.PhotoImage(self.titleScaled))
+
     def drawBackground(self, canvas):
         # draw background
         xTabsEnd = self.tabMargin + self.tabWidth*self.numTabs
@@ -271,9 +265,22 @@ class clashGrabUI(App):
             championName = self.regressionData[i][0]
             championPickrate = self.regressionData[i][1]
             rowCenter = i*self.dataRowHeight + self.dataRowHeight//2
+
+            with open('APIData/currentChamplist.json', 'r') as champlistRead:
+                champlist = json.load(champlistRead)
+
+            # from: https://www.cs.cmu.edu/~112/notes/notes-animations-part3.html#imageSize
+            champId = champlist[championName]['id']
+
+            cx = (2*self.regressionTextMargin+self.imageSize) // 2
+            cy = self.tabMargin+self.tabHeight+rowCenter
+            canvas.create_rectangle(cx-self.imageSize/2, cy-self.imageSize/2, cx+self.imageSize/2, cy+self.imageSize/2,fill=None,
+                                    outline=self.outlineColor, width=1.5*self.tabMargin)
+            canvas.create_image(cx, cy, image=ImageTk.PhotoImage(self.imageDict[champId]))
+
             # round from: https://docs.python.org/3/library/functions.html#round
             displayText = f'{championName}: {round(championPickrate*100, 2)} pick score'
-            canvas.create_text(self.regressionTextMargin, self.tabMargin+self.tabHeight+rowCenter, text=displayText, anchor='w', font=self.regressionFont, fill=self.regressionTextColor)
+            canvas.create_text(2*self.regressionTextMargin+self.imageSize, self.tabMargin+self.tabHeight+rowCenter, text=displayText, anchor='w', font=self.regressionFont, fill=self.regressionTextColor)
 
     def drawRegression(self, canvas):
         with open('championRegressionData.json', 'r') as championRegressionDataRead:
@@ -283,12 +290,25 @@ class clashGrabUI(App):
         for i in range(min(10, len(self.regressionData))):
             championName = self.regressionData[i][0]
             rowCenter = i*self.dataRowHeight + self.dataRowHeight//2
+
+            with open('APIData/currentChamplist.json', 'r') as champlistRead:
+                champlist = json.load(champlistRead)
+
+            # from: https://www.cs.cmu.edu/~112/notes/notes-animations-part3.html#imageSize
+            champId = champlist[championName]['id']
+
+            cx = (2*self.regressionTextMargin+self.imageSize) // 2
+            cy = self.tabMargin+self.tabHeight+rowCenter
+            canvas.create_rectangle(cx-self.imageSize/2, cy-self.imageSize/2, cx+self.imageSize/2, cy+self.imageSize/2,fill=None,
+                                    outline=self.outlineColor, width=1.5*self.tabMargin)
+            canvas.create_image(cx, cy, image=ImageTk.PhotoImage(self.imageDict[champId]))
+
             champWinrateWeight = round(championRegressionData[championName]['winrateWeight'], 2)
             champKDAWeight = round(championRegressionData[championName]['kdaWeight'], 2)
             champMasteryWeight = round(championRegressionData[championName]['masteryWeight'], 2)
             champConstant = round(championRegressionData[championName]['constant'], 2)
-            displayText = f"{championName}'s regression weights: Winrate Weight={champWinrateWeight}, KDA Weight={champKDAWeight}, Mastery Weight={champMasteryWeight}, Constant={champConstant}"
-            canvas.create_text(self.regressionTextMargin, self.tabMargin+self.tabHeight+rowCenter, text=displayText, anchor='w', font=self.regressionFont, fill=self.regressionTextColor)
+            displayText = f"{championName}'s  Winrate Weight: {champWinrateWeight}, KDA Weight: {champKDAWeight}, Mastery Weight: {champMasteryWeight}, Constant: {champConstant}"
+            canvas.create_text(2*self.regressionTextMargin+self.imageSize, self.tabMargin+self.tabHeight+rowCenter, text=displayText, anchor='w', font=self.regressionFont, fill=self.regressionTextColor)
 
     def drawInstructions(self, canvas):
         printInstructions = ''
@@ -309,6 +329,7 @@ class clashGrabUI(App):
         self.drawBackground(canvas)
         self.drawTabs(canvas)
         if self.currentTab == 0:
+            self.drawTitle(canvas)
             self.drawButton(canvas)
         elif self.readyToProceed and self.currentTab == 1:
             self.drawData(canvas)
@@ -320,6 +341,8 @@ class clashGrabUI(App):
             self.drawAnalysis(canvas)
     
 def main():
+    # gather data and find regression with api (takes a very long time depending on variables)
+    # currently set to look at Ranked Solo 5x5
     '''
     loadAllSummonersDict = findSummonerDict(lol_watcher, clashFilter=False, summonerLimit=True)
     with open('APIData/allSummoners.json', 'w') as allSummonersWrite:
@@ -341,18 +364,24 @@ def main():
 
     with open('APIData/noMasteryDataBySummoner.json', 'w') as noMasteryDataBySummonerWrite:
         json.dump(noMasteryDataBySummoner, noMasteryDataBySummonerWrite, indent=2)
-
+    
     with open('APIData/dataBySummoner.json', 'w') as dataBySummonerWrite:
         json.dump(addMasteryData('APIData/noMasteryDataBySummoner.json', 'APIData/allSummoners.json'), dataBySummonerWrite, indent=2)
+    
 
     percentizeMastery('APIData/dataBySummoner.json')
 
     addPickrateEntry('APIData/dataBySummoner.json')
-
+    
     with open('APIData/dataByChamp.json', 'w') as parsedData:
         json.dump(convertToByChamp('APIData/dataBySummoner.json'), parsedData, indent=2)
+    
+    allChampionRegressions = findChampionRegressions(path='APIData/dataByChamp.json')
+    with open('APIData/apiChampionRegressionData.json', 'w') as championRegressions:
+        json.dump(allChampionRegressions, championRegressions, indent=2, cls=PickrateRegressionEncoder)
     '''
 
+    # regression without api
     '''
     allChampionRegressions = findChampionRegressions()
     with open('championRegressionData.json', 'w') as championRegressions:
