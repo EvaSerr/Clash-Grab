@@ -12,22 +12,52 @@ lol_watcher = LolWatcher('RGAPI-d4e17890-be4b-4fdf-921d-328090cc960b')
 
 # region = 'na1'
 
-def findSummonerList(lol_watcher):
+def findSummonerDict(lol_watcher, clashFilter=False, summonerLimit=False, region='na1'):
     # queues Gold IV - I, Platinum IV - I, Diamond IV - I
-    summonerRegion = 'na1'
-    tierList = ['GOLD', 'PLATINUM', 'DIAMOND']
+    # tierList = ['GOLD', 'PLATINUM', 'DIAMOND']
+    tierList = ['PLATINUM']
     divisionList = ['IV', 'III', 'II', 'I']
     queueType = 'RANKED_SOLO_5x5'
     pages = 1
+    doing = -1
 
     summonerNames = dict()
     for tier in tierList:
         for division in divisionList:
+            numSummoners = 0
             for i in range(pages):
-                leagueUUID = lol_watcher.league.entries(summonerRegion, queueType, tier, division, page=i)
+                leagueUUID = lol_watcher.league.entries(region, queueType, tier, division, page=(i+1))
                 for summonerData in leagueUUID:
-                    # print(summonerData)
-                    name = summonerData['summonerName']
+                    if not numSummoners >= 10: 
+                        doing += 1
+                        print(f'doing: {doing}')
+                        if clashFilter:
+                            name = summonerData['summonerName']
+                            try:
+                                accountId = lol_watcher.summoner.by_name(region, name)['accountId']
+                                matchlistByQueue = lol_watcher.match.matchlist_by_account(region, accountId, queue='700', season='13')
+                                summonerId = summonerData['summonerId']
+                                summonerNames[name] = summonerId
+                                if summonerLimit:
+                                    numSummoners += 1
+                            except ApiError as err: # error code copied from: https://riot-watcher.readthedocs.io/en/latest/
+                                if err.response.status_code == 429:
+                                    print('We should retry in {} seconds.'.format(err.headers['Retry-After']))
+                                    print('this retry-after is handled by default by the RiotWatcher library')
+                                    print('future requests wait until the retry-after time passes')
+                                elif err.response.status_code == 404:
+                                    print(f"{name} hasn't played clash.")
+                                else:
+                                    raise
+                        else:
+                            name = summonerData['summonerName']
+                            summonerId = summonerData['summonerId']
+                            summonerNames[name] = summonerId
+                            if summonerLimit:
+                                numSummoners += 1
+                    else:
+                        print(f'division: {division} complete.')
+                        break
 
     print(len(summonerNames))
     return summonerNames
@@ -47,6 +77,95 @@ def getChampionList(region='na1'):
         json.dump(championsDict, champList, indent=2)
 
     return championsDict
+
+def addMasteryData(pathSummonerData, pathSummonersDict, region='na1'):
+    with open(pathSummonersDict, 'r') as summonersDictRead:
+        summonersDict = json.load(summonersDictRead)
+
+    versions = lol_watcher.data_dragon.versions_for_region(region)
+    champions_version = versions['n']['champion']
+
+    current_champ_list = lol_watcher.data_dragon.champions(champions_version)
+    champData = current_champ_list['data']
+    champKeys = dict()
+    for champ in champData:
+        champKeys[champData[champ]['key']] = champData[champ]['name']
+
+    championMasteries = dict()
+    depth = 0
+    for summonerName in summonersDict:
+        championMasteries[summonerName] = dict()
+        try:
+            print(f'doing {depth}')
+            champMasteryDTO = lol_watcher.champion_mastery.by_summoner(region, summonersDict[summonerName])
+            for championMastery in champMasteryDTO:
+                tempKey = str(championMastery['championId'])
+                champName = champKeys[tempKey]
+                championMasteries[summonerName][champName] = championMastery['championPoints']
+            depth += 1
+        except ApiError as err: # error code copied from: https://riot-watcher.readthedocs.io/en/latest/
+            if err.response.status_code == 429:
+                print('We should retry in {} seconds.'.format(err.headers['Retry-After']))
+                print('this retry-after is handled by default by the RiotWatcher library')
+                print('future requests wait until the retry-after time passes')
+            elif err.response.status_code == 404:
+                print('Summoner with that ridiculous name not found.')
+            else:
+                raise
+
+    with open(pathSummonerData, 'r') as summonerDataRead:
+        summonerData = json.load(summonerDataRead)
+    
+    summonerDataWithMastery = summonerData.copy()
+    for summonerName in summonerData:
+        summonerChampMasteries = championMasteries[summonerName]
+        for championName in summonerChampMasteries:
+            summonerDataWithMastery[summonerName][championName]['mastery'] = summonerChampMasteries[championName]
+
+    return summonerDataWithMastery
+
+def addMasteryDataSingle(pathSummonerData, summonerName, region='na1'):
+    versions = lol_watcher.data_dragon.versions_for_region(region)
+    champions_version = versions['n']['champion']
+
+    current_champ_list = lol_watcher.data_dragon.champions(champions_version)
+    champData = current_champ_list['data']
+    champKeys = dict()
+    for champ in champData:
+        champKeys[champData[champ]['key']] = champData[champ]['name']
+
+    summonerId = lol_watcher.summoner.by_name(region, summonerName)['id']
+    championMasteries = dict()
+    depth = 0
+    try:
+        champMasteryDTO = lol_watcher.champion_mastery.by_summoner(region, summonerId)
+        for championMastery in champMasteryDTO:
+            print(f'doing {depth}')
+            tempKey = str(championMastery['championId'])
+            champName = champKeys[tempKey]
+            championMasteries[champName] = championMastery['championPoints']
+            depth += 1
+    except ApiError as err: # error code copied from: https://riot-watcher.readthedocs.io/en/latest/
+        if err.response.status_code == 429:
+            print('We should retry in {} seconds.'.format(err.headers['Retry-After']))
+            print('this retry-after is handled by default by the RiotWatcher library')
+            print('future requests wait until the retry-after time passes')
+        elif err.response.status_code == 404:
+            print('Summoner with that ridiculous name not found.')
+        else:
+            raise
+    
+    with open(pathSummonerData, 'r') as summonerDataNoMasteryRead:
+        summonerDataNoMastery = json.load(summonerDataNoMasteryRead)
+    
+    summonerDataWithMastery = summonerDataNoMastery.copy()
+    for champName in summonerDataWithMastery[summonerName]:
+        summonerDataWithMastery[summonerName][champName]['mastery'] = championMasteries[champName]
+    
+    with open(pathSummonerData, 'w') as summonerDataNoMasteryWrite:
+        json.dump(summonerDataWithMastery, summonerDataNoMasteryWrite, indent=2)
+
+    return pathSummonerData
 
 class Summoner(object):
     def __init__(self, summonerName, region):
@@ -117,8 +236,22 @@ class Summoner(object):
 
             for match in matchlistByChamp[champ]:
                 doing += 1
-                print(doing)
-                matchData = lol_watcher.match.by_id(self.region, match)
+                print(f'doing: {doing}')
+                try:
+                    matchData = lol_watcher.match.by_id(self.region, match)
+                except ApiError as err: # error code copied from: https://riot-watcher.readthedocs.io/en/latest/
+                    if err.response.status_code == 429:
+                        print('We should retry in {} seconds.'.format(err.headers['Retry-After']))
+                        print('this retry-after is handled by default by the RiotWatcher library')
+                        print('future requests wait until the retry-after time passes')
+                    elif err.response.status_code == 404 or err.response.status_code == 503:
+                        print(f"{match} doesn't exist.")
+                        continue
+                    elif err.response.status_code == 504:
+                        print(f"Gateway Timeout for match: {match}")
+                        continue
+                    else:
+                        raise
 
                 participantIdentities = matchData['participantIdentities']
                 participantId = 0
@@ -152,4 +285,4 @@ class Summoner(object):
         
         return summonerData
 
-funghi3 = Summoner('funghi3', 'na1')
+# funghi3 = Summoner('funghi3', 'na1')

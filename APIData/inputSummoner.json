@@ -1,0 +1,84 @@
+{
+  "saltysalmonella": {
+    "Vel'Koz": {
+      "winrate": 0.6363636363636364,
+      "KDA": 4.45945945945946,
+      "wins": 14,
+      "losses": 8,
+      "totalGames": 22,
+      "mastery": 333534,
+      "masteryPercentage": 0.45506006589853265,
+      "pickrate": 0.22
+    },
+    "Bard": {
+      "winrate": 0.4666666666666667,
+      "KDA": 4.136363636363637,
+      "wins": 7,
+      "losses": 8,
+      "totalGames": 15,
+      "mastery": 89657,
+      "masteryPercentage": 0.12232432174310487,
+      "pickrate": 0.15
+    },
+    "Leona": {
+      "winrate": 0.5813953488372093,
+      "KDA": 3.1586538461538463,
+      "wins": 25,
+      "losses": 18,
+      "totalGames": 43,
+      "mastery": 69544,
+      "masteryPercentage": 0.09488297211932682,
+      "pickrate": 0.43
+    },
+    "Lulu": {
+      "winrate": 0.6153846153846154,
+      "KDA": 5.379310344827586,
+      "wins": 8,
+      "losses": 4,
+      "totalGames": 13,
+      "mastery": 25836,
+      "masteryPercentage": 0.0352495753433068,
+      "pickrate": 0.13
+    },
+    "Zyra": {
+      "winrate": 0.0,
+      "KDA": 2.2,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 22883,
+      "masteryPercentage": 0.03122062364843201,
+      "pickrate": 0.01
+    },
+    "Alistar": {
+      "winrate": 0.5,
+      "KDA": 3.05,
+      "wins": 2,
+      "losses": 2,
+      "totalGames": 4,
+      "mastery": 114984,
+      "masteryPercentage": 0.15687943842989582,
+      "pickrate": 0.04
+    },
+    "Karma": {
+      "winrate": 0.0,
+      "KDA": 4.666666666666667,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 57661,
+      "masteryPercentage": 0.07867029586121742,
+      "pickrate": 0.01
+    },
+    "Soraka": {
+      "winrate": 0.0,
+      "KDA": 1.5,
+      "wins": 0,
+      "losses": 1,
+      "totalGames": 1,
+      "mastery": 18846,
+      "masteryPercentage": 0.025712706956183617,
+      "pickrate": 0.01
+    }
+  }
+}

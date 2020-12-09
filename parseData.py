@@ -5,10 +5,10 @@ import json, os
 
 lol_watcher = LolWatcher('RGAPI-d4e17890-be4b-4fdf-921d-328090cc960b')
 
-def findSummonerList(lol_watcher):
+def findSummonerListLimited(lol_watcher):
     # queues Gold IV - I, Platinum IV - I, Diamond IV - I
     summonerRegion = 'na1'
-    tierList = ['GOLD']
+    tierList = ['GOLD', 'PLATINUM', 'DIAMOND']
     divisionList = ['IV', 'III', 'II', 'I']
     queueType = 'RANKED_SOLO_5x5'
 
@@ -233,20 +233,22 @@ def percentizeMasterySingle(path, summonerName):
         json.dump(resultData, summonerDataWrite, indent=2)
 
 def convertToByChamp(path):
-    with open(path, 'r') as summonerData:
-        tempData = json.load(summonerData)
-        resultData = dict()
-        for summonerName in tempData:
-            for championName in tempData[summonerName]:
-                if championName in resultData:
-                    resultData[championName][summonerName] = tempData[summonerName][championName]
-                else:
-                    resultData[championName] = {summonerName:tempData[summonerName][championName]}
+    with open(path, 'r') as summonerDataRead:
+        tempDataBySummoner = json.load(summonerDataRead)
+    
+    resultData = dict()
+    for summonerName in tempDataBySummoner:
+        for championName in tempDataBySummoner[summonerName]:
+            if championName in resultData:
+                resultData[championName][summonerName] = tempDataBySummoner[summonerName][championName]
+            else:
+                resultData[championName] = {summonerName:tempDataBySummoner[summonerName][championName]}
 
     return resultData
 
 # code copied from: https://www.geeksforgeeks.org/working-with-json-data-in-python/
 
+'''
 with open('parsedSummonerData/opggDataBySummoner.json', 'w') as opggData:
     json.dump(parseRankedData('rawSummonerData'), opggData, indent=2)
 
@@ -258,3 +260,4 @@ addPickrateEntry('parsedSummonerData/champDataBySummoner.json')
 
 with open('parsedSummonerData/summonerDataByChamp.json', 'w') as parsedData:
     json.dump(convertToByChamp('parsedSummonerData/champDataBySummoner.json'), parsedData, indent=2)
+'''

@@ -12,10 +12,6 @@ class clashGrabUI(App):
         self.cultured = '#F1F2F6'
         self.deepSpaceSparkle = '#416165'
 
-        self.region = 'na1'
-        self.queue = '420' # Ranked Solo 5x5
-        self.season='13' # season 2019
-
         self.numTabs = 5
         self.tabWidth = self.width // 8
         self.tabHeight = self.height // 12
@@ -97,7 +93,7 @@ class clashGrabUI(App):
         with open('championRegressionData.json', 'r') as championRegressionDataRead:
             championRegressionData = json.load(championRegressionDataRead)
         
-        with open('APIData/inputSummonerByChamp.json', 'r') as parsedDataRead:
+        with open('parsedInputData/inputSummonerDataByChamp.json', 'r') as parsedDataRead:
             parsedData = json.load(parsedDataRead)
 
         # [(chamipon, winrate), ...]
@@ -153,8 +149,6 @@ class clashGrabUI(App):
                 self.showMessage('cancelled')
                 self.readyToProceed = False
             else:
-                # the following comment is deprecated code
-                '''
                 self.inputHTML = self.getUserInput('Copy summoner champ HTML here: \n  (inspect element find last instance of "tbody.Body")')
                 if self.inputHTML == None or self.summonerQueryName == None:
                     self.showMessage('cancelled')
@@ -193,32 +187,12 @@ class clashGrabUI(App):
 
                     with open('parsedInputData/inputSummonerDataByChamp.json', 'w') as parsedData:
                         json.dump(convertToByChamp('parsedInputData/inputChampDataBySummoner.json'), parsedData, indent=2)
-                    '''
-                inputSummoner = Summoner(self.summonerQueryName, self.region)
-                print('getting matchlistQueue')
-                matchlistQueue = inputSummoner.getMatchlistQueue(queue=self.queue, season=self.season)
-                print('getting gamesByChampion')
-                gamesByChampion = inputSummoner.getGamesByChampion(matchlist=matchlistQueue)
-                print('parsing game data')
-                rankedData = inputSummoner.parseGameData(matchlistByChamp=gamesByChampion)
-                
-                with open('APIData/inputSummoner.json', 'w') as inputSummonerWrite:
-                    json.dump(rankedData, inputSummonerWrite, indent=2)
-                
-                addMasteryDataSingle('APIData/inputSummoner.json', inputSummoner.summonerName, region=self.region)
 
-                percentizeMastery('APIData/inputSummoner.json')
+                    # get regression outputs
+                    self.regressionData = self.getRegressionData()
 
-                addPickrateEntry('APIData/inputSummoner.json')
-
-                with open('APIData/inputSummonerByChamp.json', 'w') as inputSummonerBySummoner:
-                    json.dump(convertToByChamp('APIData/inputSummoner.json'), inputSummonerBySummoner, indent=2)
-
-                # get regression outputs
-                self.regressionData = self.getRegressionData()
-
-                self.readyToProceed = True
-                self.showMessage('Data is ready')
+                    self.readyToProceed = True
+                    self.showMessage('Data is ready')
         # move to the tab that's been clicked
         elif (self.tabMargin <= event.x < self.tabMargin + self.tabWidth and
                 self.tabMargin <= event.y < self.tabMargin + self.tabHeight):
@@ -267,12 +241,12 @@ class clashGrabUI(App):
 
     def drawData(self, canvas):
         # get likelihoods only for top 10 champs
-        for i in range(min(10, len(self.regressionData))):
+        for i in range(10):
             championName = self.regressionData[i][0]
             championPickrate = self.regressionData[i][1]
             rowCenter = i*self.dataRowHeight + self.dataRowHeight//2
             # round from: https://docs.python.org/3/library/functions.html#round
-            displayText = f'{championName}: {round(championPickrate*100, 2)} pick score'
+            displayText = f'{championName}: {round(championPickrate*100, 2)} pick chance'
             canvas.create_text(self.regressionTextMargin, self.tabMargin+self.tabHeight+rowCenter, text=displayText, anchor='w', font=self.regressionFont, fill=self.regressionTextColor)
 
     def drawRegression(self, canvas):
@@ -280,7 +254,7 @@ class clashGrabUI(App):
             championRegressionData = json.load(championRegressionDataRead)
 
         # get regression data only for top 10 champs
-        for i in range(min(10, len(self.regressionData))):
+        for i in range(10):
             championName = self.regressionData[i][0]
             rowCenter = i*self.dataRowHeight + self.dataRowHeight//2
             champWinrateWeight = round(championRegressionData[championName]['winrateWeight'], 2)
@@ -320,8 +294,7 @@ class clashGrabUI(App):
             self.drawAnalysis(canvas)
     
 def main():
-    '''
-    loadAllSummonersDict = findSummonerDict(lol_watcher, clashFilter=False, summonerLimit=True)
+    loadAllSummonersDict = findSummonerDict(lol_watcher, clashFilter=True, summonerLimit=True)
     with open('APIData/allSummoners.json', 'w') as allSummonersWrite:
         json.dump(loadAllSummonersDict, allSummonersWrite, indent=2)
 
@@ -331,13 +304,8 @@ def main():
     noMasteryDataBySummoner = dict()
     for summonerName in allSummonersDict:
         summoner = Summoner(summonerName, 'na1')
-        print('getting matchlistQueue')
-        matchlistQueue = summoner.getMatchlistQueue(queue='420')
-        print('getting gamesByChampion')
-        gamesByChampion = summoner.getGamesByChampion(matchlist=matchlistQueue)
-        print('parsing game data')
-        rankedData = summoner.parseGameData(matchlistByChamp=gamesByChampion)
-        noMasteryDataBySummoner[summonerName] = rankedData[summonerName]
+        clashData = summoner.parseGameData()
+        noMasteryDataBySummoner[summonerName] = clashData[summonerName]
 
     with open('APIData/noMasteryDataBySummoner.json', 'w') as noMasteryDataBySummonerWrite:
         json.dump(noMasteryDataBySummoner, noMasteryDataBySummonerWrite, indent=2)
@@ -345,21 +313,13 @@ def main():
     with open('APIData/dataBySummoner.json', 'w') as dataBySummonerWrite:
         json.dump(addMasteryData('APIData/noMasteryDataBySummoner.json', 'APIData/allSummoners.json'), dataBySummonerWrite, indent=2)
 
-    percentizeMastery('APIData/dataBySummoner.json')
-
-    addPickrateEntry('APIData/dataBySummoner.json')
-
-    with open('APIData/dataByChamp.json', 'w') as parsedData:
-        json.dump(convertToByChamp('APIData/dataBySummoner.json'), parsedData, indent=2)
-    '''
-
     '''
     allChampionRegressions = findChampionRegressions()
     with open('championRegressionData.json', 'w') as championRegressions:
         json.dump(allChampionRegressions, championRegressions, indent=2, cls=PickrateRegressionEncoder)
     '''
 
-    clashGrabUI(width=704, height=400)
+    # clashGrabUI(width=704, height=400)
 
 if (__name__ == '__main__'):
     main()
